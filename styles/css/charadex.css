@@ -280,19 +280,30 @@ a:active {
 }
 
 .navbar-brand::before {
-  display: inline-block;
-  content: url('/concordia-order/assets/parentheses-left.svg');
-  height: 100%;
-  color: inherit;
-}
-.navbar-brand::after {
-  display: inline-block;
-  content: '';
-  -webkit-mask: url('/concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
-  mask:         url('/concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
+  background-color: currentColor;
+  -webkit-mask: url('/concordia-order/assets/parentheses-left.svg') no-repeat 50% 50%;
+  mask: url('/concordia-order/assets/parentheses-left.svg') no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
-  background-color: var(--cd-primary-color)
+  display: inline-block;
+  vertical-align: -.1em;
+  content: "";
+  height: 1em;
+  width: 1em;
+  margin-right: .1em;
+}
+.navbar-brand::after {
+  background-color: currentColor;
+  -webkit-mask: url('/concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
+  mask: url('/concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  display: inline-block;
+  vertical-align: -.1em;
+  content: "";
+  height: 1em;
+  width: 1em;
+  margin-left: .1em;
 }
 
 .navbar .navbar-nav .nav-link {
