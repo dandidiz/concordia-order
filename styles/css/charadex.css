@@ -32,7 +32,7 @@ body {
   --cd-faded-background-color: var(--cd-content-background-color);
 
   /* Background Extras */
-  --cd-body-background-image: url();
+  --cd-body-background-image: url('/concordia-order/assets/emblem-concordia-order.png');
 
   /* ============================================================= */
   /* Text
@@ -43,7 +43,7 @@ body {
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color: #AAA5B6;
+  --cd-border-color: #AAA5B661;
   --cd-border-width: 1px;
   --cd-border-style: solid;
   --cd-border-radius: 5px;
@@ -235,8 +235,9 @@ body {
   /* Global Background */
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
+  background-size: 400px;
+  background-repeat: no-repeat;
 
 }
 
@@ -280,6 +281,21 @@ a:active {
 .navbar .navbar-brand strong {
   font-weight: normal;
   color: var(--cd-navbar-brand-color-hover) !important;
+}
+
+.navbar-brand:before {
+  display: inline-block;
+  content: url('concordia-order/assets/parentheses-left.svg');
+  height: 100%;
+  color: inherit;
+}
+.navbar-brand:after {
+  display: inline-block;
+  content: '';
+  -webkit-mask: url('concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
+  mask:         url('concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -659,7 +675,7 @@ img {
 
 /* Custom bullet list style */
 ul {
-  list-style-type: ">> ";
+  list-style-type: "✦";
 }
 
 ul li {
@@ -667,7 +683,11 @@ ul li {
 }
 
 ul li::marker {
-  color: var(--cd-primary-color);
+  color: var(--cd-secondary-color);
+}
+
+ol {
+  list-style-type: upper-roman;
 }
 
 ol li {
@@ -676,7 +696,7 @@ ol li {
 }
 
 ol li::marker {
-  color: var(--cd-faded-text-color);
+  color: var(--cd-primary-color);
 }
 
 
