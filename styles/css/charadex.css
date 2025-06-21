@@ -614,11 +614,12 @@ h2 {
 /* ============================================================= */
 hr { 
   color: var(--cd-faded-text-color);
-  background: url('concordia-order/assets/emblem-concordia-order.png') no-repeat center;
+  background: url('/concordia-order/assets/emblem-concordia-order.png') no-repeat center;
   background-size: contain;
   display: block;
   position: relative;
   padding: 1rem;
+  margin: 0;
   border: 0;
 }
 hr:before,
@@ -702,7 +703,7 @@ ul li {
 }
 
 ul li::marker {
-  color: var(--cd-secondary-color);
+  color: var(--cd-secondary-color) !important;
 }
 
 ol {
@@ -716,6 +717,7 @@ ol li {
 
 ol li::marker {
   color: var(--cd-primary-color);
+  font-family: var(--cd-header-font-family);
 }
 
 
