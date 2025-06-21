@@ -283,27 +283,27 @@ a:active {
   background-color: currentColor;
   -webkit-mask: url('/concordia-order/assets/parentheses-left.svg') no-repeat 50% 50%;
   mask: url('/concordia-order/assets/parentheses-left.svg') no-repeat 50% 50%;
-  -webkit-mask-size: cover;
-  mask-size: cover;
+  -webkit-mask-size: contain;
+  mask-size: contain;
   display: inline-block;
   vertical-align: -.1em;
   content: "";
   height: 1em;
-  width: 1em;
-  margin-right: .1em;
+  width: .6em;
+  margin-left: .1em;
 }
 .navbar-brand::after {
   background-color: currentColor;
   -webkit-mask: url('/concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
   mask: url('/concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
-  -webkit-mask-size: cover;
-  mask-size: cover;
+  -webkit-mask-size: contain;
+  mask-size: contain;
   display: inline-block;
   vertical-align: -.1em;
   content: "";
   height: 1em;
-  width: 1em;
-  margin-left: .1em;
+  width: .6em;
+  margin-right: .1em;
 }
 
 .navbar .navbar-nav .nav-link {
