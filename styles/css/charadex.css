@@ -764,10 +764,11 @@ body {
 }
 
 #main-container {
-  height: 80vh;
+  height: 75vh;
   padding: 1rem;
   -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
+  overflow: scroll;
 }
 
 @media (min-width: 768px) {
