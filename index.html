@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ----------------------------------------------------------------- -->
+  <!-- About Your Site                                                   -->
+  <!-- ----------------------------------------------------------------- -->
+  <link rel="shortcut icon" type="image/png" href="/concordia-order/assets/favicon.png" />
+  <title>Charadex</title>
+  <meta name="title" content="Charadex" />
+  <meta name="type" content="website" />
+  <meta name="url" content="/" />
+  <meta name="image" content="/concordia-order/assets/meta.png" />
+  <meta name="description" content="">
+
+  <!-- No AI scraping directives -->
+  <meta name="robots" content="noai">
+  <meta name="robots" content="noimageai">
+
+
+  <!-- ----------------------------------------------------------------- -->
+  <!-- Styles                                                            -->
+  <!-- ----------------------------------------------------------------- -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+  <!-- ----------------------------------------------------------------- -->
+  <!-- Optional Styles                                                   -->
+  <!-- ----------------------------------------------------------------- -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="/concordia-order/styles/css/charadex.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="charadex-body">
+
+  <!-- --------------------------------------------------------------------
+  <-- Header
+  <-------------------------------------------------------------------- -->
+  <div class="load-html" data-source="/concordia-order/includes/header.html"></div>
+
+  <!-- --------------------------------------------------------------------
+  <-- Main List
+  <-------------------------------------------------------------------- -->
+  <div class="container" id="main-container">
+    <div class="card p-md-5 p-4 mb-3">
+
+
+      <!-- Hero Image & Title
+      <!-- --------------------------------------------------------------- -->
+      <div class="cd-hero-title m-1" style="background-image: url('/concordia-order/assets/header.png');">
+        <div class="m-auto">Pa<span class="text-muted">radigm</span> In<span class="text-muted">finite</span></div>
+      </div>
+
+      <!-- Description
+      <!-- --------------------------------------------------------------- -->
+      <div class="card card-body bg-faded m-1">
+        <p class="text-muted">“Welcome to ISOMNIS, [NAME]! We know how much of an asset you will be within our company, and we can’t wait to see all that you accomplish.”</p>
+
+        <hr class="mb-4 mx-5">
+        <p>
+          The pay is respectable. The benefits are good. And the work… the work is <span class="text-loud">important</span>… right? 
+          Is that what you were thinking when you accepted the <span class="text-loud">Analyst</span> position at ISOMNIS? 
+          Maybe. Maybe not. Either way, you’re here now– seeing things you can’t unsee and knowing things you can’t unknow. 
+          <span class="text-loud">Just another day in the office, eh?</span>
+        </p>
+        <ul>
+          <li>
+            Paradigm Infinite <span class="text-muted">(concordia-order)</span> is a hub-style roleplay group; there is a central place for day-to-day roleplay and downtime, 
+              marked by periods of short-term high activity campaigns run by <span class="text-muted">(usually)</span> moderators or <span class="text-muted">(sometimes)</span> players.
+          </li>
+          <li>
+            In addition to roleplaying in a dedicated discord server, there will be optional in character <span class="text-muted">(IC)</span> social media accounts on bsky.app
+          </li>
+        </ul>
+        <p>
+          <strong>Influences for vibes:</strong> Severance <span class="text-muted">(show)</span>, Field Studies Institute, 
+          Lethal Company <span class="text-muted"></span>(game)</span>, 
+          SCP Foundation, Control <span class="text-muted">(game)</span>, 
+          Magnus Archives <span class="text-muted">(podcast)</span>, 
+          Maniac <span class="text-muted">(show)</span>, 
+          The Secret World <span class="text-muted">(game)</span>
+        </p>
+      </div>
+
+    </div>
+      
+    <!-- Designs
+    <!-- --------------------------------------------------------------- -->
+    <div class="card p-md-5 p-4 mb-3" id="charadex-gallery">
+      <h1 class="mb-0 text-center"><a href="masterlist.html">Newest Characters</a></h1>
+      <div class="row no-gutters charadex-list softload m-n2"></div>
+      <p class="text-center"><i class="fa-solid fa-infinity fa-spin loading"></i></p>
+    </div>
+
+    <!-- Prompts
+    <!-- --------------------------------------------------------------- -->
+    <div class="card p-md-5 p-4 mb-3" id="prompt-gallery">
+      <h1 class="mb-0 text-center"><a href="prompts.html">Recent prompts</a></h1>
+      <div class="row no-gutters prompt-list softload m-n2"></div>
+      <p class="text-center"><i class="fa-solid fa-infinity fa-spin loading"></i></p>
+    </div>
+
+    
+  </div>
+
+
+
+  <!-- --------------------------------------------------------------------
+  <-- Footer
+  <-------------------------------------------------------------------- -->
+  <div class="load-html" data-source="/concordia-order/includes/footer.html"></div>
+
+
+
+  <!-- --------------------------------------------------------------------
+  <-- Repeat Items
+  <-- Do not remove 'display:none;'
+  <-------------------------------------------------------------------- -->
+  <div style="display:none;">
+    <div class="load-html" data-source="/concordia-order/includes/character-thumb.html"></div>
+    <div class="load-html" data-source="/concordia-order/includes/prompt-thumb.html"></div>
+  </div>
+
+  <!-- ----------------------------------------------------------------- -->
+  <!-- JS                                                                -->
+  <!-- ----------------------------------------------------------------- -->
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <!-- Showdown.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Charadex Script -->
+  <script src="/concordia-order/styles/js/pages/base.js" type="module"></script>
+  <script src="/concordia-order/styles/js/pages/index.js" type="module"></script>
+
+
+</body>
+
+</html>
