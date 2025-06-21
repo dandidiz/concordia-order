@@ -270,7 +270,7 @@ a:active {
 
 .navbar .navbar-brand {
   color: var(--cd-navbar-brand-color) !important;
-  font-size: 2rem;
+  font-size: calc(1.375rem + 1.5vw);
 }
 
 .navbar .navbar-brand:hover,
@@ -283,13 +283,13 @@ a:active {
   color: var(--cd-navbar-brand-color-hover) !important;
 }
 
-.navbar-brand:before {
+.navbar-brand::before {
   display: inline-block;
   content: url('concordia-order/assets/parentheses-left.svg');
   height: 100%;
   color: inherit;
 }
-.navbar-brand:after {
+.navbar-brand::after {
   display: inline-block;
   content: '';
   -webkit-mask: url('concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
@@ -591,6 +591,62 @@ a.badge.badge-primary:active,
 
 
 /* ============================================================= */
+/* Headers
+/* ============================================================= */
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: var(--cd-navbar-font-family) !important;
+}
+h1 a, h2 a, h3 a,
+h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+h1 {
+  color: var(--cd-faded-text-color);
+}
+h2 {
+  color: var(--cd-primary-color);
+}
+
+
+/* ============================================================= */
+/* Horizontal Rule
+/* ============================================================= */
+hr { 
+  color: var(--cd-faded-text-color);
+  background: url('concordia-order/assets/emblem-concordia-order.png') no-repeat center;
+  background-size: contain;
+  display: block;
+  position: relative;
+  padding: 1rem;
+  border: 0;
+}
+hr:before,
+hr:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: var(--cd-hr-border-color);
+  height: var(--cd-hr-border-width);
+  top: calc(var(--cd-hr-border-height / 2));
+}
+hr:before {
+  left: 0;
+  right: 50%;
+  margin-right: 10px;
+}
+hr:after {
+  right: 0;
+  left: 50%;
+  margin-left: 10px;
+}
+.card hr {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+/* ============================================================= */
 /* Misc
 /* ============================================================= */
 
@@ -612,43 +668,6 @@ a.badge.badge-primary:active,
 
 .text-loud {
   color: var(--cd-primary-color) !important;
-}
-
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: var(--cd-navbar-font-family) !important;
-}
-h1 a, h2 a, h3 a,
-h4 a, h5 a, h6 a {
-  text-decoration: none;
-}
-
-hr { 
-    background: url('https://i.sstatic.net/37Aip.png') no-repeat top center;
-    background-size: contain;
-    display: block;
-    height: var(--cd-hr-border-height);
-    border: 0;
-    position: relative;
-}
-hr:before,
-hr:after {
-    content: '';
-    display: block;
-    position: absolute;
-    background: var(--cd-hr-border-color);
-    height: var(--cd-hr-border-width);
-    top: calc(var(--cd-hr-border-height / 2));
-}
-hr:before {
-    left: 0;
-    right: 50%;
-    margin-right: 10px;
-}
-hr:after {
-    right: 0;
-    left: 50%;
-    margin-left: 10px;
 }
 
 img {
@@ -745,7 +764,7 @@ body {
 }
 
 #main-container {
-  min-height: calc(100vh - 105px);
+  height: 80vh;
   padding: 1rem;
   -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
