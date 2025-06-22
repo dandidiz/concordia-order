@@ -780,9 +780,7 @@ body {
 #main-container::before, #main-container::after {
   display: none;
 }
-
 #main-card {
-  height: 75vh;
   overflow: scroll;
 }
 
@@ -811,6 +809,10 @@ body {
     content: "";
     height: 50px;
     margin-top: .1em;
+  }
+  #main-card {
+    height: 60vh;
+    overflow: scroll;
   }
 }
 
