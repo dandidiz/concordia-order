@@ -397,6 +397,11 @@ a:active {
   height: 50px;
   margin-bottom: -45px;
 }
+@media (min-width: 768px) {
+  #header::after, #footer::before {
+    display: none;
+  }
+}
 
 /* ============================================================= */
 /* Footer
@@ -808,9 +813,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  #main-container {
-    padding: 1rem .5rem;
-  }
   #main-card {
     height: 60vh;
     overflow: scroll;
