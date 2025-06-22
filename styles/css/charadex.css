@@ -634,33 +634,19 @@ h4 {
 /* Horizontal Rule
 /* ============================================================= */
 hr { 
-  color: var(--cd-faded-text-color);
-  background: url('/concordia-order/assets/emblem-concordia-order.png') no-repeat center;
-  background-size: contain;
-  display: block;
-  position: relative;
+  background-color: var(--cd-faded-text-color);
+  -webkit-mask: url('/concordia-order/assets/hr.svg') no-repeat 50% 50%;
+  mask: url('/concordia-order/assets/hr.svg') no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: inline-block;
+  vertical-align: -.1em;
+  content: '';
+  height: 1em;
+  width: 80%;
   padding: 1rem;
   margin: 0;
   border: 0;
-}
-hr:before,
-hr:after {
-  content: '';
-  display: block;
-  position: absolute;
-  background: var(--cd-hr-border-color);
-  height: var(--cd-hr-border-width);
-  top: calc(var(--cd-hr-border-height / 2));
-}
-hr:before {
-  left: 0;
-  right: 50%;
-  margin-right: 10px;
-}
-hr:after {
-  right: 0;
-  left: 50%;
-  margin-left: 10px;
 }
 .card hr {
   margin-left: 20%;
@@ -792,6 +778,30 @@ body {
   -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
   overflow: scroll;
+}
+#main-container::before {
+  background-color: var(--cd-secondary-color);
+  -webkit-mask: url('/concordia-order/assets/bracket-top.svg') no-repeat 50% 50%;
+  mask: url('/concordia-order/assets/bracket-top.svg') no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: block;
+  content: "";
+  height: 1em;
+  width: 100%;
+  margin-top: .1em;
+}
+#main-container::after {
+  background-color: var(--cd-secondary-color);
+  -webkit-mask: url('/concordia-order/assets/bracket-bottom.svg') no-repeat 50% 50%;
+  mask: url('/concordia-order/assets/bracket-bottom.svg') no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: block;
+  content: "";
+  height: 1em;
+  width: 100%;
+  margin-bottom: .1em;
 }
 
 @media (min-width: 768px) {
