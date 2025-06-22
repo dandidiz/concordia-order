@@ -46,7 +46,7 @@ body {
   --cd-border-color: #AAA5B661;
   --cd-border-width: 1px;
   --cd-border-style: solid;
-  --cd-border-radius: 5px;
+  --cd-border-radius: 10px;
 
   /* ============================================================= */
   /* Navbar
@@ -643,14 +643,14 @@ hr {
   vertical-align: -.1em;
   content: '';
   height: 1em;
-  width: 80%;
+  width: 50%;
   padding: 1rem;
   margin: 0;
   border: 0;
 }
 .card hr {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -773,11 +773,9 @@ body {
 }
 
 #main-container {
-  height: 75vh;
   padding: 1rem;
   -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
-  overflow: scroll;
 }
 #main-container::before {
   background-color: var(--cd-secondary-color);
@@ -787,9 +785,9 @@ body {
   mask-size: contain;
   display: block;
   content: "";
-  height: 1em;
-  width: 100%;
-  margin-top: .1em;
+  height: 50px;
+  width: 950px;
+  margin-bottom: .1em;
 }
 #main-container::after {
   background-color: var(--cd-secondary-color);
@@ -801,12 +799,20 @@ body {
   content: "";
   height: 1em;
   width: 100%;
-  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+#main-card {
+  height: 75vh;
+  overflow: scroll;
 }
 
 @media (min-width: 768px) {
   #main-container {
     padding: 1rem .5rem;
+  }
+  #main-container::before, #main-container::after {
+    display: none;
   }
 }
 
