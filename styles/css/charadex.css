@@ -332,8 +332,8 @@ a:active {
   margin-left: .25rem;
 }
 
-.navbar .nav-link .disabled {
-  color: var(--cd-faded-text-color);
+.navbar .nav-link.disabled {
+  color: var(--cd-faded-text-color) !important;
 }
 
 /* ============================================================= */
