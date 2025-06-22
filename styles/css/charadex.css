@@ -813,8 +813,12 @@ body {
 }
 
 @media (min-width: 768px) {
+  #main-container {
+    padding: 0rem .5rem;
+    height: 62vh;
+  }
   #main-card {
-    height: 60vh;
+    height: 100%;
     overflow: scroll;
   }
 }
