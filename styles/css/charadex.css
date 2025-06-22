@@ -271,8 +271,15 @@ a:active {
 
 .navbar .navbar-brand {
   color: var(--cd-navbar-brand-color) !important;
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: 5vw;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-brand {
+    color: var(--cd-navbar-brand-color) !important;
+    font-size: calc(1.4rem + 1.5vw);
+    font-weight: bold;
+  }
 }
 
 .navbar .navbar-brand:hover,
