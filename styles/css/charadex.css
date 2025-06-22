@@ -818,7 +818,6 @@ body {
     height: 62vh;
   }
   #main-card {
-    height: 100%;
     overflow: scroll;
   }
 }
