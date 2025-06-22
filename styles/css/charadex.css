@@ -679,7 +679,6 @@ hr {
   mask: url('/concordia-order/assets/hr.svg') no-repeat 50% 50%;
   -webkit-mask-size: contain;
   mask-size: contain;
-  display: inline-block;
   vertical-align: -.1em;
   content: '';
   height: 1em;
