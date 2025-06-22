@@ -660,6 +660,15 @@ h4 {
   font-size: 1.05rem;
 }
 
+.subtitle {
+  font-family: var(--cd-navbar-font-family) !important;
+  font-weight: bold;
+  color: var(--cd-faded-text-color);
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
 
 /* ============================================================= */
 /* Horizontal Rule
