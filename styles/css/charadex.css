@@ -375,31 +375,31 @@ a:active {
   color: var(--cd-navbar-dropdown-link-color-hover) !important;
 }
 
-#header::after {
-  background-color: var(--cd-secondary-color);
-  -webkit-mask: url('/concordia-order/assets/bracket-top.svg') no-repeat 50% 50%;
-  mask: url('/concordia-order/assets/bracket-top.svg') no-repeat 50% 50%;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  display: block;
-  content: "";
-  height: 50px;
-  margin-top: -45px;
-}
-#footer::before {
-  background-color: var(--cd-secondary-color);
-  -webkit-mask: url('/concordia-order/assets/bracket-bottom.svg') no-repeat 50% 50%;
-  mask: url('/concordia-order/assets/bracket-bottom.svg') no-repeat 50% 50%;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  display: block;
-  content: "";
-  height: 50px;
-  margin-bottom: -45px;
+#header::after, #footer::before {
+  display: none;
 }
 @media (min-width: 768px) {
-  #header::after, #footer::before {
-    display: none;
+  #header::after {
+    background-color: var(--cd-secondary-color);
+    -webkit-mask: url('/concordia-order/assets/bracket-top.svg') no-repeat 50% 50%;
+    mask: url('/concordia-order/assets/bracket-top.svg') no-repeat 50% 50%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    display: block;
+    content: "";
+    height: 50px;
+    margin-top: -45px;
+  }
+  #footer::before {
+    background-color: var(--cd-secondary-color);
+    -webkit-mask: url('/concordia-order/assets/bracket-bottom.svg') no-repeat 50% 50%;
+    mask: url('/concordia-order/assets/bracket-bottom.svg') no-repeat 50% 50%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    display: block;
+    content: "";
+    height: 50px;
+    margin-bottom: -45px;
   }
 }
 
