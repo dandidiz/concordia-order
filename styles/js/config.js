@@ -42,7 +42,7 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['All', 'Story Character', 'Player Character', 'Side Character'],
+    roles: ['All', 'Story Character', 'Player Character', 'Side Character'],
     statuses: ['All', 'Active', 'Voided', 'Retired', 'Dead', 'WIP'],
     rarity: ['All', '🔷', '🔷🔷', '🔷🔷🔷', '⭐', '⭐⭐', '⭐⭐⭐', '👑'],
     inheritance: ['All', 'Earth', 'Heaven'],
@@ -332,22 +332,22 @@ charadex.page.masterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Design Type': charadex.sheet.options.designTypes,
+      'Role': charadex.sheet.options.roles,
       'Status': charadex.sheet.options.statuses,
-      'Rarity': charadex.sheet.options.rarity,
+      'Inheritance': charadex.sheet.options.inheritance,
     }
   },
 
   fauxFolder: {
-    toggle: true,
-    folderProperty: 'Inheritance',
-    parameters: charadex.sheet.options.inheritance,
+    toggle: false,
+    folderProperty: 'Role',
+    parameters: charadex.sheet.options.roles,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Name', 'Player', 'Traits']
+    parameters: ['All', 'Name', 'Player', 'Traits', 'Age', 'Gender']
   },
 
   prevNext: {
