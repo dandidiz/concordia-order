@@ -155,6 +155,10 @@ charadex.page.traits = {
     toggle: true,
   },
 
+  markdownColumns: [
+    "notes"
+  ],
+
 };
 
 
@@ -380,7 +384,7 @@ charadex.page.masterlist = {
 
   markdownColumns: [
     "notes"
-  ]
+  ],
 
 };
 
