@@ -19,4 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log('loading page #charadex-body...')
   charadex.tools.loadPage('#charadex-body', 100);
   console.log('✅');
+
+  $('[data-bs-toggle="tooltip"]').tooltip();
 });
