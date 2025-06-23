@@ -161,7 +161,7 @@ charadex.url = {
   // https://charadex.com/characters.html
   getPageUrl(page, url) {
     let pageUrl = url ?? charadex.url.getSiteUrl();
-    return `${pageUrl.replace(/\/$/, '')}/${page}.html`
+    return `${pageUrl.replace(/\/$/, '')}/${page}`
   },
 
   // Returns the parameters in object form

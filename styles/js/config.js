@@ -312,7 +312,7 @@ charadex.page.timeline = {
 charadex.page.masterlist = {
 
   sheetPage: charadex.sheet.pages.masterlist,
-  sitePage: 'masterlist',
+  sitePage: 'characters',
   dexSelector: 'charadex',
   profileProperty: 'name',
 
