@@ -1,0 +1,221 @@
+<div id="main-container" class="container order-md-2 order-3">
+
+  <!-- ----------------------------------------------------------------- -->
+  <!-- Title                                                             -->
+  <!-- ----------------------------------------------------------------- -->
+  <div style="" id="charadex-gallery" class="w-100 d-flex flex-column">
+    <div id="search" class="mx-md-3 mx-0 mb-2">
+      <h1 class="mb-0"><a href="/concordia-order/characters">Characters</a></h1>
+
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Faux Folders                                                      -->
+      <!-- ----------------------------------------------------------------- -->
+      <div style="display:none;" id="charadex-folder-container">
+        <hr>
+        <div class="row no-gutters m-n1" id="charadex-folders"></div>
+        <!-- Buttons -->
+        <div style="display:none;">
+          <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
+            <a class="btn btn-primary d-block" href=""></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Filters                                                           -->
+      <!-- ----------------------------------------------------------------- -->
+      <div style="" id="charadex-filter-container">
+
+        <div id="charadex-filters" class="row">
+          <div class="col-md-4 col-12 charadex-filter">
+            <label class="px-2">Role</label>
+            <div class="dropdown bootstrap-select show-tick form-control"><select class="form-control" multiple=""
+                name="role" tabindex="-98">
+                <option value="all">All</option>
+                <option value="storycharacter">Story Character</option>
+                <option value="playercharacter">Player Character</option>
+                <option value="sidecharacter">Side Character</option>
+              </select><button type="button" class="form-control dropdown-toggle bs-placeholder" data-toggle="dropdown"
+                role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" title="All">
+                <div class="filter-option">
+                  <div class="filter-option-inner">
+                    <div class="filter-option-inner-inner">All</div>
+                  </div>
+                </div><span class="bs-caret"><span class="caret"></span></span>
+              </button>
+              <div class="dropdown-menu open">
+                <div class="inner open" role="listbox" id="bs-select-1" tabindex="-1" aria-multiselectable="true">
+                  <ul class="dropdown-menu inner " role="presentation"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 charadex-filter">
+            <label class="px-2">Status</label>
+            <div class="dropdown bootstrap-select show-tick form-control"><select class="form-control" multiple=""
+                name="status" tabindex="-98">
+                <option value="all">All</option>
+                <option value="active">Active</option>
+                <option value="voided">Voided</option>
+                <option value="retired">Retired</option>
+                <option value="dead">Dead</option>
+                <option value="wip">WIP</option>
+              </select><button type="button" class="form-control dropdown-toggle bs-placeholder" data-toggle="dropdown"
+                role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" title="All">
+                <div class="filter-option">
+                  <div class="filter-option-inner">
+                    <div class="filter-option-inner-inner">All</div>
+                  </div>
+                </div><span class="bs-caret"><span class="caret"></span></span>
+              </button>
+              <div class="dropdown-menu open">
+                <div class="inner open" role="listbox" id="bs-select-2" tabindex="-1" aria-multiselectable="true">
+                  <ul class="dropdown-menu inner " role="presentation"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 charadex-filter">
+            <label class="px-2">Inheritance</label>
+            <div class="dropdown bootstrap-select show-tick form-control"><select class="form-control" multiple=""
+                name="inheritance" tabindex="-98">
+                <option value="all">All</option>
+                <option value="earth">Earth</option>
+                <option value="heaven">Heaven</option>
+              </select><button type="button" class="form-control dropdown-toggle bs-placeholder" data-toggle="dropdown"
+                role="combobox" aria-owns="bs-select-3" aria-haspopup="listbox" aria-expanded="false" title="All">
+                <div class="filter-option">
+                  <div class="filter-option-inner">
+                    <div class="filter-option-inner-inner">All</div>
+                  </div>
+                </div><span class="bs-caret"><span class="caret"></span></span>
+              </button>
+              <div class="dropdown-menu open">
+                <div class="inner open" role="listbox" id="bs-select-3" tabindex="-1" aria-multiselectable="true">
+                  <ul class="dropdown-menu inner " role="presentation"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Filters -->
+        <div style="display: none;">
+          <div class="col-md-4 col-12 p-1" id="charadex-filter">
+            <label class="px-2"></label>
+            <select class="form-control" multiple=""></select>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Search                                                            -->
+      <!-- ----------------------------------------------------------------- -->
+      <div style="" id="charadex-search-container">
+
+        <div class="row mt-2">
+          <!-- Search Filter -->
+          <div style="" class="col-md-4 col-6">
+            <select class="form-control" id="charadex-search-filter">
+              <option value="all">All</option>
+              <option value="name">Name</option>
+              <option value="player">Player</option>
+              <option value="traits">Traits</option>
+              <option value="age">Age</option>
+              <option value="gender">Gender</option>
+            </select>
+          </div>
+          <!-- Search Bar -->
+          <div class="col d-flex">
+            <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Pagination                                                        -->
+      <!-- ----------------------------------------------------------------- -->
+      <div style="display: none;" class="charadex-pagination-container">
+        <hr class="mb-4 mt-4">
+        <div class="nav d-flex justify-content-center mb-n4">
+          <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+          <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
+          <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Prev & Next Topbar                                                -->
+      <!-- ----------------------------------------------------------------- -->
+      <div style="display: none;" id="charadex-prevnext-container">
+        <hr>
+        <div class="row no-gutters px-2 text-uppercase">
+          <div class="col-6 px-1">
+            <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
+          </div>
+          <div class="col-6 px-1 text-end order-md-1">
+            <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+    <div id="main-card" class="card card-body bg-faded flex-grow-1 mx-md-3 mx-0">
+      <!-- ----------------------------------------------------------------- -->
+      <!-- List Items Render Here                                            -->
+      <!-- ----------------------------------------------------------------- -->
+      <div class="card-body p-md-3 p-0">
+        <div class="row no-gutters charadex-list softload m-n2 active">
+          <div class="col-md-3 col-sm-6 p-2">
+            <div class="card bg-faded h-100">
+              <div class="card-header text-center">
+                <h5 class="mb-0">
+                  <a class="stretched-link profileid profilelink"
+                    href="https://dandidiz.github.io/concordia-order/masterlist.html?profile=secondfourth">Second
+                    Fourth</a>
+                </h5>
+              </div>
+              <div class="card-body cd-gallery-card d-flex flex-fill">
+                <img class="image img-fluid m-auto" src="https://img-l.ink/img/10GUuA9u0rWsvlr-JG26ZfhYq4k97obQC.png">
+              </div>
+              <div class="card-footer text-center">
+                <span class="player small">corycatte</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 p-2">
+            <div class="card bg-faded h-100">
+              <div class="card-header text-center">
+                <h5 class="mb-0">
+                  <a class="stretched-link profileid profilelink"
+                    href="https://dandidiz.github.io/concordia-order/masterlist.html?profile=firstlast">First Last</a>
+                </h5>
+              </div>
+              <div class="card-body cd-gallery-card d-flex flex-fill">
+                <img class="image img-fluid m-auto" src="https://img-l.ink/img/1SBBGq-FA9ZvKJgQbcDJCl1wSAXHYxz5V.png">
+              </div>
+              <div class="card-footer text-center">
+                <span class="player small">junijwi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center"><i class="text-primary fa-solid fa-hurricane fa-spin loading" style="display: none;"></i>
+        </p>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Pagination                                                        -->
+        <!-- ----------------------------------------------------------------- -->
+        <div style="display: none;" class="charadex-pagination-container">
+          <hr class="mb-4 mt-4">
+          <div class="nav d-flex justify-content-center mb-n4">
+            <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+            <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
+            <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- card body -->
+  </div> <!-- card -->
+</div>
