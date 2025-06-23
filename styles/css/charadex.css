@@ -1,5 +1,4 @@
 body {
-
   /* ============================================================= */
   /*
   /* Main Styles
@@ -15,35 +14,35 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color: #7689B7;
-  --cd-primary-text-color: #FFF;
+  --cd-primary-color: #7689b7;
+  --cd-primary-text-color: #fff;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color: #574B60;
-  --cd-secondary-text-color: #FFF;
+  --cd-secondary-color: #574b60;
+  --cd-secondary-text-color: #fff;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #F7FAFF;
-  --cd-content-background-color: rgba(255,255,255,.9);
+  --cd-body-background-color: #f7faff;
+  --cd-content-background-color: rgba(255, 255, 255, 0.9);
   --cd-faded-background-color: var(--cd-content-background-color);
 
   /* Background Extras */
-  --cd-body-background-image: url('/concordia-order/assets/emblem-concordia-order.png');
+  --cd-body-background-image: url("/concordia-order/assets/emblem-concordia-order.png");
 
   /* ============================================================= */
   /* Text
   ================================================================ */
   --cd-body-text-color: #271f30;
-  --cd-faded-text-color: #AAA5B6;
+  --cd-faded-text-color: #aaa5b6;
 
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color: #AAA5B661;
+  --cd-border-color: #aaa5b661;
   --cd-border-width: 1px;
   --cd-border-style: solid;
   --cd-border-radius: 10px;
@@ -62,9 +61,9 @@ body {
   /* ============================================================= */
   /* Main Fonts
   ================================================================ */
-  --cd-body-font-family: 'Lato', sans-serif;
-  --cd-header-font-family: 'Texturina', serif;
-  
+  --cd-body-font-family: "Lato", sans-serif;
+  --cd-header-font-family: "Texturina", serif;
+
   /* ============================================================= */
   /* Rarities
   ================================================================ */
@@ -74,7 +73,7 @@ body {
 
   --cd-rarity-uncommon-bg: #e0bb68;
   --cd-rarity-uncommon-txt: var(--cd-rarity-common-txt);
-  
+
   --cd-rarity-rare-bg: #97b34e;
   --cd-rarity-rare-txt: var(--cd-rarity-common-txt);
 
@@ -84,8 +83,6 @@ body {
   /* Legendary & Mythic */
   --cd-rarity-legendary-bg: #5a473e;
   --cd-rarity-legendary-txt: var(--cd-rarity-common-txt);
-  
-
 
   /* ============================================================= */
   /*
@@ -105,9 +102,8 @@ body {
   --cd-navbar-dropdown-link-color-hover: var(--cd-primary-text-color);
 
   /* Divider */
-  --cd-navbar-dropdown-divider: rgba(255, 255, 255, .12);
+  --cd-navbar-dropdown-divider: rgba(255, 255, 255, 0.12);
   --cd-navbar-dropdown-border-radius: var(--cd-border-radius);
-
 
   /* ============================================================= */
   /* Footer
@@ -121,14 +117,12 @@ body {
   --cd-footer-link-color: var(--cd-navbar-link-color);
   --cd-footer-link-color-hover: var(--cd-navbar-link-color-hover);
 
-
   /* ============================================================= */
   /* Link
   ================================================================ */
 
   --cd-link-text-color: var(--cd-primary-color);
   --cd-link-text-color-hover: var(--cd-faded-text-color);
-
 
   /* ============================================================= */
   /* HR
@@ -137,7 +131,6 @@ body {
   --cd-hr-border-width: 2px;
   --cd-hr-border-height: 16px;
   --cd-hr-border-color: var(--cd-primary-color);
-
 
   /* ============================================================= */
   /* Pagination
@@ -158,7 +151,6 @@ body {
   --cd-pagination-border-color: var(--cd-border-color);
   --cd-pagination-border-color-hover: var(--cd-primary-color);
 
-
   /* ============================================================= */
   /* Cards
   ================================================================ */
@@ -176,7 +168,6 @@ body {
   --cd-card-border-style: var(--cd-border-style);
   --cd-card-border-color: var(--cd-border-color);
   --cd-card-border-radius: var(--cd-border-radius);
-
 
   /* ============================================================= */
   /* Button
@@ -197,7 +188,6 @@ body {
   --cd-button-border-color-hover: var(--cd-button-background-color-hover);
   --cd-button-border-radius: var(--cd-border-radius);
 
-
   /* ============================================================= */
   /* Input
   ================================================================ */
@@ -214,17 +204,13 @@ body {
   --cd-input-border-color: var(--cd-border-color);
   --cd-input-border-color-hover: var(--cd-primary-color);
   --cd-input-border-radius: var(--cd-border-radius);
-  
-
 }
-
 
 /* ============================================================= */
 /* General Page Styles
 /* ============================================================= */
 
 body {
-
   /* Global Text */
   color: var(--cd-body-text-color);
   font-family: var(--cd-body-font-family);
@@ -238,9 +224,7 @@ body {
   background-position: center top;
   background-size: 400px;
   background-repeat: no-repeat;
-
 }
-
 
 /* ============================================================= */
 /* Plain Links
@@ -249,7 +233,7 @@ body {
 a,
 a:visited {
   color: var(--cd-link-text-color);
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover,
@@ -289,29 +273,31 @@ a:active {
 
 .navbar-brand::before {
   background-color: currentColor;
-  -webkit-mask: url('/concordia-order/assets/parentheses-left.svg') no-repeat 50% 50%;
-  mask: url('/concordia-order/assets/parentheses-left.svg') no-repeat 50% 50%;
+  -webkit-mask: url("/concordia-order/assets/parentheses-left.svg") no-repeat
+    50% 50%;
+  mask: url("/concordia-order/assets/parentheses-left.svg") no-repeat 50% 50%;
   -webkit-mask-size: contain;
   mask-size: contain;
   display: inline-block;
-  vertical-align: -.1em;
+  vertical-align: -0.1em;
   content: "";
   height: 1em;
-  width: .6em;
-  margin-left: .1em;
+  width: 0.6em;
+  margin-left: 0.1em;
 }
 .navbar-brand::after {
   background-color: currentColor;
-  -webkit-mask: url('/concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
-  mask: url('/concordia-order/assets/parentheses-right.svg') no-repeat 50% 50%;
+  -webkit-mask: url("/concordia-order/assets/parentheses-right.svg") no-repeat
+    50% 50%;
+  mask: url("/concordia-order/assets/parentheses-right.svg") no-repeat 50% 50%;
   -webkit-mask-size: contain;
   mask-size: contain;
   display: inline-block;
-  vertical-align: -.1em;
+  vertical-align: -0.1em;
   content: "";
   height: 1em;
-  width: .6em;
-  margin-right: .1em;
+  width: 0.6em;
+  margin-right: 0.1em;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -335,8 +321,8 @@ a:active {
 }
 
 .navbar .nav-link-icon {
-  font-size: .5rem;
-  margin-left: .25rem;
+  font-size: 0.5rem;
+  margin-left: 0.25rem;
 }
 
 .navbar .nav-link.disabled {
@@ -368,7 +354,7 @@ a:active {
 .navbar .dropdown-item,
 .navbar .dropdown-item-text {
   color: var(--cd-navbar-dropdown-link-color) !important;
-  transition: color .2s ease, background .2s ease;
+  transition: color 0.2s ease, background 0.2s ease;
 }
 
 .navbar .dropdown-item:hover,
@@ -382,14 +368,16 @@ a:active {
   color: var(--cd-navbar-dropdown-link-color-hover) !important;
 }
 
-#header::after, #footer::before {
+#header::after,
+#footer::before {
   display: none;
 }
 @media (min-width: 768px) {
   #header::after {
     background-color: var(--cd-secondary-color);
-    -webkit-mask: url('/concordia-order/assets/bracket-top.svg') no-repeat 50% 50%;
-    mask: url('/concordia-order/assets/bracket-top.svg') no-repeat 50% 50%;
+    -webkit-mask: url("/concordia-order/assets/bracket-top.svg") no-repeat 50%
+      50%;
+    mask: url("/concordia-order/assets/bracket-top.svg") no-repeat 50% 50%;
     -webkit-mask-size: contain;
     mask-size: contain;
     display: block;
@@ -399,8 +387,9 @@ a:active {
   }
   #footer::before {
     background-color: var(--cd-secondary-color);
-    -webkit-mask: url('/concordia-order/assets/bracket-bottom.svg') no-repeat 50% 50%;
-    mask: url('/concordia-order/assets/bracket-bottom.svg') no-repeat 50% 50%;
+    -webkit-mask: url("/concordia-order/assets/bracket-bottom.svg") no-repeat
+      50% 50%;
+    mask: url("/concordia-order/assets/bracket-bottom.svg") no-repeat 50% 50%;
     -webkit-mask-size: contain;
     mask-size: contain;
     display: block;
@@ -430,13 +419,12 @@ a:active {
   color: var(--cd-footer-link-color-hover) !important;
 }
 
-
 /* ============================================================= */
 /* Pagination
 /* ============================================================= */
 
 .page-link {
-  transition: color .2s ease, background .2s ease, border .2s ease;
+  transition: color 0.2s ease, background 0.2s ease, border 0.2s ease;
   border-width: var(--cd-pagination-border-width) !important;
   border-style: var(--cd-pagination-border-style) !important;
 }
@@ -470,26 +458,27 @@ a:active {
 }
 
 .nav .pagination .page-item:last-child .page-link {
-  border-radius: 0 !important
+  border-radius: 0 !important;
 }
 
 .nav .page-item:first-child .page-link {
-  border-radius: var(--cd-pagination-border-radius) 0 0 var(--cd-pagination-border-radius) !important;
+  border-radius: var(--cd-pagination-border-radius) 0 0
+    var(--cd-pagination-border-radius) !important;
 }
 
 .nav .page-item:last-child .page-link {
-  border-radius: 0 var(--cd-pagination-border-radius) var(--cd-pagination-border-radius) 0 !important
+  border-radius: 0 var(--cd-pagination-border-radius)
+    var(--cd-pagination-border-radius) 0 !important;
 }
-
 
 /* ============================================================= */
 /* Multi Select Fixes
 /* ============================================================= */
 
-.bootstrap-select > .dropdown-toggle.bs-placeholder, 
-.bootstrap-select>.dropdown-toggle.bs-placeholder:active, 
-.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
-.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+.bootstrap-select > .dropdown-toggle.bs-placeholder,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
   border: 0 !important;
   box-shadow: none !important;
   outline: none !important;
@@ -514,7 +503,6 @@ a:active {
   color: var(--cd-primary-text-color) !important;
 }
 
-
 /* ============================================================= */
 /* Card
 /* ============================================================= */
@@ -534,7 +522,8 @@ a:active {
   border-bottom-width: var(--cd-card-border-width) !important;
   border-bottom-style: var(--cd-card-border-style) !important;
   font-family: var(--cd-card-header-font-family) !important;
-  border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0 !important;
+  border-radius: calc(var(--cd-border-radius) - 1px)
+    calc(var(--cd-border-radius) - 1px) 0 0 !important;
 }
 
 .card-footer {
@@ -544,10 +533,9 @@ a:active {
   border-top-width: var(--cd-card-border-width) !important;
   border-top-style: var(--cd-card-border-style) !important;
   font-family: var(--cd-card-header-font-family) !important;
-  border-radius: 0 0  calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) !important;
+  border-radius: 0 0 calc(var(--cd-border-radius) - 1px)
+    calc(var(--cd-border-radius) - 1px) !important;
 }
-
-
 
 /* ============================================================= */
 /* Text
@@ -560,7 +548,7 @@ a:active {
 /* Buttons & Badges
 /* ============================================================= */
 
-.btn, 
+.btn,
 .nav-pills .nav-link {
   border-style: var(--cd-button-border-style) !important;
   border-width: var(--cd-button-border-width) !important;
@@ -609,7 +597,6 @@ a.badge.badge-primary:active,
   border-color: var(--cd-input-border-color-hover) !important;
 }
 
-
 /* ============================================================= */
 /* Scrollbar
 /* ============================================================= */
@@ -635,18 +622,25 @@ a.badge.badge-primary:active,
   }
 }
 
-
 /* ============================================================= */
 /* Headers
 /* ============================================================= */
-h1, h2, h3,
-h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--cd-navbar-font-family) !important;
   font-weight: bold;
   text-transform: uppercase;
 }
-h1 a, h2 a, h3 a,
-h4 a, h5 a, h6 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
   text-decoration: none;
 }
 h1 {
@@ -673,21 +667,20 @@ h4 {
   color: var(--cd-faded-text-color);
   font-size: 1.4rem;
   text-align: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 /* ============================================================= */
 /* Horizontal Rule
 /* ============================================================= */
-hr { 
+hr {
   background-color: var(--cd-faded-text-color);
-  -webkit-mask: url('/concordia-order/assets/hr.svg') no-repeat 50% 50%;
-  mask: url('/concordia-order/assets/hr.svg') no-repeat 50% 50%;
+  -webkit-mask: url("/concordia-order/assets/hr.svg") no-repeat 50% 50%;
+  mask: url("/concordia-order/assets/hr.svg") no-repeat 50% 50%;
   -webkit-mask-size: contain;
   mask-size: contain;
-  vertical-align: -.1em;
-  content: '';
+  vertical-align: -0.1em;
+  content: "";
   height: 1em;
   width: 50%;
   padding: 1rem;
@@ -698,7 +691,6 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* ============================================================= */
 /* Misc
@@ -729,13 +721,13 @@ img {
 }
 
 .img-thumbnail {
-  border-radius:  var(--cd-border-radius) !important;
+  border-radius: var(--cd-border-radius) !important;
   border-color: var(--cd-border-color) !important;
 }
 
 /* Fix any border radiuses that were messed from before */
 .rounded {
-  border-radius: var(--cd-border-radius) !important
+  border-radius: var(--cd-border-radius) !important;
 }
 
 .rounded-circle {
@@ -752,7 +744,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 ul li::marker {
@@ -764,15 +756,14 @@ ol {
 }
 
 ol li {
-  margin-bottom: .5em;
-  padding-left: .5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
 }
 
 ol li::marker {
   color: var(--cd-primary-color);
   font-family: var(--cd-header-font-family);
 }
-
 
 /* ============================================================= */
 /* Loading
@@ -785,7 +776,7 @@ ol li::marker {
 
 .softload.active {
   opacity: 1;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
 }
 
 /* Fades container in on load so its not as jarring */
@@ -795,7 +786,7 @@ ol li::marker {
 
 .hardload.active {
   opacity: 1;
-  transition: opacity .1s ease;
+  transition: opacity 0.1s ease;
 }
 
 /* Specifically for the body */
@@ -806,7 +797,6 @@ ol li::marker {
 #charadex-body.active {
   display: block;
 }
-
 
 /* ============================================================= */
 /* Chee's Tweaks
@@ -829,7 +819,7 @@ body {
 
 @media (min-width: 768px) {
   #main-container {
-    padding: 0rem .5rem;
+    padding: 0rem 0.5rem;
     height: 62vh;
   }
   #main-card {
@@ -877,7 +867,7 @@ p:last-child {
   max-height: 175px !important;
 }
 
-.cd-profile-image-container > img{
+.cd-profile-image-container > img {
   max-height: 400px;
 }
 
@@ -918,7 +908,6 @@ p:last-child {
     font-size: 4rem;
   }
 }
-
 
 /* ============================================================= */
 /* Class

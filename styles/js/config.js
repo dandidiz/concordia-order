@@ -36,7 +36,7 @@ charadex.sheet = {
     items:         "items",
     traits:        "traits",
     prompts:       "prompts",
-    faq:           "faq",
+    timeline:      "timeline",
     staff:         "mods",
   },
 
@@ -254,12 +254,12 @@ charadex.page.staff = {
 };
 
 
-/* FAQ
+/* Timeline
 /* --------------------------------------------------------------- */
-charadex.page.faq = {
+charadex.page.timeline = {
 
-  sheetPage: charadex.sheet.pages.faq,
-  sitePage: 'faq',
+  sheetPage: charadex.sheet.pages.timeline,
+  sitePage: 'timeline',
   dexSelector: 'charadex',
   profileProperty: 'id',
 

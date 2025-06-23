@@ -10,7 +10,7 @@ import { charadex } from '../charadex.js';
 document.addEventListener("DOMContentLoaded", async () => {
   let dex = await charadex.initialize.page(
     null, 
-    charadex.page.faq, 
+    charadex.page.timeline, 
     (arr) => {
 
       let pageUrl = charadex.url.getPageUrl(charadex.page.faq.sitePage);

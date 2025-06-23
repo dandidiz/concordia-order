@@ -11,7 +11,7 @@
   <!-- ----------------------------------------------------------------- -->
   <link rel="shortcut icon" type="image/png" href="/concordia-order/assets/favicon.png" />
   <title>Charadex</title>
-  <meta name="title" content="Charadex 404" />
+  <meta name="title" content="Charadex" />
   <meta name="type" content="website" />
   <meta name="url" content="/" />
   <meta name="image" content="/concordia-order/assets/meta.png" />
@@ -48,31 +48,48 @@
 
 </head>
 
-<body id="charadex-body">
-
-
-  <!-- --------------------------------------------------------------------
-  <-- Header
-  <-------------------------------------------------------------------- -->
-  <div class="load-html" id="header" data-source="/concordia-order/includes/header.html"></div>
-
+<body id="charadex-body" class="d-flex">
 
   <!-- --------------------------------------------------------------------
-  <-- Main List
+  <--- Header
   <-------------------------------------------------------------------- -->
-  <div class="container" id="main-container">
-    <div class="card p-md-5 p-4 text-center">
+  <div class="load-html" data-source="/concordia-order/includes/header.html"></div>
 
-      👻 Oh no! Nothing's here...
+  <!-- --------------------------------------------------------------------
+  <--- Main List
+  <-------------------------------------------------------------------- -->
+  <div id="main-container" class="container d-flex order-md-2 order-3">
+    <div id="main-card" class="card card-body bg-faded flex-grow-1 mx-md-3 mx-0">
+      <div class="card-body p-md-3 p-0">
+        <!-- CONTENT
+        <--- --------------------------------------------------------------- -->
+        <div class="text-center">
+          <div class="subtitle">You've strayed too far...</div>
 
-    </div>
-  </div>
+          <p>... This page cannot be found!</p>
+        </div>
+
+      </div> <!-- card body -->
+    </div> <!-- card -->
+  </div> <!-- container -->
+
+
 
   <!-- --------------------------------------------------------------------
   <-- Footer
   <-------------------------------------------------------------------- -->
-  <div class="load-html" id="footer" data-source="/concordia-order/includes/footer.html"></div>
+  <div class="load-html" data-source="/concordia-order/includes/footer.html"></div>
 
+
+
+  <!-- --------------------------------------------------------------------
+  <-- Repeat Items
+  <-- Do not remove 'display:none;'
+  <-------------------------------------------------------------------- -->
+  <div style="display:none;">
+    <div class="load-html" data-source="/concordia-order/includes/character-thumb.html"></div>
+    <div class="load-html" data-source="/concordia-order/includes/prompt-thumb.html"></div>
+  </div>
 
   <!-- ----------------------------------------------------------------- -->
   <!-- JS                                                                -->
@@ -89,6 +106,7 @@
 
   <!-- Charadex Script -->
   <script src="/concordia-order/styles/js/pages/base.js" type="module"></script>
+  <script src="/concordia-order/styles/js/pages/index.js" type="module"></script>
 
 
 </body>
