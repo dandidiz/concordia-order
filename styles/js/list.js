@@ -2,7 +2,7 @@
 /* Import Charadex
 ======================================================================= */
 import { charadex } from './utilities.js';
-import List from "https://esm.sh/gh/javve/list.js@v2.3.0";
+import List from "https://esm.sh/gh/javve/list.js@v2.3.1";
 
 
 /* ==================================================================== */

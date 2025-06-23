@@ -44,11 +44,7 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     // Convert markdown to HTML, if we need to
     if (config.markdownColumns) {
       config.markdownColumns.forEach(function(column) {
-        try {
-          entry[column] = charadex.manageData.convertMarkdown(entry[column]);
-        } catch (error) {
-          console.error(error);
-        }
+        if (entry[column]) entry[column] = charadex.manageData.convertMarkdown(entry[column]);
       });
     }
   }
