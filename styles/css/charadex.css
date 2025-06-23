@@ -508,8 +508,11 @@ label {
   color: var(--cd-primary-text-color) !important;
 }
 
-.btn-btn-group {
+.bs-actionsbox .btn-group {
   display: flex !important;
+}
+.bs-actionsbox .btn-group button {
+  width: auto;
 }
 .btn.btn-light {
   color: var(--cd-button-text-color) !important;
@@ -524,6 +527,10 @@ label {
   border-color: var(--cd-button-border-color-hover) !important;
   background-color: var(--cd-button-background-color-hover) !important;
   box-shadow: none !important;
+}
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+  right: 1rem;
+  top: .5rem;
 }
 
 /* ============================================================= */
