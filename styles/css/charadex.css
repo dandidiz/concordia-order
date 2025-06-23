@@ -507,6 +507,12 @@ label {
   background-color: var(--cd-primary-color) !important;
   color: var(--cd-primary-text-color) !important;
 }
+option:checked {
+  background-color: var(--cd-primary-color);
+  border-radius: var(--cd-border-radius);
+  color: var(--cd-primary-text-color);
+  padding: .2rem .5rem;
+}
 
 .bs-actionsbox .btn-group {
   display: flex !important;
