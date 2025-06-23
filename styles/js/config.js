@@ -42,12 +42,12 @@ charadex.sheet = {
 
   options: {
 
-    roles: ['All', 'Story Character', 'Player Character', 'Side Character'],
-    statuses: ['All', 'Active', 'Voided', 'Retired', 'Dead', 'WIP'],
-    rarity: ['All', '🔷', '🔷🔷', '🔷🔷🔷', '⭐', '⭐⭐', '⭐⭐⭐', '👑'],
-    inheritance: ['All', 'Earth', 'Heaven'],
-    itemTypes: ['All', 'Currency', 'Voucher', 'Keepsakes', 'Gatcha', 'Misc'],
-    traitTypes: ['All', 'Magic', 'Affiliation', 'Rank']
+    roles: ['Story Character', 'Player Character', 'Side Character'],
+    statuses: ['Active', 'Voided', 'Retired', 'Dead', 'WIP'],
+    rarity: ['🔷', '🔷🔷', '🔷🔷🔷', '⭐', '⭐⭐', '⭐⭐⭐', '👑'],
+    inheritance: ['Earth', 'Heaven'],
+    itemTypes: ['Currency', 'Voucher', 'Keepsakes', 'Gatcha', 'Misc'],
+    traitTypes: ['Magic', 'Affiliation', 'Rank']
 
   }
 
