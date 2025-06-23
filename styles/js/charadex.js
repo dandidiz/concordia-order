@@ -24,6 +24,9 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
   let selector = config.dexSelector;
   let pageUrl = customPageUrl || charadex.url.getPageUrl(config.sitePage);
 
+  console.log('Beginning initializaion of page:', pageUrl);
+  console.log('Page selector:', selector);
+
   // Add folders, filters & search
   let folders = config.fauxFolder?.toggle ?? false ? charadex.listFeatures.fauxFolders(pageUrl, config.fauxFolder.parameters, selector) : false;
   let filters = config.filters?.toggle ?? false ? charadex.listFeatures.filters(config.filters.parameters, selector) : false;
