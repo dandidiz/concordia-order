@@ -473,6 +473,13 @@ a:active {
 /* Multi Select Fixes
 /* ============================================================= */
 
+label {
+  color: var(--cd-link-text-color);
+  font-family: var(--cd-header-font-family);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .bootstrap-select > .dropdown-toggle.bs-placeholder,
 .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
 .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
