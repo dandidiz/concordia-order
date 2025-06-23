@@ -702,6 +702,9 @@ hr {
 .tooltip {
   z-index: 10000 !important;
 }
+.tooltip.show {
+  opacity: 1 !important;
+}
 .tooltip-inner {
   background-color: var(--cd-primary-color);
   border-radius: var(--cd-border-radius) !important;
