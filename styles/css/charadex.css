@@ -61,7 +61,7 @@ body {
   /* ============================================================= */
   /* Main Fonts
   ================================================================ */
-  --cd-body-font-family: "Lato", sans-serif;
+  --cd-body-font-family: "Montserrat", sans-serif;
   --cd-header-font-family: "Texturina", serif;
 
   /* ============================================================= */
@@ -260,9 +260,7 @@ a:active {
 }
 @media (min-width: 768px) {
   .navbar .navbar-brand {
-    color: var(--cd-navbar-brand-color) !important;
     font-size: calc(1.4rem + 1.5vw);
-    font-weight: bold;
   }
 }
 
@@ -691,6 +689,11 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 768px) {
+  hr {
+  width: 50%;
+  }
+}
 
 /* ============================================================= */
 /* Misc
@@ -823,7 +826,7 @@ body {
     height: 62vh;
   }
   #main-card {
-    overflow: scroll;
+    padding: 1rem 4rem;
   }
 }
 
