@@ -156,7 +156,7 @@ charadex.page.traits = {
   },
 
   markdownColumns: [
-    "notes"
+    "description"
   ],
 
 };
