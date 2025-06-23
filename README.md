@@ -11,7 +11,7 @@
 - Added ability to apply multiple ListJS filters.
 - Added ability to filter out the gallery by URL parameters (there is no UI implementation for this yet.)
 - Folders now use their own special `folder` property that's determined by your chosen key to prevent filters clashing.
-- Profiles now use a universal `profileid` and `profilelink` instead of one of the original properties. (i.e. Profile links will look like ...charadex.com/masterlist.html?profile=CHA0001). Old links to profiles will still work by filtering out the gallery based on the property. (i.e. ?design=CHA0001 will bring users to the gallery but will only that specific design will show.)
+- Profiles now use a universal `profileid` and `profilelink` instead of one of the original properties. (i.e. Profile links will look like ...charadex.com/characters.html?profile=CHA0001). Old links to profiles will still work by filtering out the gallery based on the property. (i.e. ?design=CHA0001 will bring users to the gallery but will only that specific design will show.)
 - Ability to create grouped galleries - you'll be able to see these prominently on User Profiles. Their inventories are grouped and can be searched and filtered.
 - User Profiles now have Owned Designs.
 - The tags in the FAQs now work correctly and users will be able to click tags to bring them to other questions with the same tags.

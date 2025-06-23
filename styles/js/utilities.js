@@ -137,7 +137,7 @@ charadex.tools = {
 charadex.url = {
 
   // Returns the entire URL w/ parameters 
-  // https://charadex.com/masterlist.html?param=value
+  // https://charadex.com/characters.html?param=value
   getUrl(url) {
     return new URL(url || window.location.href).href;
   },
@@ -158,7 +158,7 @@ charadex.url = {
   },
 
   // Returns the page URL
-  // https://charadex.com/masterlist.html
+  // https://charadex.com/characters.html
   getPageUrl(page, url) {
     let pageUrl = url ?? charadex.url.getSiteUrl();
     return `${pageUrl.replace(/\/$/, '')}/${page}.html`
