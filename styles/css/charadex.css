@@ -508,13 +508,14 @@ label {
   color: var(--cd-primary-text-color) !important;
 }
 
-.btn-block {
+.btn-btn-group {
   display: flex !important;
 }
 .btn.btn-light {
   color: var(--cd-button-text-color) !important;
   background-color: var(--cd-button-background-color) !important;
   border-color: var(--cd-button-border-color) !important;
+  margin: 0 .5rem;
 }
 .btn.btn-light:hover,
 .btn.btn-light:focus,
