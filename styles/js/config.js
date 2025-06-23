@@ -463,7 +463,7 @@ charadex.page.inventory = {
       ...charadex.page.masterlist, 
 
       sheetPage: charadex.sheet.pages.masterlist,
-      sitePage: 'masterlist',
+      sitePage: 'characters',
       primaryProperty: 'username',
       relatedProperty: 'player',
       dexSelector: 'charadex',
