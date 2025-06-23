@@ -696,6 +696,34 @@ hr {
 }
 
 /* ============================================================= */
+/* Tooltips
+/* ============================================================= */
+
+.tooltip {
+  z-index: 10000 !important;
+}
+.tooltip-inner {
+  background-color: var(--cd-primary-color);
+  border-radius: var(--cd-border-radius) !important;
+  font-family: var(--cd-body-font-family);
+  font-size: 10pt;
+  line-height: 1rem;
+  padding: .5rem;
+}
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: var(--cd-primary-color);
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: var(--cd-primary-color);
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: var(--cd-primary-color);
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--cd-primary-color);
+}
+
+/* ============================================================= */
 /* Misc
 /* ============================================================= */
 

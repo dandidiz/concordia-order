@@ -18,25 +18,42 @@
       <ul class="navbar-nav justify-content-between col-md-6 col-12 px-3">
 
         <li class="nav-item">
-          <a class="nav-link" href="/concordia-order/info/premise" data-bs-toggle="tooltip"
-            title="A general pitch for the roleplay setting, summarized for at-a-glance viewing.">Premise</a>
+          <a class="nav-link justify-content-center" href="/concordia-order/info/premise" data-bs-toggle="tooltip"
+            title="A general pitch for the roleplay setting, summarized for at-a-glance viewing.">
+            Premise
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/concordia-order/info/world">World</a>
+          <a class="nav-link justify-content-center" href="/concordia-order/info/world" data-bs-toggle="tooltip"
+            title="A look into the tone, aesthetic, and story of the world setting. Includes summaries of notable groups and religions within the world.">
+            World
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/concordia-order/info/magic">Magic &amp; Mythos</a>
+          <a class="nav-link justify-content-center" href="/concordia-order/info/magic" data-bs-toggle="tooltip"
+            title="A look into the magic of the world, and the possibilities for mythos forms.">
+            Magic & Mythos
+          </a>
         </li>
       </ul>
       <ul class="navbar-nav w-md-50 justify-content-between col-md-6 col-12 px-3">
         <li class="nav-item">
-          <a class="nav-link" href="/concordia-order/info/the-order">The Order</a>
+          <a class="nav-link justify-content-center" href="/concordia-order/info/the-order" data-bs-toggle="tooltip"
+            title="An in-depth look at the Order’s structure, responsibilities, and unique features.">
+            The Order
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="/concordia-order/timeline">Timeline</a>
+          <a class="nav-link justify-content-center" href="/concordia-order/timeline" data-bs-toggle="tooltip"
+            title="A brief list of events that have shaped the world thus far. This will expand from both group events, and player-established history.">
+            Timeline
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="/concordia-order/info/creation">OC Creation</a>
+          <a class="nav-link justify-content-center" href="/concordia-order/info/creation" data-bs-toggle="tooltip"
+            title="An explanation of how to go about making a character for the setting, and what guidelines to follow.">
+            OC Creation
+          </a>
         </li>
 
       </ul>
@@ -44,3 +61,9 @@
 
   </nav>
 </div>
+
+<script>
+  $(document).ready(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip();
+  });
+</script>
