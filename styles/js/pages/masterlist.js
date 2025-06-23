@@ -8,8 +8,6 @@ import { charadex } from '../charadex.js';
 /* Load
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
-
-  console.log('initializing masterlist...');
   let dex = await charadex.initialize.page(
     null,
     charadex.page.masterlist,
@@ -34,10 +32,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }
   );
-  console.log('✅');
-  
-  console.log('soft loading page...');
   charadex.tools.loadPage('.softload', 500);
-  console.log('✅');
   
 });
