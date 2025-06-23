@@ -480,10 +480,10 @@ label {
   text-transform: uppercase;
 }
 
-.bootstrap-select > .dropdown-toggle.bs-placeholder,
-.bootstrap-select > .dropdown-toggle.bs-placeholder:active,
-.bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
-.bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+.bootstrap-select > .dropdown-toggle,
+.bootstrap-select > .dropdown-toggle:active,
+.bootstrap-select > .dropdown-toggle:focus,
+.bootstrap-select > .dropdown-toggle:hover {
   border: 0 !important;
   box-shadow: none !important;
   outline: none !important;
@@ -494,9 +494,6 @@ label {
   border-radius: var(--cd-border-radius) !important;
   background-color: var(--cd-faded-background-color) !important;
   color: var(--cd-body-text-color) !important;
-}
-.dropdown-menu .text {
-  padding: 0 1rem;
 }
 
 .dropdown-item {
@@ -514,14 +511,14 @@ label {
 .btn-block {
   display: flex !important;
 }
-.btn.btn-default {
+.btn.btn-light {
   color: var(--cd-button-text-color) !important;
   background-color: var(--cd-button-background-color) !important;
   border-color: var(--cd-button-border-color) !important;
 }
-.btn.btn-default:hover,
-.btn.btn-default:focus,
-.btn.btn-default:active {
+.btn.btn-light:hover,
+.btn.btn-light:focus,
+.btn.btn-light:active {
   color: var(--cd-button-text-color-hover) !important;
   border-color: var(--cd-button-border-color-hover) !important;
   background-color: var(--cd-button-background-color-hover) !important;
