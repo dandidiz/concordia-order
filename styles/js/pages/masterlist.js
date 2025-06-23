@@ -7,7 +7,7 @@ import { charadex } from '../charadex.js';
 /* ==================================================================== */
 /* Load
 ======================================================================= */
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("load", async () => {
 
   console.log('initializing masterlist...');
   let dex = await charadex.initialize.page(
