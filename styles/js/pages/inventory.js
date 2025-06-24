@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           await charadex.manageData.inventoryFix(profile),
           'type',
           charadex.url.getPageUrl('items')
-        )
+        );
 
         // Designs
         if (charadex.tools.checkArray(profile.characters)) {

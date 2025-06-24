@@ -69,7 +69,7 @@ charadex.page.items = {
 
   sort: {
     toggle: true,
-    key: 'item',
+    key: 'sort',
     order: 'asc',
     parameters: []
   },
@@ -336,10 +336,10 @@ charadex.page.inventory = {
 
       sheetPage: charadex.sheet.pages.inventoryLog,
       sitePage: 'inventories',
-      primaryProperty: 'username',
-      relatedProperty: 'username',
+      primaryProperty: 'username', // name of field of the calling page to search by
+      relatedProperty: 'username', // name of column to search in related page
       dexSelector: 'log',
-      profileProperty: 'username',
+      profileProperty: 'username', // name of found record of the related page
       profileToggle: false,
 
       pagination: {
@@ -373,10 +373,7 @@ charadex.page.inventory = {
   // This is a special config for their inventory
   inventoryConfig: {
 
-    sheetPage: charadex.sheet.pages.items,
-    sitePage: 'items',
-    dexSelector: 'item',
-    profileProperty: 'item',
+    ...charadex.page.items,
     profileToggle: false,
 
     sort: {
@@ -390,7 +387,7 @@ charadex.page.inventory = {
     search: {
       toggle: true,
       filterToggle: false,
-      parameters: ['Item']
+      parameters: ['All', 'Item', 'Description']
     },
 
     filters: {
