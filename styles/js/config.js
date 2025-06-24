@@ -254,10 +254,10 @@ charadex.page.masterlist = {
     [charadex.sheet.pages.masterlistLog]: {
 
       sheetPage: charadex.sheet.pages.masterlistLog,
-      primaryProperty: 'name',
-      relatedProperty: 'name',
+      primaryProperty: 'name', // The key of the field we are SEARCHING BY in primary array
+      relatedProperty: 'name', // The name of the field we are SEARCHING IN in secondary array
       dexSelector: 'log',
-      profileProperty: 'name',
+      profileProperty: 'name', // The ID of the secondary field
       profileToggle: false,
 
       sort: {

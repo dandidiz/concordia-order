@@ -288,18 +288,27 @@ charadex.manageData = {
 
   },
 
- /* Relates data to a main sheet via a key
-  ===================================================================== */
+  /**
+   * Relates data to a main sheet via a key
+   *
+   * @param {String} primaryArray       The primary array we are building off of
+   * @param {String} primaryKey         The key of the field we are SEARCHING BY in primary array
+   * @param {String} secondaryPageName  The name of the secondary array sheet
+   * @param {String} secondaryKey       The name of the field we are SEARCHING IN in secondary array
+   */
   async relateData (primaryArray, primaryKey, secondaryPageName, secondaryKey) {
-
     let scrub = charadex.tools.scrub;
     let secondaryArray = await charadex.importSheet(secondaryPageName);
 
     for (let primaryEntry of primaryArray) {
+      console.log('Primary Entry:', primaryEntry);
       primaryEntry[scrub(secondaryPageName)] = [];
       for (let secondaryEntry of secondaryArray) {
+        console.log('SecondaryEntry:', secondaryEntry);
         let secondaryDataArray = secondaryEntry[secondaryKey].split(',');
         for (let prop of secondaryDataArray) {
+          console.log('Property:', prop);
+          console.log('Scrubbed primary', scrub(primaryEntry[primaryKey], '===', scrub(prop));
           if (scrub(primaryEntry[primaryKey]) === scrub(prop)) {
             primaryEntry[scrub(secondaryPageName)].push(secondaryEntry);
           }
