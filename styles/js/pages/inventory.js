@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             )
           ).then(console.log('Initialized inventory!'));
 
-          console.log(fixedData);
         // Designs
         if (charadex.tools.checkArray(profile.characters)) {
           let designs = await charadex.initialize.page(
