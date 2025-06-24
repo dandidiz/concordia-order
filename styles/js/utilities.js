@@ -314,7 +314,7 @@ charadex.manageData = {
             primaryEntry[scrub(secondaryPageName)].push(secondaryEntry);
           }
         }
-        console.log('secondaries:', primaryEntry[scrub(seecondaryPageName)]);
+        console.log('secondaries:', primaryEntry[scrub(secondaryPageName)]);
       }
     }
 
