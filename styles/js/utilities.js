@@ -301,20 +301,14 @@ charadex.manageData = {
     let secondaryArray = await charadex.importSheet(secondaryPageName);
 
     for (let primaryEntry of primaryArray) {
-      console.log('Primary Entry:', primaryEntry);
       primaryEntry[scrub(secondaryPageName)] = [];
       for (let secondaryEntry of secondaryArray) {
-        console.log('SecondaryEntry:', secondaryEntry);
         let secondaryDataArray = secondaryEntry[secondaryKey].split(',');
         for (let prop of secondaryDataArray) {
-          console.log('Property:', prop);
-          console.log('Scrubbed primary:', scrub(primaryEntry[primaryKey]));
-          console.log('Scrubbed secondary:', scrub(prop));
           if (scrub(primaryEntry[primaryKey]) === scrub(prop)) {
             primaryEntry[scrub(secondaryPageName)].push(secondaryEntry);
           }
         }
-        console.log('secondaries:', primaryEntry[scrub(secondaryPageName)]);
       }
     }
 
