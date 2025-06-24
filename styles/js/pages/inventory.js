@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     null, 
     async (listData) => {
 
+      console.log("LIST DATA:", listData); 
       if (listData.type == 'profile') {
 
         let profile = listData.profileArray[0];
@@ -28,10 +29,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         )
 
         // Designs
-        if (charadex.tools.checkArray(profile.masterlist)) {
+        if (charadex.tools.checkArray(profile.characters)) {
           let designs = await charadex.initialize.page(
-            profile.masterlist,
-            charadex.page.inventory.relatedData[charadex.sheet.pages.masterlist],
+            profile.characters,
+            charadex.page.inventory.relatedData[charadex.sheet.pages.characters],
           ).then(console.log('Related Designs:', designs));
         }
 
@@ -42,7 +43,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             charadex.page.inventory.relatedData[charadex.sheet.pages.inventoryLog],
           ).then(console.log('Related Logs:', logs));
         }
-
 
       }
     }

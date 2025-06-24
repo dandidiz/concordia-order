@@ -14,20 +14,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     null,
     async (listData) => {
 
-      console.log('LIST DATA TYPE:', listData.type);
+      console.log("LIST DATA:", listData); 
       if (listData.type == 'profile') {
-        console.log(listData);
-        // Create the log dex
-        if (charadex.tools.checkArray(listData.profileArray[0].masterlistlog)) {
+        
+        let profile = listData.profileArray[0];
+
+        // Logs
+        if (charadex.tools.checkArray(profile.characterlog)) {
           let logs = await charadex.initialize.page(
-            listData.profileArray[0].masterlistlog,
+            listData.profile.characterlog,
             charadex.page.masterlist.relatedData[charadex.sheet.pages.masterlistLog]
           ).then(console.log('Character Logs:', logs));
         }
 
         // Set the player url
         let pageUrl = charadex.url.getPageUrl(charadex.page.inventory.sitePage);
-        $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: listData.profileArray[0].player }));
+        $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
 
       }
 
