@@ -924,9 +924,24 @@ p:last-child {
   max-height: 200px;
 }
 
+.cd-gallery-card-header {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 20px 21px 20px 21px;
+  -moz-border-image: url(card-border-top.svg) 30 31 30 31 stretch stretch;
+  -webkit-border-image: url(card-border-top.svg) 30 31 30 31 stretch stretch;
+  -o-border-image: url(card-border-top.svg) 30 31 30 31 stretch stretch;
+  border-image: url(card-border-top.svg) 30 31 30 31 stretch stretch;
+}
 .cd-gallery-card {
-  background-color: var(--cd-faded-background-color);
+  background-color: transparent;
   min-height: calc(175px + 2.5rem);
+  border-style: solid;
+  border-width: 4px 21px 20px 21px;
+  -moz-border-image: url("/concordia-order/assets/card-border-bottom.svg") 4 31 31 31 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 4 31 31 31 stretch stretch;
+  -o-border-image: url("/concordia-order/assets/card-border-bottom.svg") 4 31 31 31 stretch stretch;
+  border-image: url("/concordia-order/assets/card-border-bottom.svg") 4 31 31 31 stretch stretch;
 }
 
 .cd-gallery-card > img {

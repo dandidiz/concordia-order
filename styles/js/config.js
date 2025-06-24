@@ -47,7 +47,7 @@ charadex.sheet = {
     rarity: ['🔷', '🔷🔷', '🔷🔷🔷', '⭐', '⭐⭐', '⭐⭐⭐', '👑'],
     inheritance: ['Earth', 'Heaven'],
     itemTypes: ['Currency', 'Voucher', 'Keepsakes', 'Gatcha', 'Misc'],
-    traitTypes: ['Magic', 'Affiliation', 'Rank']
+    traitTypes: ['Magic', 'Affiliation', 'Rank'],
 
   }
 
