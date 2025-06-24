@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (charadex.tools.checkArray(profile.characters)) {
           let designs = await charadex.initialize.page(
             profile.characters,
-            charadex.page.inventory.relatedData[charadex.sheet.pages.characters],
+            charadex.page.inventory.relatedData['characters'],
           ).then(console.log('Initialized related characters!'));
         }
 
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (charadex.tools.checkArray(profile.inventorylog)) {
           let logs = await charadex.initialize.page(
             profile.inventorylog,
-            charadex.page.inventory.relatedData[charadex.sheet.pages.inventoryLog],
+            charadex.page.inventory.relatedData['inventory log'],
           ).then(console.log('Initialized related logs!'));
         }
 

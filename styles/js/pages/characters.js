@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (charadex.tools.checkArray(profile.characterlog)) {
           let logs = await charadex.initialize.page(
             listData.profile.characterlog,
-            charadex.page.masterlist.relatedData[charadex.sheet.pages.masterlistLog]
+            charadex.page.masterlist.relatedData['character log']
           ).then(console.log('Initialized related characters!'));
         }
 
