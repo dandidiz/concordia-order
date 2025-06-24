@@ -791,6 +791,10 @@ img {
   border-color: var(--cd-border-color) !important;
 }
 
+.img-fluid {
+  object-fit:contain;
+}
+
 /* Fix any border radiuses that were messed from before */
 .rounded {
   border-radius: var(--cd-border-radius) !important;
