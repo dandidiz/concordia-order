@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     charadex.page.timeline, 
     (arr) => {
 
-      let pageUrl = charadex.url.getPageUrl(charadex.page.faq.sitePage);
+      let pageUrl = charadex.url.getPageUrl(charadex.page.timeline.sitePage);
       for (let question of arr) {
 
         // Make the tags pretty and actually work <3
