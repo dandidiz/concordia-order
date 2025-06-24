@@ -19,15 +19,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (listData.type == 'profile') {
 
         let profile = listData.profileArray[0];
-
+        
         // Inventory
-        charadex.initialize.groupGallery(
-          charadex.page.inventory.inventoryConfig,
-          profile,
-          'type',
-          charadex.url.getPageUrl('items')
-        );
+        let fixedData = await charadex.manageData.inventoryFix(profile)
+          .then(
+            charadex.initialize.groupGallery(
+              charadex.page.inventory.inventoryConfig,
+              fixedData,
+              'type',
+              charadex.url.getPageUrl('items')
+            )
+          ).then(console.log('Initialized inventory!'));
 
+          console.log(fixedData);
         // Designs
         if (charadex.tools.checkArray(profile.characters)) {
           let designs = await charadex.initialize.page(
