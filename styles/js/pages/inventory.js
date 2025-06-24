@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           let designs = await charadex.initialize.page(
             profile.characters,
             charadex.page.inventory.relatedData[charadex.sheet.pages.characters],
-          ).then(console.log('Related Designs:', designs));
+          ).then(console.log('Initialized related characters!'));
         }
 
         // Logs
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           let logs = await charadex.initialize.page(
             profile.inventorylog,
             charadex.page.inventory.relatedData[charadex.sheet.pages.inventoryLog],
-          ).then(console.log('Related Logs:', logs));
+          ).then(console.log('Initialized related logs!'));
         }
 
       }

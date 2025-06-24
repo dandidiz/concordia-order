@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           let logs = await charadex.initialize.page(
             listData.profile.characterlog,
             charadex.page.masterlist.relatedData[charadex.sheet.pages.masterlistLog]
-          ).then(console.log('Character Logs:', logs));
+          ).then(console.log('Initialized related characters!'));
         }
 
         // Set the player url
