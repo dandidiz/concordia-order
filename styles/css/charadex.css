@@ -340,11 +340,6 @@ a:active {
   margin-top: 0;
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
-  display: block !important;
-}
-
 .navbar .dropdown-divider {
   border-top: 1px solid var(--cd-navbar-dropdown-divider) !important;
 }
