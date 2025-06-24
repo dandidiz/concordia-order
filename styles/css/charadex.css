@@ -940,11 +940,11 @@ p:last-child {
   position: absolute;
   background-color: transparent;
   border-style: solid;
-  border-width: 16px 16px 15px;
-  -moz-border-image: url("/concordia-order/assets/card-border-top.svg") 47 54 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-top.svg") 47 54 stretch stretch;
-  -o-border-image: url("/concordia-order/assets/card-border-top.svg") 47 54 stretch stretch;
-  border-image: url("/concordia-order/assets/card-border-top.svg") 47 54 stretch stretch;
+  border-width: 16px;
+  -moz-border-image: url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
+  -o-border-image: url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
+  border-image: url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
   aspect-ratio: 175/29;
   width: 100%;
 }
@@ -953,11 +953,21 @@ p:last-child {
   min-height: calc(175px + 2.5rem);
   border-style: solid;
   border-width: 2px 16px 16px;
-  -moz-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 54 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 54 stretch stretch;
-  -o-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 54 stretch stretch;
-  border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 54 stretch stretch;
+  -moz-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
+  -o-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
+  border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
   aspect-ratio: 174/187;
+}
+
+#gallery-card {
+  overflow: scroll;
+}
+
+@media (min-width: 768px) {
+  #gallery-card {
+    padding: .5rem 1rem;
+  }
 }
 
 .cd-gallery-card > img {
