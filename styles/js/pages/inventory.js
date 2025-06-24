@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Inventory
         charadex.initialize.groupGallery(
           charadex.page.inventory.inventoryConfig,
-          await charadex.manageData.inventoryFix(profile),
+          profile,
           'type',
           charadex.url.getPageUrl('items')
         );

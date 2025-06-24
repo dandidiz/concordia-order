@@ -320,7 +320,7 @@ charadex.page.inventory = {
 
   search: {
     toggle: true,
-    filterToggle: false,
+    filterToggle: true,
     parameters: ['Username']
   },
 
