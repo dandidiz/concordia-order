@@ -11,5 +11,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   let dex = await charadex.initialize.page(
     null,
     charadex.page.items
-  ).then(charadex.tools.loadPage('.softload', 500));
+  ).then( () => {
+    console.log('Initialized items!', dex);
+    charadex.tools.loadPage('.softload', 500);
+  });
 });

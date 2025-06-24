@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", async () => {
           let logs = await charadex.initialize.page(
             profile.characterlog,
             charadex.page.masterlist.relatedData['character log']
-          ).then(console.log('Initialized related characters!'));
+          ).then( () => {
+            console.log('Initialized related logs!', logs);
+          });
         }
 
         // Set the player url
@@ -34,6 +36,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
 
     }
-  ).then(charadex.tools.loadPage('.softload', 500));
+  ).then( () => {
+    charadex.tools.loadPage('.softload', 500);
+  });
 
 });

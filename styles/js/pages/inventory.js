@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", async () => {
               'type',
               charadex.url.getPageUrl('items')
             );
-          }).then( () => {
             console.log('Initialized inventory! Fixed data:', fixedData);
           });
 
@@ -55,6 +54,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       }
     }
-  ).then(charadex.tools.loadPage('.softload', 500));
+  ).then( () => {
+    charadex.tools.loadPage('.softload', 500);
+  });
   
 });
