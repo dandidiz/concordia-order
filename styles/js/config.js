@@ -31,7 +31,7 @@ charadex.sheet = {
   pages: {
     masterlist:    'characters',
     masterlistLog: 'character log',
-    inventory:     'members',
+    inventory:     'players',
     inventoryLog:  'inventory log',
     items:         'items',
     prompts:       'prompts',
@@ -304,7 +304,7 @@ charadex.page.inventory = {
 
   pagination: {
     toggle: true,
-    bottomToggle: true,
+    bottomToggle: false,
     amount: 24,
   },
 
@@ -360,10 +360,10 @@ charadex.page.inventory = {
 
       sheetPage: charadex.sheet.pages.masterlist,
       sitePage: 'characters',
-      primaryProperty: 'username', // name of field of the calling page
-      relatedProperty: 'player',   // name of field in the related page
+      primaryProperty: 'username', // name of field of the calling page to search by
+      relatedProperty: 'player',   // name of column to search in related page
       dexSelector: 'charadex',
-      profileProperty: 'name',     // name of field of the related page
+      profileProperty: 'name',     // name of found record of the related page
       profileToggle: false,
 
     }
