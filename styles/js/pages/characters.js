@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       console.log('LIST DATA TYPE:', listData.type);
       if (listData.type == 'profile') {
-
+        console.log(listData);
         // Create the log dex
         if (charadex.tools.checkArray(listData.profileArray[0].masterlistlog)) {
           let logs = await charadex.initialize.page(
