@@ -15,8 +15,8 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Concordia Order",
-  url: "https://dandidiz.github.io/concordia-order/",
+  title: 'Concordia Order',
+  url: 'https://dandidiz.github.io/concordia-order/',
   description: `"With one heart."`
 }
 
@@ -26,26 +26,25 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "11_fjnY9Ia8QEdUl4sfw_29Os-oIbp5PgFQZrnYdgQvg",
+  id: '11_fjnY9Ia8QEdUl4sfw_29Os-oIbp5PgFQZrnYdgQvg',
 
   pages: {
-    masterlist:    "masterlist",
-    masterlistLog: "masterlist log",
-    inventory:     "inventory",
-    inventoryLog:  "inventory log",
-    items:         "items",
-    traits:        "traits",
-    prompts:       "prompts",
-    timeline:      "timeline",
-    staff:         "mods",
+    masterlist:    'characters',
+    masterlistLog: 'character log',
+    inventory:     'members',
+    inventoryLog:  'inventory log',
+    items:         'items',
+    prompts:       'prompts',
+    timeline:      'timeline',
   },
 
   options: {
 
     roles: ['Story Character', 'Player Character', 'Side Character'],
-    statuses: ['Active', 'Voided', 'Retired', 'Dead', 'WIP'],
-    rarity: ['🔷', '🔷🔷', '🔷🔷🔷', '⭐', '⭐⭐', '⭐⭐⭐', '👑'],
-    inheritance: ['Earth', 'Heaven'],
+    statuses: ['Active', 'Out of Date', 'Retired', 'Dead', 'WIP'],
+    magic: ['Blood', 'Bone', 'Flesh'],
+    inheritance: ['Earth', 'Heaven', 'None'],
+    affiliation: ['Concordia Order', 'The Lost Guard', 'Salus Animarum', 'Gloriola Foundation', 'L’Énochet Université'],
     itemTypes: ['Currency', 'Voucher', 'Keepsakes', 'Gatcha', 'Misc'],
     traitTypes: ['Magic', 'Affiliation', 'Rank'],
 
@@ -71,8 +70,8 @@ charadex.page.items = {
 
   sort: {
     toggle: true,
-    key: "id",
-    order: "asc",
+    key: 'item',
+    order: 'asc',
     parameters: []
   },
 
@@ -86,7 +85,6 @@ charadex.page.items = {
     toggle: true,
     parameters: {
       'Type': charadex.sheet.options.itemTypes,
-      'Rarity': charadex.sheet.options.rarity,
     }
   },
 
@@ -99,65 +97,12 @@ charadex.page.items = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Item', 'Rarity']
+    parameters: ['All', 'Item', 'Description']
   },
 
   prevNext: {
     toggle: true,
   },
-
-};
-
-
-/* Traits
-/* --------------------------------------------------------------- */
-charadex.page.traits = {
-
-  sheetPage: charadex.sheet.pages.traits,
-  sitePage: 'traits',
-  dexSelector: 'charadex',
-  profileProperty: 'trait',
-
-  sort: {
-    toggle: true,
-    key: "id",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 24,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-      'Type': charadex.sheet.options.traitTypes,
-      'Rarity': charadex.sheet.options.rarity,
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Type',
-    parameters: charadex.sheet.options.traitTypes,
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'Trait', 'Rarity']
-  },
-
-  prevNext: {
-    toggle: true,
-  },
-
-  markdownColumns: [
-    "description"
-  ],
 
 };
 
@@ -173,8 +118,8 @@ charadex.page.prompts = {
 
   sort: {
     toggle: true,
-    key: "enddate",
-    order: "asc",
+    key: 'enddate',
+    order: 'asc',
     parameters: []
   },
 
@@ -210,54 +155,6 @@ charadex.page.prompts = {
 };
 
 
-/* Staff
-/* --------------------------------------------------------------- */
-charadex.page.staff = {
-
-  sheetPage: charadex.sheet.pages.staff,
-  sitePage: 'inventories',
-  dexSelector: 'charadex',
-  profileProperty: 'username',
-
-  sort: {
-    toggle: false,
-    key: "username",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: false,
-    bottomToggle: false,
-    amount: 12,
-  },
-
-  filters: {
-    toggle: false,
-    parameters: {
-      'TBA': [],
-    }
-  },
-
-  fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: false,
-    parameters: ['Username']
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-};
-
-
 /* Timeline
 /* --------------------------------------------------------------- */
 charadex.page.timeline = {
@@ -269,8 +166,8 @@ charadex.page.timeline = {
 
   sort: {
     toggle: false,
-    key: "id",
-    order: "asc",
+    key: 'id',
+    order: 'asc',
     parameters: []
   },
 
@@ -306,7 +203,6 @@ charadex.page.timeline = {
 }
 
 
-
 /* Masterlist
 /* --------------------------------------------------------------- */
 charadex.page.masterlist = {
@@ -318,8 +214,8 @@ charadex.page.masterlist = {
 
   sort: {
     toggle: true,
-    key: "id",
-    order: "desc",
+    key: 'id',
+    order: 'desc',
     parameters: []
   },
 
@@ -347,7 +243,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Name', 'Player', 'Traits', 'Age', 'Gender']
+    parameters: ['All', 'Name', 'Player', 'Age', 'Gender']
   },
 
   prevNext: {
@@ -359,16 +255,16 @@ charadex.page.masterlist = {
     [charadex.sheet.pages.masterlistLog]: {
 
       sheetPage: charadex.sheet.pages.masterlistLog,
-      primaryProperty: 'id',
-      relatedProperty: 'id',
+      primaryProperty: 'name',
+      relatedProperty: 'name',
       dexSelector: 'log',
       profileProperty: 'name',
       profileToggle: false,
 
       sort: {
         toggle: true,
-        key: "timestamp",
-        order: "desc",
+        key: 'timestamp',
+        order: 'desc',
         parameters: []
       },
 
@@ -383,7 +279,7 @@ charadex.page.masterlist = {
   },
 
   markdownColumns: [
-    "notes"
+    'personality'
   ],
 
 };
@@ -401,8 +297,8 @@ charadex.page.inventory = {
   // Dex Options
   sort: {
     toggle: true,
-    key: "username",
-    order: "asc",
+    key: 'username',
+    order: 'asc',
     parameters: []
   },
 
@@ -444,7 +340,7 @@ charadex.page.inventory = {
       primaryProperty: 'username',
       relatedProperty: 'username',
       dexSelector: 'log',
-      profileProperty: 'id',
+      profileProperty: 'username',
       profileToggle: false,
 
       pagination: {
@@ -464,10 +360,10 @@ charadex.page.inventory = {
 
       sheetPage: charadex.sheet.pages.masterlist,
       sitePage: 'characters',
-      primaryProperty: 'username',
-      relatedProperty: 'player',
+      primaryProperty: 'username', // name of field of the calling page
+      relatedProperty: 'player',   // name of field in the related page
       dexSelector: 'charadex',
-      profileProperty: 'name',
+      profileProperty: 'name',     // name of field of the related page
       profileToggle: false,
 
     }
@@ -486,8 +382,8 @@ charadex.page.inventory = {
 
     sort: {
       toggle: true,
-      sortProperty: "item",
-      order: "asc",
+      sortProperty: 'item',
+      order: 'asc',
       parametersKey: 'type', 
       parameters: charadex.sheet.options.itemTypes
     },
@@ -502,7 +398,6 @@ charadex.page.inventory = {
       toggle: true,
       parameters: {
         'Type': charadex.sheet.options.itemTypes,
-        'Rarity': charadex.sheet.options.rarity,
       }
     },
 
