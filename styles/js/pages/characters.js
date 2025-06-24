@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     null,
     async (listData) => {
 
+      console.log('LIST DATA TYPE:', listData.type);
       if (listData.type == 'profile') {
 
         // Create the log dex

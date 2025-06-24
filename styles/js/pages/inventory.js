@@ -31,23 +31,21 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (charadex.tools.checkArray(profile.masterlist)) {
           let designs = await charadex.initialize.page(
             profile.masterlist,
-            charadex.page.inventory.relatedData['characters'],
-          );
+            charadex.page.inventory.relatedData[charadex.sheet.pages.masterlist],
+          ).then(console.log('Related Designs:', designs));
         }
 
         // Logs
         if (charadex.tools.checkArray(profile.inventorylog)) {
           let logs = await charadex.initialize.page(
             profile.inventorylog,
-            charadex.page.inventory.relatedData['inventory log'],
-          );
+            charadex.page.inventory.relatedData[charadex.sheet.pages.inventoryLog],
+          ).then(console.log('Related Logs:', logs));
         }
 
 
       }
     }
-  );
-  
-  charadex.tools.loadPage('.softload', 500);
+  ).then(charadex.tools.loadPage('.softload', 500));
   
 });
