@@ -929,7 +929,7 @@ p:last-child {
 }
 #charadex-gallery .card-header {
   border: 0 !important;
-  background-color: transparent;
+  background-color: transparent !important;
   aspect-ratio: 504/79;
 }
 #charadex-gallery .cd-gallery-card-header {
@@ -949,15 +949,20 @@ p:last-child {
   min-height: calc(175px + 2.5rem);
   border-style: solid;
   border-width: 2px 16px 16px;
-  -moz-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 47 54 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 47 54 stretch stretch;
-  -o-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 47 54 stretch stretch;
-  border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 47 54 stretch stretch;
+  -moz-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 54 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 54 stretch stretch;
+  -o-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 54 stretch stretch;
+  border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 54 stretch stretch;
   aspect-ratio: 174/187;
 }
 
 .cd-gallery-card > img {
-  max-height: 175px !important;
+  background-color: var(--cd-faded-text-color);
+  aspect-ratio: 1/1;
+  border-radius: 3px;
+  border-width: var(--cd-card-border-width) !important;
+  border-style: var(--cd-card-border-style) !important;
+  border-color: var(--cd-card-border-color) !important;
 }
 
 .cd-profile-image-container > img {
