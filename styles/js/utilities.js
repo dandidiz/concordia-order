@@ -308,8 +308,8 @@ charadex.manageData = {
         let secondaryDataArray = secondaryEntry[secondaryKey].split(',');
         for (let prop of secondaryDataArray) {
           console.log('Property:', prop);
-          console.log('Scrubbed primary:', scrub(primaryEntry[primaryKey]);
-          console.log('Scrubbed secondary:', scrub(prop)));
+          console.log('Scrubbed primary:', scrub(primaryEntry[primaryKey]));
+          console.log('Scrubbed secondary:', scrub(prop));
           if (scrub(primaryEntry[primaryKey]) === scrub(prop)) {
             primaryEntry[scrub(secondaryPageName)].push(secondaryEntry);
           }
