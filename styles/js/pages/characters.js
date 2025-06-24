@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let dex = await charadex.initialize.page(
     null,
     charadex.page.masterlist,
-    null, 
+    null,
     async (listData) => {
 
       if (listData.type == 'profile') {
@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (charadex.tools.checkArray(listData.profileArray[0].masterlistlog)) {
           let logs = await charadex.initialize.page(
             listData.profileArray[0].masterlistlog,
-            charadex.page.masterlist.relatedData['character log']
-          );
+            charadex.page.masterlist.relatedData[charadex.sheet.pages.masterlistLog]
+          ).then(console.log('Character Logs:', logs));
         }
 
         // Set the player url
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
 
     }
-  );
-  charadex.tools.loadPage('.softload', 500);
-  
+  ).then(charadex.tools.loadPage('.softload', 500));
+
 });
