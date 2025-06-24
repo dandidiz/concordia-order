@@ -923,7 +923,7 @@ p:last-child {
 #charadex-gallery .list .card-body img {
   max-height: 200px;
 }
-
+/* 
 #charadex-gallery .cd-gallery-card {
   background-color: var(--cd-faded-text-color);
   -webkit-mask: url("/concordia-order/assets/card-border.svg") no-repeat 50% 50%;
@@ -933,6 +933,29 @@ p:last-child {
   display: block;
   content: "";
   aspect-ratio: 504/609;
+}
+*/
+#charadex-gallery .cd-gallery-card-header {
+  border: 0;
+  background-color: var(--cd-faded-text-color);
+  -webkit-mask: url("/concordia-order/assets/card-border-top.svg") no-repeat 50% 50%;
+  mask: url("/concordia-order/assets/card-border-top.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: block;
+  content: "";
+  aspect-ratio: 504/84;
+}
+#charadex-gallery .cd-gallery-card {
+  border: 0;
+  background-color: var(--cd-faded-text-color);
+  -webkit-mask: url("/concordia-order/assets/card-border-bottom.svg") no-repeat 50% 50%;
+  mask: url("/concordia-order/assets/card-border-bottom.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: block;
+  content: "";
+  aspect-ratio: 504/541;
 }
 
 .cd-gallery-card > img {
