@@ -45,8 +45,7 @@ charadex.sheet = {
     magic: ['Blood', 'Bone', 'Flesh'],
     inheritance: ['Earth', 'Heaven', 'None'],
     affiliation: ['Concordia Order', 'The Lost Guard', 'Salus Animarum', 'Gloriola Foundation', 'L’Énochet Université'],
-    itemTypes: ['Currency', 'Voucher', 'Keepsakes', 'Gatcha', 'Misc'],
-    traitTypes: ['Magic', 'Affiliation', 'Rank'],
+    itemTypes: ['All', 'Currency', 'Voucher', 'Keepsakes', 'Gatcha', 'Misc'],
 
   }
 
@@ -82,9 +81,9 @@ charadex.page.items = {
   },
 
   filters: {
-    toggle: true,
+    toggle: false,
     parameters: {
-      'Type': charadex.sheet.options.itemTypes,
+      'TBA': [],
     }
   },
 
@@ -214,7 +213,7 @@ charadex.page.masterlist = {
 
   sort: {
     toggle: true,
-    key: 'id',
+    key: 'lastupdate',
     order: 'desc',
     parameters: []
   },
@@ -382,7 +381,7 @@ charadex.page.inventory = {
 
     sort: {
       toggle: true,
-      sortProperty: 'item',
+      sortProperty: 'sort',
       order: 'asc',
       parametersKey: 'type', 
       parameters: charadex.sheet.options.itemTypes
