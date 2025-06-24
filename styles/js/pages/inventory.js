@@ -22,21 +22,25 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         // Inventory
         let fixedData = await charadex.manageData.inventoryFix(profile)
-          .then(
+          .then( () => {
             charadex.initialize.groupGallery(
               charadex.page.inventory.inventoryConfig,
               fixedData,
               'type',
               charadex.url.getPageUrl('items')
-            )
-          ).then(console.log('Initialized inventory!'));
+            );
+          }).then( () => {
+            console.log('Initialized inventory! Fixed data:', fixedData);
+          });
 
         // Designs
         if (charadex.tools.checkArray(profile.characters)) {
           let designs = await charadex.initialize.page(
             profile.characters,
             charadex.page.inventory.relatedData['characters'],
-          ).then(console.log('Initialized related characters!'));
+          ).then( () => {
+            console.log('Initialized related characters!', designs);
+          });
         }
 
         // Logs
@@ -44,7 +48,9 @@ document.addEventListener("DOMContentLoaded", async () => {
           let logs = await charadex.initialize.page(
             profile.inventorylog,
             charadex.page.inventory.relatedData['inventory log'],
-          ).then(console.log('Initialized related logs!'));
+          ).then( () => {
+            console.log('Initialized related logs!', logs);
+          });
         }
 
       }
