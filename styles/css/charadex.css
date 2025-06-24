@@ -978,12 +978,6 @@ p:last-child {
   border-color: var(--cd-card-border-color) !important;
 }
 
-#charadex-gallery-item {
-  font-family: var(--cd-navbar-font-family) !important;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .cd-profile-image-container > img {
   max-height: 400px;
 }
