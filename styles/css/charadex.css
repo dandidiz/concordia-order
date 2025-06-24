@@ -963,7 +963,6 @@ p:last-child {
 #gallery-card {
   overflow: scroll;
 }
-
 @media (min-width: 768px) {
   #gallery-card {
     padding: .5rem 1rem;
@@ -977,6 +976,12 @@ p:last-child {
   border-width: var(--cd-card-border-width) !important;
   border-style: var(--cd-card-border-style) !important;
   border-color: var(--cd-card-border-color) !important;
+}
+
+#charadex-gallery-item {
+  font-family: var(--cd-navbar-font-family) !important;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .cd-profile-image-container > img {
