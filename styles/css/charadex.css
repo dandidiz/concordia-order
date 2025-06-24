@@ -792,7 +792,7 @@ img {
 }
 
 .img-fluid {
-  object-fit:contain;
+  object-fit: contain;
 }
 
 /* Fix any border radiuses that were messed from before */
@@ -928,15 +928,15 @@ p:last-child {
   max-height: 200px;
 }
 
-#charadex-gallery-item .card {
+#charadex-gallery .list .card {
   border: 0 !important;
 }
-#charadex-gallery-item .card-header {
+#charadex-gallery .list .card-header {
   border: 0 !important;
   background-color: transparent !important;
   aspect-ratio: 504/79;
 }
-#charadex-gallery-item .cd-gallery-card-header {
+#charadex-gallery .list .cd-gallery-card-header {
   position: absolute;
   background-color: transparent;
   border-style: solid;
@@ -948,7 +948,7 @@ p:last-child {
   aspect-ratio: 175/29;
   width: 100%;
 }
-#charadex-gallery-item .cd-gallery-card {
+#charadex-gallery .list .cd-gallery-card {
   background-color: transparent;
   min-height: calc(175px + 2.5rem);
   border-style: solid;
