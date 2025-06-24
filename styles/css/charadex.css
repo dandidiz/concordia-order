@@ -936,6 +936,9 @@ p:last-child {
   background-color: transparent !important;
   aspect-ratio: 504/79;
 }
+#charadex-gallery .list .card-header a {
+  text-decoration: none;
+}
 #charadex-gallery .list .cd-gallery-card-header {
   position: absolute;
   background-color: transparent;
