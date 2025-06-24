@@ -928,15 +928,15 @@ p:last-child {
   max-height: 200px;
 }
 
-#charadex-gallery .card {
+#charadex-gallery-item .card {
   border: 0 !important;
 }
-#charadex-gallery .card-header {
+#charadex-gallery-item .card-header {
   border: 0 !important;
   background-color: transparent !important;
   aspect-ratio: 504/79;
 }
-#charadex-gallery .cd-gallery-card-header {
+#charadex-gallery-item .cd-gallery-card-header {
   position: absolute;
   background-color: transparent;
   border-style: solid;
@@ -948,7 +948,7 @@ p:last-child {
   aspect-ratio: 175/29;
   width: 100%;
 }
-#charadex-gallery .cd-gallery-card {
+#charadex-gallery-item .cd-gallery-card {
   background-color: transparent;
   min-height: calc(175px + 2.5rem);
   border-style: solid;
