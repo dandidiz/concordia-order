@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             } catch(err) {
               console.error('Failed to get the related logs.', err);
             } finally {
-              console.log('Initialized related logs!', logs);
+              if (logs) {
+                console.log('Initialized related logs!', logs);
+              }
             }
           }
 
@@ -43,7 +45,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch(err) {
     console.error('Failed to initialize the page.', err);
   } finally {
-    console.log('Initialized the page!', dex);
+    if (dex) {
+      console.log('Initialized the page!', dex);
+    }
     charadex.tools.loadPage('.softload', 500);
   }
 
