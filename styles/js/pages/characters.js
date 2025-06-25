@@ -8,8 +8,10 @@ import { charadex } from '../charadex.js';
 /* Load
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
+  let dex = null;
+  let logs = null;
   try {
-    let dex = await charadex.initialize.page(
+    dex = await charadex.initialize.page(
       null,
       charadex.page.masterlist,
       null,
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           // Logs
           if (charadex.tools.checkArray(profile.characterlog)) {
             try {
-              let logs = await charadex.initialize.page(
+              logs = await charadex.initialize.page(
                 profile.characterlog,
                 charadex.page.masterlist.relatedData['character log']
               );
