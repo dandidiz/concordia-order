@@ -390,7 +390,7 @@ charadex.page.inventory = {
     search: {
       toggle: true,
       filterToggle: false,
-      parameters: ['All', 'Item', 'Description']
+      parameters: ['Item']
     },
 
     filters: {
