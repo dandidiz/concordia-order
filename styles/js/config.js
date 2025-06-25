@@ -373,7 +373,10 @@ charadex.page.inventory = {
   // This is a special config for their inventory
   inventoryConfig: {
 
-    ...charadex.page.items,
+    sheetPage: charadex.sheet.pages.items,
+    sitePage: 'items',
+    dexSelector: 'item',
+    profileProperty: 'item',
     profileToggle: false,
 
     sort: {
