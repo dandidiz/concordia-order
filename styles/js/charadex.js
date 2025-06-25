@@ -216,7 +216,7 @@ charadex.initialize.groupGallery = async function (config, dataArray, groupBy, c
       // Create the DOM elements
       let groupElement = $(`#${selector}-group-list`).clone();
       groupElement.removeAttr('id');
-      groupElement.find(`.${selector}-list list`).addClass(`${groupListSelector}-list list`);
+      groupElement.find(`.${selector}-list`).addClass(`${groupListSelector}-list`);
       groupElement.find(`.${selector}-group-title`).text(group);
       $(`#${selector}-group`).append(groupElement);
       
