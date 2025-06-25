@@ -322,7 +322,11 @@ charadex.manageData = {
   
     let inventoryData = [];
     for (let property in profileArray) {
+      console.log("property", property);
       for (let item of itemArr) {
+        console.log("item", item);
+        console.log("item.item", item.item)
+        console.log("profileArray[property", profileArray[property]);
         if (property === charadex.tools.scrub(item.item) && profileArray[property] !== '') inventoryData.push({
           ... item,
           ... {
