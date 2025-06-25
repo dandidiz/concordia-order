@@ -27,10 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         question.fancytags = fancyTagArr.join(' ');
 
       }
-      
-    }
-  ).then( () => {
-    charadex.tools.loadPage('.softload', 500);
   });
-  
+
+  charadex.tools.loadPage('.softload', 500);
 });

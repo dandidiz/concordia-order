@@ -12,10 +12,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     null,
     charadex.page.prompts,
     null, 
-    async (listData) => {
-
+    (listData) => {
       let backgroundElement = $('.cd-prompt-background');
-
       if (listData.type == 'profile') {
         backgroundElement.attr('style', `background-image: url(${listData.profileArray[0].image})`);
       } else {
@@ -24,9 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           $(this).attr('style', `background-image: url(${image})`);
         });
       }
-    }
-  ).then( () => {
-    charadex.tools.loadPage('.softload', 500);
   });
   
+  charadex.tools.loadPage('.softload', 500);
 });
