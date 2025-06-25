@@ -83,7 +83,7 @@ charadex.page.items = {
   filters: {
     toggle: false,
     parameters: {
-      'TBA': [],
+      'Type': charadex.sheet.options.itemTypes,
     }
   },
 
