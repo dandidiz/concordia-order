@@ -178,7 +178,6 @@ charadex.initialize.groupGallery = async function (config, dataArray, groupBy, c
 
   // Add profile information
   for (let entry of charadexData) {
-    console.log("entry", entry);
     charadex.tools.addProfileLinks(entry, pageUrl, config.profileProperty);
   }
 
