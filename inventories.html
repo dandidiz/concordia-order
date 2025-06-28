@@ -354,13 +354,13 @@
                 <!-- Filters -->
                 <!-- ------- -->
                 <div style="display:none;" id="charadex-filter-container">
-                  <hr>
-                  <div class="row no-gutters m-n1" id="charadex-filters"></div>
+                  <div class="row mb-2" id="charadex-filters"></div>
                   <!-- Filters -->
                   <div style="display: none;">
-                    <div class="col-md-4 col-12 p-1" id="charadex-filter">
+                    <div class="col-md-4 col-12" id="charadex-filter">
                       <label class="px-2"></label>
-                      <select class="form-control bg-reset" multiple></select>
+                      <select class="form-control" multiple data-actions-box="true" data-icon-base="fa-solid"
+                        data-tick-icon="fa-check"></select>
                     </div>
                   </div>
                 </div>
@@ -371,18 +371,19 @@
               <!-- Search -->
               <!-- ------ -->
               <div style="display:none;" id="charadex-search-container">
-                <hr>
-                <div class="row no-gutters m-n1">
+                <div class="row mb-2">
                   <!-- Search Filter -->
-                  <div class="col-md-4 col-6 p-1" style="display: none;">
-                    <select class="form-control bg-reset" id="charadex-search-filter"></select>
+                  <div class="col-md-4 col-6" style="display: none;">
+                    <select id="charadex-search-filter" class="form-control form-select"
+                      aria-label="Select search parameter."></select>
                   </div>
                   <!-- Search Bar -->
-                  <div class="col d-flex p-1">
-                    <input class="form-control bg-reset search" type="search" placeholder="Search" id="charadex-search">
+                  <div class="col d-flex">
+                    <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
                   </div>
                 </div>
               </div>
+
 
               <!-- ---------- -->
               <!-- Pagination -->
@@ -400,7 +401,6 @@
               <!-- Prev & Next Topbar -->
               <!-- ------------------ -->
               <div style="display: none;" id="charadex-prevnext-container">
-                <hr>
                 <div class="row no-gutters px-2 text-uppercase">
                   <div class="col-6 px-1">
                     <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
@@ -416,19 +416,16 @@
             <!-- ---------------------- -->
             <!-- List Items Render Here -->
             <!-- ---------------------- -->
-            <div class="row no-gutters charadex-list list m-n2"></div>
+            <div class="row no-gutters charadex-list list softload m-n2"></div>
 
             <!-- ---------- -->
             <!-- Pagination -->
             <!-- ---------- -->
             <div style="display: none;" class="charadex-pagination-container">
-              <div class="card bg-faded px-3 py-1 mt-4">
-                <div class="nav d-flex justify-content-center">
-                  <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                  <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0">
-                  </ul>
-                  <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                </div>
+              <div class="nav d-flex justify-content-center mb-n4">
+                <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
+                <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
               </div>
             </div>
 
@@ -467,7 +464,6 @@
             <!-- Title -->
             <!-- ----- -->
             <h4 class="text-primary mb-0">Transaction Log</h4>
-            <hr>
 
             <!-- ---- -->
             <!-- List -->
@@ -477,7 +473,7 @@
                 <div class="col-md-3"><b>Timestamp</b></div>
                 <div class="col-md-9"><b>Reason</b></div>
               </div>
-              <hr class="my-2 mx-n2">
+              <hr>
               <!-- ---------------------- -->
               <!-- List Items Render Here -->
               <!-- ---------------------- -->
@@ -493,7 +489,6 @@
                   <div class="col-md-3"><span class="timestamp"></span></div>
                   <div class="col-md-9"><span class="reason"></span></div>
                 </div>
-                <hr class="my-2 mx-n2">
               </div> <!-- End of Log Thumb -->
 
             </div>
