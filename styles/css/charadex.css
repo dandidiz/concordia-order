@@ -662,7 +662,7 @@ h3,
 h4,
 h5,
 h6,
-title {
+.title {
   font-family: var(--cd-navbar-font-family) !important;
   font-weight: bold;
   text-transform: uppercase;
