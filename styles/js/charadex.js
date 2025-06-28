@@ -124,7 +124,7 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
 
     // Add gallery information
     for (let entry of charadexData) {
-      if (entry.affiliation) entry.affiliationstamp = `<div class="stamp-${charadex.tools.scrub(entry.affiliation)}"></div>`; // Adds a stamp
+      if (entry.affiliation) entry.affiliationstamp = `<span class="stamp-${charadex.tools.scrub(entry.affiliation)}"></span>`; // Adds a stamp
     }
 
     // Add Pagination
