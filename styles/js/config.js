@@ -229,7 +229,7 @@ charadex.page.masterlist = {
     parameters: {
       'Role': charadex.sheet.options.roles,
       'Status': charadex.sheet.options.statuses,
-      'Inheritance': charadex.sheet.options.inheritance,
+      'Affiliation': charadex.sheet.options.affiliation,
     }
   },
 

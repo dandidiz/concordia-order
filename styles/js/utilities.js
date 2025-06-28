@@ -18,7 +18,15 @@ charadex.tools = {
   scrub(str) {
     if (!str) return str;
     if (!isNaN(str)) return Number(str);
-    return str.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+    // multiple selections allowed
+    let split = str.split(', ');
+    if (split.length() == 1) return str.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+    for (let entry of split) {
+      entry.toLowerCase().replace(/[^a-z0-9]/g, "");
+    }
+    return split;
   },
 
   // Similar to scrub
