@@ -1021,7 +1021,8 @@ p:last-child {
 /* Affiliation
 /* ============================================================= */
 
-.affiliationstamp {
+.stamp-all, .stamp-concordiaorder, .stamp-thelostguard,
+.stamp-salusanimarum, .stamp-gloriolafoundation, .stamp-lnochetuniversit {
   position: absolute;
   background-color: transparent;
   background-position: center;
