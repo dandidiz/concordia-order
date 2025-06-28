@@ -821,6 +821,7 @@ ul {
 
 ul li {
   margin-bottom: 0.5em;
+  padding-left: 0.5em;
 }
 
 ul li::marker {
