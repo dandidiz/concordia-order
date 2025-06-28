@@ -60,93 +60,100 @@
   <!-- Main Container                                                    -->
   <!-- ----------------------------------------------------------------- -->
   <div id="main-container" class="container d-flex order-md-2 order-3">
-    <div id="main-card" class="card card-body bg-faded flex-grow-1 mx-md-3 mx-0">
-      <div class="card-body p-md-3 p-0">
 
+    <!-- -------------------------------------------------------------- -->
+    <!-- Gallery Container                                              -->
+    <!-- -------------------------------------------------------------- -->
+    <div id="player-gallery" class="w-100 d-flex flex-column">
+
+      <div id="search-options" class="mx-md-3 mx-0 mb-2">
+        <h1 class="mb-0"><a href="/concordia-order/players">Players</a></h1>
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Faux Folders                                                      -->
+        <!-- ----------------------------------------------------------------- -->
+        <div style="display:none;" id="player-folder-container">
+          <div class="row mb-2" id="player-folders"></div>
+          <!-- Buttons -->
+          <div style="display:none;">
+            <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="player-folder">
+              <a class="btn btn-primary d-block" href=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Filters                                                           -->
+        <!-- ----------------------------------------------------------------- -->
+        <div style="display:none;" id="player-filter-container">
+          <div class="row mb-2" id="player-filters"></div>
+          <!-- Filters -->
+          <div style="display: none;">
+            <div class="col-md-4 col-12" id="player-filter">
+              <label class="px-2"></label>
+              <select class="form-control" multiple data-actions-box="true" data-icon-base="fa-solid"
+                data-tick-icon="fa-check"></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Search                                                            -->
+        <!-- ----------------------------------------------------------------- -->
+        <div style="display:none;" id="player-search-container">
+          <div class="row mb-2">
+            <!-- Search Filter -->
+            <div class="col-md-4 col-6 p-1" style="display: none;">
+              <select id="player-search-filter" class="form-control form-select"
+                aria-label="Select search parameter."></select>
+            </div>
+            <!-- Search Bar -->
+            <div class="col d-flex">
+              <input class="form-control search" type="search" placeholder="Search" id="player-search">
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Pagination                                                        -->
+        <!-- ----------------------------------------------------------------- -->
+        <div style="display: none;" class="player-pagination-container">
+
+          <div class="nav d-flex justify-content-center mb-n4">
+            <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+            <ul class="pagination player-pagination player-pagination-top justify-content-center m-0"></ul>
+            <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+          </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Prev & Next Topbar                                                -->
+        <!-- ----------------------------------------------------------------- -->
+        <div style="display: none;" id="player-prevnext-container">
+          <div class="row no-gutters px-2 text-uppercase">
+            <div class="col-6 px-1">
+              <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
+            </div>
+            <div class="col-6 px-1 text-end order-md-1">
+              <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end of search options -->
+
+      <div id="gallery-card" class="card card-body bg-faded flex-grow-1 mx-md-3 mx-0">
         <!-- -------------------------------------------------------------- -->
-        <!-- Gallery Container                                              -->
+        <!-- List Items Render Here                                         -->
         <!-- -------------------------------------------------------------- -->
-        <div id="player-gallery">
-          <h3 class="mb-0"><a href="?">Player Inventories</a></h3>
-
-          <!-- ----------------------------------------------------------------- -->
-          <!-- Faux Folders                                                      -->
-          <!-- ----------------------------------------------------------------- -->
-          <div style="display:none;" id="player-folder-container">
-            <hr>
-            <div class="row no-gutters m-n1" id="player-folders"></div>
-            <!-- Buttons -->
-            <div style="display:none;">
-              <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="player-folder">
-                <a class="btn btn-primary d-block" href=""></a>
-              </div>
-            </div>
+        <div class="card-body p-md-3 p-0">
+          <!-- headers -->
+          <div class="row no-gutters m-n2">
+            <div class="col">Name</div>
+            <div class="col-auto">Characters</div>
+            <div class="col-auto">Cooldown</div>
           </div>
-
-          <!-- ----------------------------------------------------------------- -->
-          <!-- Filters                                                           -->
-          <!-- ----------------------------------------------------------------- -->
-          <div style="display:none;" id="player-filter-container">
-            <hr>
-            <div class="row no-gutters m-n1" id="player-filters"></div>
-            <!-- Filters -->
-            <div style="display: none;">
-              <div class="col-md-4 col-12 p-1" id="player-filter">
-                <label class="px-2"></label>
-                <select class="form-control" multiple></select>
-              </div>
-            </div>
-          </div>
-
-          <!-- ----------------------------------------------------------------- -->
-          <!-- Search                                                            -->
-          <!-- ----------------------------------------------------------------- -->
-          <div style="display:none;" id="player-search-container">
-            <hr>
-            <div class="row no-gutters m-n1">
-              <!-- Search Filter -->
-              <div class="col-md-4 col-6 p-1" style="display: none;">
-                <select id="player-search-filter" class="form-control form-select"
-                  aria-label="Select search parameter."></select>
-              </div>
-              <!-- Search Bar -->
-              <div class="col d-flex p-1">
-                <input class="form-control search" type="search" placeholder="Search" id="player-search">
-              </div>
-            </div>
-          </div>
-
-          <!-- ----------------------------------------------------------------- -->
-          <!-- Pagination                                                        -->
-          <!-- ----------------------------------------------------------------- -->
-          <div style="display: none;" class="player-pagination-container">
-
-            <div class="nav d-flex justify-content-center mb-n4">
-              <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-              <ul class="pagination player-pagination player-pagination-top justify-content-center m-0"></ul>
-              <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-            </div>
-          </div>
-
-          <!-- ----------------------------------------------------------------- -->
-          <!-- Prev & Next Topbar                                                -->
-          <!-- ----------------------------------------------------------------- -->
-          <div style="display: none;" id="player-prevnext-container">
-            <hr>
-            <div class="row no-gutters px-2 text-uppercase">
-              <div class="col-6 px-1">
-                <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
-              </div>
-              <div class="col-6 px-1 text-end order-md-1">
-                <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ms-2"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- -------------------------------------------------------------- -->
-          <!-- List Items Render Here                                         -->
-          <!-- -------------------------------------------------------------- -->
-          <div class="row no-gutters player-list list softload m-n1"></div>
+          <!-- entries -->
+          <div class="player-list list softload"></div>
+          <p class="text-center"><i class="text-primary fa-solid fa-hurricane fa-spin fa-spin-reverse loading"></i></p>
 
           <!-- ----------------------------------------------------------------- -->
           <!-- Pagination                                                        -->
@@ -161,7 +168,6 @@
           </div>
 
         </div>
-
       </div> <!-- card body -->
     </div> <!-- card -->
   </div> <!-- container -->
@@ -179,10 +185,14 @@
     <!-- ----------------------------------------------------------------- -->
     <!-- Gallery Items - Player Thumb                                      -->
     <!-- ----------------------------------------------------------------- -->
-    <div class="col-md-4 col-sm-6 p-1" id="player-gallery-item">
-      <a class="card px-4 py-3 stretched-link profilelink text-truncate" href="">
-        <h5 class="m-0"><span class="profileid"></span></h5>
-      </a>
+    <div class="row card no-gutters softload m-n2 p-3" id="player-gallery-item"></div>
+      <div class="col p-2">
+        <a class="stretched-link profilelink" href="">
+          <h4 class="m-0 profileid"></h4>
+        </a>
+      </div>
+      <div class="col-auto p-2 charactercount"></div>
+      <div class="col-auto p-2 cooldown"></div>
     </div> <!-- End of Player Thumb -->
     <!-- ----------------------------------------------------------------- -->
     <!-- Gallery Profile - Player Card                                     -->
