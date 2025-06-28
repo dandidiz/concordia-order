@@ -692,9 +692,10 @@ h4 {
   font-size: 1.05rem;
 }
 
-.title {
+.script {
   font-family: var(--cd-navbar-font-family) !important;
   font-weight: bold;
+  text-transform: uppercase;
   color: var(--cd-faded-text-color);
 }
 .subtitle {
