@@ -24,9 +24,6 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
   let selector = config.dexSelector;
   let pageUrl = customPageUrl || charadex.url.getPageUrl(config.sitePage);
 
-  console.log('page url:', pageUrl);
-  console.log('page selector:', selector);
-
   // Add folders, filters & search
   let folders = config.fauxFolder?.toggle ?? false ? charadex.listFeatures.fauxFolders(pageUrl, config.fauxFolder.parameters, selector) : false;
   let filters = config.filters?.toggle ?? false ? charadex.listFeatures.filters(config.filters.parameters, selector) : false;
@@ -34,14 +31,14 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
 
   // Get our data
   let charadexData = dataArr || await charadex.importSheet(config.sheetPage);
-
+  
   // Add profile information
   for (let entry of charadexData) {
     charadex.tools.addProfileLinks(entry, pageUrl, config.profileProperty); // Go ahead and add profile keys just in case
     if (folders) folders(entry, config.fauxFolder.folderProperty); // If folders, add folder info
     if (entry.affiliation) {
       entry.affiliationstamp = `<div class="stamp-${charadex.tools.scrub(entry.affiliation)}"></div>`; // Adds a stamp
-      entry.affiliationbadge = `<span class="badge badge-${charadex.tools.scrub(entry.affiliation)}">${entry.class}</span>`; // Adds an affiliation badge
+      entry.affiliationbadge = `<span class="badge badge-${charadex.tools.scrub(entry.affiliation)}">${entry.affiliation}</span>`; // Adds an affiliation badge
     }
 
     // Convert markdown to HTML, if we need to
@@ -64,6 +61,8 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     }
   }
 
+  console.log("CHARADEX DATA:", charadexData);
+  
   // Initialize the list
   let list = charadex.buildList(selector);
 
