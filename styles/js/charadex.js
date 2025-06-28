@@ -38,10 +38,11 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     if (folders) folders(entry, config.fauxFolder.folderProperty); // If folders, add folder info
     if (entry.affiliation) {
       let affiliations = entry.affiliation.split(', ');
+      let badges = [];
       for (let affiliation of affiliations) {
-        affiliation = `<span class="badge badge-${charadex.tools.scrub(affiliation)}">${affiliation}</span>`;
+        badges.push(`<span class="badge badge-${charadex.tools.scrub(affiliation)}">${affiliation}</span>`);
       }
-      entry.affiliationbadge = affiliations.join();
+      entry.affiliationbadge = badges.join();
     }
 
     // Convert markdown to HTML, if we need to
@@ -132,10 +133,11 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     for (let entry of charadexData) {
       if (entry.affiliation) {
         let affiliations = entry.affiliation.split(', ');
+        let stamps = [];
         for (let affiliation of affiliations) {
-          affiliation = `<span class="stamp-${charadex.tools.scrub(entry.affiliation)}"></span>`;
+          stamps.push(`<span class="stamp-${charadex.tools.scrub(affiliation)}"></span>`);
         }
-        entry.affiliationstamp = affiliations.join();
+        entry.affiliationstamp = stamps.join();
       }
     }
 
