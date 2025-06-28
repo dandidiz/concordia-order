@@ -44,7 +44,7 @@ charadex.sheet = {
     statuses: ['Active', 'Out of Date', 'Retired', 'Dead', 'WIP'],
     magic: ['Blood', 'Bone', 'Flesh'],
     inheritance: ['Earth', 'Heaven', 'None'],
-    affiliation: ['Concordia Order', 'The Lost Guard', 'Salus Animarum', 'Gloriola Foundation', 'L’Énochet Université'],
+    affiliation: ['All', 'Concordia Order', 'The Lost Guard', 'Salus Animarum', 'Gloriola Foundation', 'L’Énochet Université'],
     itemTypes: ['All', 'Currency', 'Voucher', 'Keepsakes', 'Gatcha', 'Misc'],
 
   }
@@ -131,7 +131,7 @@ charadex.page.prompts = {
   filters: {
     toggle: false,
     parameters: {
-      'TBA': [],
+      'Affiliation': charadex.sheet.options.affiliation,
     }
   },
 

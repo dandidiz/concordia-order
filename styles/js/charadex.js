@@ -39,7 +39,10 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
   for (let entry of charadexData) {
     charadex.tools.addProfileLinks(entry, pageUrl, config.profileProperty); // Go ahead and add profile keys just in case
     if (folders) folders(entry, config.fauxFolder.folderProperty); // If folders, add folder info
-    if (entry.class) entry.classbadge = `<span class="badge badge-${charadex.tools.scrub(entry.class)}">${entry.class}</span>`; // Adds a class badge
+    if (entry.affiliation) {
+      entry.affiliationstamp = `<div class="stamp-${charadex.tools.scrub(entry.affiliation)}"></div>`; // Adds a stamp
+      entry.affiliationbadge = `<span class="badge badge-${charadex.tools.scrub(entry.affiliation)}">${entry.class}</span>`; // Adds an affiliation badge
+    }
 
     // Convert markdown to HTML, if we need to
     if (config.markdownColumns) {
