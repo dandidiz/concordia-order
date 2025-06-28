@@ -661,8 +661,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.title {
+h6{
   font-family: var(--cd-navbar-font-family) !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -693,6 +692,11 @@ h4 {
   font-size: 1.05rem;
 }
 
+.title {
+  font-family: var(--cd-navbar-font-family) !important;
+  font-weight: bold;
+  color: var(--cd-faded-text-color);
+}
 .subtitle {
   font-family: var(--cd-navbar-font-family) !important;
   font-weight: bold;
