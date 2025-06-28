@@ -24,7 +24,7 @@ charadex.tools = {
     if (split.length == 1) return str.toLowerCase().replace(/[^a-z0-9]/g, "");
 
     for (let entry of split) {
-      entry.toLowerCase().replace(/[^a-z0-9]/g, "");
+      entry = entry.toLowerCase().replace(/[^a-z0-9]/g, "");
     }
     return split;
   },
