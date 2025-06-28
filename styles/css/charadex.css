@@ -1021,8 +1021,8 @@ p:last-child {
 /* Affiliation
 /* ============================================================= */
 
-.stamp-all, .stamp-order, .stamp-lost,
-.stamp-parlaiment, .stamp-foundation, .stamp-university {
+.stamp-all, .stamp-concordiaorder, .stamp-thelostguard,
+.stamp-salusanimarum, .stamp-gloriolafoundation, .stamp-lnochetuniversit {
   position: absolute;
   background-color: transparent;
   left: 0;
@@ -1034,19 +1034,19 @@ p:last-child {
 .stamp-all {
   background-image: url('/concordia-order/assets/stamp-all.png');
 }
-.stamp-order {
+.stamp-concordiaorder {
   background-image: url('/concordia-order/assets/stamp-order.png');
 }
-.stamp-lost {
+.stamp-thelostguard {
   background-image: url('/concordia-order/assets/stamp-all.png');
 }
-.stamp-parlaiment {
+.stamp-salusanimarum {
   background-image: url('/concordia-order/assets/stamp-parlaiment.png');
 }
-.stamp-foundation {
+.stamp-gloriolafoundation {
   background-image: url('/concordia-order/assets/stamp-all.png');
 }
-.stamp-university {
+.stamp-lnochetuniversit {
   background-image: url('/concordia-order/assets/stamp-all.png');
 }
 
@@ -1058,19 +1058,19 @@ p:last-child {
   background-color: var(--cd-faded-background-color);
   color: var(--cd-faded-text-color);
 }
-.badge-lost {
+.badge-thelostguard {
   background-color: var(--cd-faded-background-color);
   color: var(--cd-faded-text-color);
 }
-.badge-parlaiment {
+.badge-salusanimarum {
   background-color: var(--cd-faded-background-color);
   color: var(--cd-faded-text-color);
 }
-.badge-foundation {
+.badge-gloriolafoundation {
   background-color: var(--cd-faded-background-color);
   color: var(--cd-faded-text-color);
 }
-.badge-university {
+.badge-lnochetuniversit {
   background-color: var(--cd-faded-background-color);
   color: var(--cd-faded-text-color);
 }
