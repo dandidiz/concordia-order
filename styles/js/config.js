@@ -129,7 +129,7 @@ charadex.page.prompts = {
   },
 
   filters: {
-    toggle: false,
+    toggle: true,
     parameters: {
       'Affiliation': charadex.sheet.options.affiliation,
     }
