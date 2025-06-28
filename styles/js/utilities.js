@@ -411,7 +411,9 @@ charadex.importSheet = async (sheetPage, sheetId = charadex.sheet.id) => {
   };
 
   // Filter out everything that says hide
-  let publicData = scrubbedData.filter(i => !i['hide']);
+  // let publicData = scrubbedData.filter(i => !i['hide']);
+  // Filter out anything that does not say show
+  let publicData = scrubbedData.filter(i => i['show']);
 
   // Return Data
   return publicData;
