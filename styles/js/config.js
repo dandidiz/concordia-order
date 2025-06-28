@@ -384,7 +384,7 @@ charadex.page.inventory = {
       sortProperty: 'sort',
       order: 'asc',
       parametersKey: 'type', 
-      parameters: charadex.sheet.options.itemTypes
+      parameters: [charadex.sheet.options.itemTypes]
     },
 
     search: {
@@ -394,7 +394,7 @@ charadex.page.inventory = {
     },
 
     filters: {
-      toggle: true,
+      toggle: false,
       parameters: {
         'Type': charadex.sheet.options.itemTypes,
       }
