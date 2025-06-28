@@ -36,7 +36,13 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
   for (let entry of charadexData) {
     charadex.tools.addProfileLinks(entry, pageUrl, config.profileProperty); // Go ahead and add profile keys just in case
     if (folders) folders(entry, config.fauxFolder.folderProperty); // If folders, add folder info
-    if (entry.affiliation) entry.affiliationbadge = `<span class="badge badge-${charadex.tools.scrub(entry.affiliation)}">${entry.affiliation}</span>`; // Adds an affiliation badge
+    if (entry.affiliation) {
+      let affiliations = entry.affiliation.split(', ');
+      for (let affiliation of affiliations) {
+        affiliation = `<span class="badge badge-${charadex.tools.scrub(affiliation)}">${affiliation}</span>`;
+      }
+      entry.affiliationbadge = affiliations.join();
+    }
 
     // Convert markdown to HTML, if we need to
     if (config.markdownColumns) {
@@ -124,7 +130,13 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
 
     // Add gallery information
     for (let entry of charadexData) {
-      if (entry.affiliation) entry.affiliationstamp = `<span class="stamp-${charadex.tools.scrub(entry.affiliation)}"></span>`; // Adds a stamp
+      if (entry.affiliation) {
+        let affiliations = entry.affiliation.split(', ');
+        for (let affiliation of affiliations) {
+          affiliation = `<span class="stamp-${charadex.tools.scrub(entry.affiliation)}"></span>`;
+        }
+        entry.affiliationstamp = affiliations.join();
+      }
     }
 
     // Add Pagination
