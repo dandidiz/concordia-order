@@ -42,7 +42,7 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
       for (let affiliation of affiliations) {
         badges.push(`<span class="badge badge-${charadex.tools.scrub(affiliation)}">${affiliation}</span>`);
       }
-      entry.affiliationbadge = badges.join();
+      entry.affiliationbadge = badges.join('');
     }
 
     // Convert markdown to HTML, if we need to
@@ -137,7 +137,7 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
         for (let affiliation of affiliations) {
           stamps.push(`<span class="stamp-${charadex.tools.scrub(affiliation)}"></span>`);
         }
-        entry.affiliationstamp = stamps.join();
+        entry.affiliationstamp = stamps.join('');
       }
     }
 
