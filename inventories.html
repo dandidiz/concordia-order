@@ -102,7 +102,7 @@
         <div style="display:none;" id="player-search-container">
           <div class="row mb-2">
             <!-- Search Filter -->
-            <div class="col-md-4 col-6 p-1" style="display: none;">
+            <div class="col-md-4 col-6" style="display: none;">
               <select id="player-search-filter" class="form-control form-select"
                 aria-label="Select search parameter."></select>
             </div>
@@ -146,11 +146,12 @@
         <!-- -------------------------------------------------------------- -->
         <div class="card-body p-md-3 p-0">
           <!-- headers -->
-          <div class="row no-gutters m-n2">
+          <div class="row no-gutters m-n2 title">
             <div class="col">Name</div>
             <div class="col-auto">Characters</div>
             <div class="col-auto">Cooldown</div>
           </div>
+          <hr>
           <!-- entries -->
           <div class="player-list list softload"></div>
           <p class="text-center"><i class="text-primary fa-solid fa-hurricane fa-spin fa-spin-reverse loading"></i></p>
@@ -185,14 +186,14 @@
     <!-- ----------------------------------------------------------------- -->
     <!-- Gallery Items - Player Thumb                                      -->
     <!-- ----------------------------------------------------------------- -->
-    <div class="row card no-gutters softload m-n2 p-3" id="player-gallery-item">
-      <div class="col p-2">
+    <div class="card d-flex flex-row softload p-3" id="player-gallery-item">
+      <div class="flex-grow-1">
         <a class="stretched-link profilelink" href="">
           <h4 class="m-0 profileid"></h4>
         </a>
       </div>
-      <div class="col-auto p-2 charactercount"></div>
-      <div class="col-auto p-2 cooldown"></div>
+      <div class="p-2 charactercount"></div>
+      <div class="p-2 cooldown"></div>
     </div> <!-- End of Player Thumb -->
     <!-- ----------------------------------------------------------------- -->
     <!-- Gallery Profile - Player Card                                     -->

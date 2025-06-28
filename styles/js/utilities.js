@@ -310,6 +310,7 @@ charadex.manageData = {
           }
         }
       }
+      primaryEntry[scrub(secondaryPageName) + "count"] = primaryEntry[scrub(secondaryPageName)].length;
     }
 
   },
