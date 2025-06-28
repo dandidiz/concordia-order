@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       console.log("LIST DATA:", listData); 
       if (listData.type == 'profile') {
+        $('#gallery-header').hide();
 
         let profile = listData.profileArray[0];
         let fixedData = await charadex.manageData.inventoryFix(profile);
