@@ -21,7 +21,7 @@ charadex.tools = {
 
     // multiple selections allowed
     let split = str.split(', ');
-    if (split.length() == 1) return str.toLowerCase().replace(/[^a-z0-9]/g, "");
+    if (split.length == 1) return str.toLowerCase().replace(/[^a-z0-9]/g, "");
 
     for (let entry of split) {
       entry.toLowerCase().replace(/[^a-z0-9]/g, "");
