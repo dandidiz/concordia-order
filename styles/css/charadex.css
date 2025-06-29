@@ -801,6 +801,10 @@ img {
   object-fit: contain;
 }
 
+figure {
+  max-height: 400px;
+  text-align: center;
+}
 /* Fix any border radiuses that were messed from before */
 .rounded {
   border-radius: var(--cd-border-radius) !important;
