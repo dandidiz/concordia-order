@@ -31,7 +31,7 @@ body {
   --cd-faded-background-color: var(--cd-content-background-color);
 
   /* Background Extras */
-  --cd-body-background-image: url("/concordia-order/assets/emblem/concordiaorder.png");
+  --cd-body-background-image: url("/concordia-order/assets/emblems/concordiaorder.png");
 
   /* ============================================================= */
   /* Text
@@ -1059,22 +1059,22 @@ p:last-child {
   bottom: -50px;
 }
 .stamp-all {
-  background-image: url('/concordia-order/assets/stamp/all.png');
+  background-image: url('/concordia-order/assets/stamps/all.png');
 }
 .stamp-concordiaorder {
-  background-image: url('/concordia-order/assets/stamp/concordiaorder.png');
+  background-image: url('/concordia-order/assets/stamps/concordiaorder.png');
 }
 .stamp-thelostguard {
-  background-image: url('/concordia-order/assets/stamp/all.png');
+  background-image: url('/concordia-order/assets/stamps/all.png');
 }
 .stamp-salusanimarum {
-  background-image: url('/concordia-order/assets/stamp/salusanimarum.png');
+  background-image: url('/concordia-order/assets/stamps/salusanimarum.png');
 }
 .stamp-gloriolafoundation {
-  background-image: url('/concordia-order/assets/stamp/all.png');
+  background-image: url('/concordia-order/assets/stamps/all.png');
 }
 .stamp-lnochetuniversit {
-  background-image: url('/concordia-order/assets/stamp/all.png');
+  background-image: url('/concordia-order/assets/stamps/all.png');
 }
 
 .badge-all {
