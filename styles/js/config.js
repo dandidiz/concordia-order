@@ -69,7 +69,7 @@ charadex.page.items = {
 
   sort: {
     toggle: true,
-    key: 'sort',
+    sortProperty: 'sort',
     order: 'asc',
     parameters: []
   },
@@ -117,7 +117,7 @@ charadex.page.prompts = {
 
   sort: {
     toggle: true,
-    key: 'enddate',
+    sortProperty: 'enddate',
     order: 'asc',
     parameters: []
   },
@@ -165,7 +165,7 @@ charadex.page.timeline = {
 
   sort: {
     toggle: false,
-    key: 'id',
+    sortProperty: 'id',
     order: 'asc',
     parameters: []
   },
@@ -213,7 +213,7 @@ charadex.page.masterlist = {
 
   sort: {
     toggle: true,
-    key: 'name',
+    sortProperty: 'name',
     order: 'desc',
     parameters: []
   },
@@ -262,7 +262,7 @@ charadex.page.masterlist = {
 
       sort: {
         toggle: true,
-        key: 'timestamp',
+        sortProperty: 'timestamp',
         order: 'desc',
         parameters: []
       },
@@ -296,7 +296,6 @@ charadex.page.inventory = {
   // Dex Options
   sort: {
     toggle: true,
-    sortProperty: 'username',
     sortProperty: 'username',
     order: 'asc',
     parameters: []
@@ -423,7 +422,6 @@ charadex.page.index = {
 
     sort: {
       toggle: true,
-      sortProperty: 'dateadded',
       sortProperty: 'dateadded',
       order: 'desc',
       parameters: []
