@@ -296,7 +296,7 @@ charadex.page.inventory = {
   // Dex Options
   sort: {
     toggle: true,
-    key: 'username',
+    sortProperty: 'username',
     order: 'asc',
     parameters: []
   },
@@ -422,7 +422,7 @@ charadex.page.index = {
 
     sort: {
       toggle: true,
-      key: 'dateadded',
+      sortProperty: 'dateadded',
       order: 'desc',
       parameters: []
     },
