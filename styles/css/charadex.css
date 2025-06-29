@@ -632,6 +632,10 @@ a.badge.badge-primary:active,
 /* Scrollbar
 /* ============================================================= */
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (min-width: 992px) {
   body::-webkit-scrollbar-track {
     background-color: var(--cd-faded-background-color);
