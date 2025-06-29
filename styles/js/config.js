@@ -214,7 +214,7 @@ charadex.page.masterlist = {
   sort: {
     toggle: true,
     sortProperty: 'name',
-    order: 'desc',
+    order: 'asc',
     parameters: []
   },
 
