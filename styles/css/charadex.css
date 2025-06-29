@@ -1,15 +1,11 @@
 body {
   /* ============================================================= */
   /*
-  /* Main Styles
+  /* Main Variables
   /*
   /* ============================================================= */
   /* 
   /* This only styles the elements shown on the page.
-  /* 
-  /* Some CSS knowledge is going to be needed to style these
-  /* elements further. If you're just looking for a swatch and
-  /* font swap, then you'll only need to edit the variables below.
   /*
   /* ============================================================= */
   /* Primary Color
@@ -65,24 +61,23 @@ body {
   --cd-header-font-family: "Texturina", serif;
 
   /* ============================================================= */
-  /* Rarities
+  /* Affiliations
   ================================================================ */
 
-  --cd-rarity-common-bg: #d58353;
-  --cd-rarity-common-txt: #fcf4ed;
+  --cd-rarity-concordiaorder-bg: #d58353;
+  --cd-rarity-concordiaorder-txt: #fcf4ed;
 
-  --cd-rarity-uncommon-bg: #e0bb68;
-  --cd-rarity-uncommon-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-thelostguard-bg: #e0bb68;
+  --cd-rarity-thelostguard-txt: var(--cd-rarity-common-txt);
 
-  --cd-rarity-rare-bg: #97b34e;
-  --cd-rarity-rare-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-salusanimarum-bg: #97b34e;
+  --cd-rarity-salusanimarum-txt: var(--cd-rarity-common-txt);
 
-  --cd-rarity-veryrare-bg: #548b71;
-  --cd-rarity-veryrare-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-gloriolafoundation-bg: #548b71;
+  --cd-rarity-gloriolafoundation-txt: var(--cd-rarity-common-txt);
 
-  /* Legendary & Mythic */
-  --cd-rarity-legendary-bg: #5a473e;
-  --cd-rarity-legendary-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-lnochetuniversit-bg: #5a473e;
+  --cd-rarity-lnochetuniversit-txt: var(--cd-rarity-common-txt);
 
   /* ============================================================= */
   /*
@@ -207,6 +202,11 @@ body {
 }
 
 /* ============================================================= */
+/*
+/* CSS Begins Here
+/* 
+/*
+/* ============================================================= */
 /* General Page Styles
 /* ============================================================= */
 
@@ -226,141 +226,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/* ============================================================= */
-/* Plain Links
-/* ============================================================= */
-
-a,
-a:visited {
-  color: var(--cd-link-text-color);
-  transition: color 0.2s ease-in-out;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: var(--cd-link-text-color-hover);
-  text-decoration: none;
-}
-
-/* ============================================================= */
-/* Navbar
-/* ============================================================= */
-.navbar {
-  background-color: var(--cd-navbar-background-color) !important;
-  font-family: var(--cd-navbar-font-family) !important;
-  text-transform: uppercase;
-  z-index: 2000;
-}
-
-.navbar .navbar-brand {
-  color: var(--cd-navbar-brand-color) !important;
-  font-size: 5vw;
-  font-weight: bold;
-}
-@media (min-width: 768px) {
-  .navbar .navbar-brand {
-    font-size: calc(1.4rem + 1.5vw);
-  }
-}
-
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus {
-  color: var(--cd-navbar-brand-color-hover) !important;
-}
-
-.navbar-brand::before {
-  background-color: currentColor;
-  -webkit-mask: url("/concordia-order/assets/parentheses-left.svg") no-repeat
-    50% 50%;
-  mask: url("/concordia-order/assets/parentheses-left.svg") no-repeat 50% 50%;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  display: inline-block;
-  vertical-align: -0.1em;
-  content: "";
-  height: 1em;
-  width: 0.6em;
-  margin-left: 0.1em;
-}
-.navbar-brand::after {
-  background-color: currentColor;
-  -webkit-mask: url("/concordia-order/assets/parentheses-right.svg") no-repeat
-    50% 50%;
-  mask: url("/concordia-order/assets/parentheses-right.svg") no-repeat 50% 50%;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  display: inline-block;
-  vertical-align: -0.1em;
-  content: "";
-  height: 1em;
-  width: 0.6em;
-  margin-right: 0.1em;
-}
-
-.navbar .navbar-nav .nav-link {
-  color: var(--cd-navbar-link-color) !important;
-  font-size: 14pt;
-}
-
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link:focus {
-  color: var(--cd-navbar-link-color-hover) !important;
-}
-
-.navbar .navbar-toggler {
-  color: var(--cd-navbar-link-color) !important;
-  border: none !important;
-}
-
-.navbar .nav-link {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .nav-link-icon {
-  font-size: 0.5rem;
-  margin-left: 0.25rem;
-}
-
-.navbar .nav-link.disabled {
-  color: var(--cd-faded-text-color) !important;
-}
-
-/* ============================================================= */
-/* Dropdowns
-/* This is for navbar dropdowns only
-/* ============================================================= */
-
-.navbar .dropdown-menu {
-  color: var(--cd-navbar-dropdown-link-color) !important;
-  background-color: var(--cd-navbar-dropdown-background-color) !important;
-  border-radius: var(--cd-navbar-dropdown-border-radius) !important;
-  border: none;
-  margin-top: 0;
-}
-
-.navbar .dropdown-divider {
-  border-top: 1px solid var(--cd-navbar-dropdown-divider) !important;
-}
-
-.navbar .dropdown-item,
-.navbar .dropdown-item-text {
-  color: var(--cd-navbar-dropdown-link-color) !important;
-  transition: color 0.2s ease, background 0.2s ease;
-}
-
-.navbar .dropdown-item:hover,
-.dropdown-item:focus,
-.dropdown-item:active {
-  color: var(--cd-navbar-dropdown-link-color-hover) !important;
-  background-color: var(--cd-navbar-dropdown-background-hover) !important;
-}
-
-.navbar .dropdown-header {
-  color: var(--cd-navbar-dropdown-link-color-hover) !important;
-}
-
+/* Header and Footer */
 #header::after,
 #footer::before {
   display: none;
@@ -391,25 +257,217 @@ a:active {
     margin-bottom: -45px;
   }
 }
-
-/* ============================================================= */
-/* Footer
-/* ============================================================= */
-
 .footer {
   background-color: var(--cd-footer-background-color) !important;
   color: var(--cd-footer-text-color) !important;
 }
-
 .footer a,
 .footer a:visited {
   color: var(--cd-footer-link-color) !important;
 }
-
 .footer a:hover,
 .footer a:focus,
 .footer a:active {
   color: var(--cd-footer-link-color-hover) !important;
+}
+
+/* Scrollbar */
+html {
+    scroll-behavior: smooth;
+}
+@media (min-width: 992px) {
+  body::-webkit-scrollbar-track {
+    background-color: var(--cd-faded-background-color);
+    border-width: 0px !important;
+  }
+
+  body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--cd-primary-color);
+  }
+
+  body::-webkit-scrollbar-corner,
+  body::-webkit-resizer {
+    background-color: var(--cd-border-color);
+  }
+}
+
+/* ============================================================= */
+/* Containers
+/* ============================================================= */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-container {
+  padding: 1rem;
+  -ms-flex: 1 1 auto !important;
+  flex: 1 1 auto !important;
+}
+#main-card {
+  overflow: scroll;
+}
+
+@media (min-width: 768px) {
+  #main-container {
+    padding: 0rem 0.5rem;
+    height: 62vh;
+  }
+  #main-card {
+    padding: 1rem 7rem;
+  }
+}
+/* Small container for more compact view */
+.container {
+  max-width: 950px !important;
+}
+
+/* Fix any border radiuses that were messed from before */
+.rounded {
+  border-radius: var(--cd-border-radius) !important;
+}
+
+.rounded-circle {
+  border-radius: 100%;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+/* ============================================================= */
+/* Images
+/* ============================================================= */
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.img-thumbnail {
+  border-radius: var(--cd-border-radius) !important;
+  border-color: var(--cd-border-color) !important;
+}
+
+.img-fluid {
+  object-fit: contain;
+  max-height: 400px;
+}
+
+figure {
+  max-width: 800px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* ============================================================= */
+/* Navbar
+/* ============================================================= */
+.navbar {
+  background-color: var(--cd-navbar-background-color) !important;
+  font-family: var(--cd-navbar-font-family) !important;
+  text-transform: uppercase;
+  z-index: 2000;
+}
+
+/* Navbar Brand */
+.navbar .navbar-brand {
+  color: var(--cd-navbar-brand-color) !important;
+  font-size: 5vw;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-brand {
+    font-size: calc(1.4rem + 1.5vw);
+  }
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: var(--cd-navbar-brand-color-hover) !important;
+}
+.navbar-brand::before {
+  background-color: currentColor;
+  -webkit-mask: url("/concordia-order/assets/parentheses-left.svg") no-repeat
+    50% 50%;
+  mask: url("/concordia-order/assets/parentheses-left.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: inline-block;
+  vertical-align: -0.1em;
+  content: "";
+  height: 1em;
+  width: 0.6em;
+  margin-left: 0.1em;
+}
+.navbar-brand::after {
+  background-color: currentColor;
+  -webkit-mask: url("/concordia-order/assets/parentheses-right.svg") no-repeat
+    50% 50%;
+  mask: url("/concordia-order/assets/parentheses-right.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: inline-block;
+  vertical-align: -0.1em;
+  content: "";
+  height: 1em;
+  width: 0.6em;
+  margin-right: 0.1em;
+}
+/* Navbar Links */
+.navbar .navbar-nav .nav-link {
+  color: var(--cd-navbar-link-color) !important;
+  font-size: 14pt;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--cd-navbar-link-color-hover) !important;
+}
+.navbar .navbar-toggler {
+  color: var(--cd-navbar-link-color) !important;
+  border: none !important;
+}
+.navbar .nav-link {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-link-icon {
+  font-size: 0.5rem;
+  margin-left: 0.25rem;
+}
+.navbar .nav-link.disabled {
+  color: var(--cd-faded-text-color) !important;
+}
+
+/* Navbar Dropdowns */
+.navbar .dropdown-menu {
+  color: var(--cd-navbar-dropdown-link-color) !important;
+  background-color: var(--cd-navbar-dropdown-background-color) !important;
+  border-radius: var(--cd-navbar-dropdown-border-radius) !important;
+  border: none;
+  margin-top: 0;
+}
+.navbar .dropdown-divider {
+  border-top: 1px solid var(--cd-navbar-dropdown-divider) !important;
+}
+.navbar .dropdown-item,
+.navbar .dropdown-item-text {
+  color: var(--cd-navbar-dropdown-link-color) !important;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.navbar .dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+  color: var(--cd-navbar-dropdown-link-color-hover) !important;
+  background-color: var(--cd-navbar-dropdown-background-hover) !important;
+}
+.navbar .dropdown-header {
+  color: var(--cd-navbar-dropdown-link-color-hover) !important;
 }
 
 /* ============================================================= */
@@ -421,14 +479,12 @@ a:active {
   border-width: var(--cd-pagination-border-width) !important;
   border-style: var(--cd-pagination-border-style) !important;
 }
-
 .page-link,
 .page-item.disabled .page-link {
   color: var(--cd-pagination-text-color) !important;
   background-color: var(--cd-pagination-background-color) !important;
   border-color: var(--cd-pagination-border-color) !important;
 }
-
 .page-item.active .page-link,
 .page-link:hover,
 .page-link:focus,
@@ -449,23 +505,20 @@ a:active {
   border-radius: 0 !important;
   border-left: 0 !important;
 }
-
 .nav .pagination .page-item:last-child .page-link {
   border-radius: 0 !important;
 }
-
 .nav .page-item:first-child .page-link {
   border-radius: var(--cd-pagination-border-radius) 0 0
     var(--cd-pagination-border-radius) !important;
 }
-
 .nav .page-item:last-child .page-link {
   border-radius: 0 var(--cd-pagination-border-radius)
     var(--cd-pagination-border-radius) 0 !important;
 }
 
 /* ============================================================= */
-/* Multi Select Fixes
+/* Multi Select Fixes - mostly Bootstrap Select
 /* ============================================================= */
 
 label {
@@ -474,7 +527,6 @@ label {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .bootstrap-select > .dropdown-toggle,
 .bootstrap-select > .dropdown-toggle:active,
 .bootstrap-select > .dropdown-toggle:focus,
@@ -484,17 +536,14 @@ label {
   outline: none !important;
   color: var(--cd-body-text-color) !important;
 }
-
 .dropdown-menu {
   border-radius: var(--cd-border-radius) !important;
   background-color: var(--cd-faded-background-color) !important;
   color: var(--cd-body-text-color) !important;
 }
-
 .dropdown-item {
   color: var(--cd-body-text-color) !important;
 }
-
 .dropdown-item:hover,
 .dropdown-item:focus,
 .dropdown-item:active,
@@ -508,7 +557,6 @@ option:checked {
   color: var(--cd-primary-text-color);
   padding: .2rem .5rem;
 }
-
 .bs-actionsbox .btn-group {
   display: flex !important;
 }
@@ -533,6 +581,25 @@ option:checked {
   right: 1rem;
   top: .5rem;
 }
+
+/* ============================================================= */
+/* Input
+/* ============================================================= */
+
+.form-control {
+  background-color: var(--cd-input-background-color) !important;
+  color: var(--cd-input-text-color) !important;
+  border-width: var(--cd-input-border-width) !important;
+  border-style: var(--cd-input-border-style) !important;
+  border-color: var(--cd-input-border-color) !important;
+  border-radius: var(--cd-input-border-radius) !important;
+}
+.form-control:focus,
+.form-control:active {
+  background-color: var(--cd-input-background-color) !important;
+  border-color: var(--cd-input-border-color-hover) !important;
+}
+
 
 /* ============================================================= */
 /* Card
@@ -568,114 +635,56 @@ option:checked {
     calc(var(--cd-border-radius) - 1px) !important;
 }
 
+
 /* ============================================================= */
-/* Text
+/* Various Text Styling
 /* ============================================================= */
+
+/* Links */
+a,
+a:visited {
+  color: var(--cd-link-text-color);
+  transition: color 0.2s ease-in-out;
+}
+a:hover,
+a:focus,
+a:active {
+  color: var(--cd-link-text-color-hover);
+  text-decoration: none;
+}
+
+/* Text */
+.text-primary {
+  color: var(--cd-primary-color) !important;
+}
+
 .text-justify {
   text-align: justify;
 }
 
-/* ============================================================= */
-/* Buttons & Badges
-/* ============================================================= */
-
-.btn,
-.nav-pills .nav-link {
-  border-style: var(--cd-button-border-style) !important;
-  border-width: var(--cd-button-border-width) !important;
-  border-radius: var(--cd-button-border-radius) !important;
+.bg-faded {
+  background-color: var(--cd-faded-background-color) !important;
 }
 
-.btn.btn-primary,
-.badge.badge-primary,
-.nav-pills .nav-link {
-  color: var(--cd-button-text-color) !important;
-  background-color: var(--cd-button-background-color) !important;
-  border-color: var(--cd-button-border-color) !important;
-}
-
-.btn.btn-primary:hover,
-.btn.btn-primary:focus,
-.btn.btn-primary:active,
-a.badge.badge-primary:hover,
-a.badge.badge-primary:focus,
-a.badge.badge-primary:active,
-.nav-pills .nav-link.active:hover,
-.nav-pills .nav-link.active:focus,
-.nav-pills .nav-link.active:active {
-  color: var(--cd-button-text-color-hover) !important;
-  border-color: var(--cd-button-border-color-hover) !important;
-  background-color: var(--cd-button-background-color-hover) !important;
-  box-shadow: none !important;
-}
-
-/* ============================================================= */
-/* Input
-/* ============================================================= */
-
-.form-control {
+.bg-reset {
   background-color: var(--cd-input-background-color) !important;
-  color: var(--cd-input-text-color) !important;
-  border-width: var(--cd-input-border-width) !important;
-  border-style: var(--cd-input-border-style) !important;
-  border-color: var(--cd-input-border-color) !important;
-  border-radius: var(--cd-input-border-radius) !important;
 }
 
-.form-control:focus,
-.form-control:active {
-  background-color: var(--cd-input-background-color) !important;
-  border-color: var(--cd-input-border-color-hover) !important;
+.text-muted {
+  color: var(--cd-faded-text-color) !important;
 }
 
-/* ============================================================= */
-/* Scrollbar
-/* ============================================================= */
-
-html {
-    scroll-behavior: smooth;
+.text-loud {
+  color: var(--cd-primary-color) !important;
 }
 
-@media (min-width: 992px) {
-  body::-webkit-scrollbar-track {
-    background-color: var(--cd-faded-background-color);
-    border-width: 0px !important;
-  }
-
-  body::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--cd-primary-color);
-  }
-
-  body::-webkit-scrollbar-corner,
-  body::-webkit-resizer {
-    background-color: var(--cd-border-color);
-  }
-}
-
-/* ============================================================= */
-/* Headers
-/* ============================================================= */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--cd-navbar-font-family) !important;
   font-weight: bold;
   text-transform: uppercase;
 }
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 h1 {
@@ -709,6 +718,34 @@ h4 {
   font-size: 1.4rem;
   text-align: center;
   margin-bottom: 0.5rem;
+}
+
+/* Bullets */
+ul {
+  list-style-type: "✦";
+}
+
+ul li {
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+}
+
+ul li::marker {
+  color: var(--cd-secondary-color) !important;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+ol li {
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+}
+
+ol li::marker {
+  color: var(--cd-primary-color);
+  font-family: var(--cd-header-font-family);
 }
 
 /* ============================================================= */
@@ -769,88 +806,37 @@ hr {
 }
 
 /* ============================================================= */
-/* Misc
+/* Buttons & Badges
 /* ============================================================= */
 
-.text-primary {
-  color: var(--cd-primary-color) !important;
+.btn,
+.nav-pills .nav-link {
+  border-style: var(--cd-button-border-style) !important;
+  border-width: var(--cd-button-border-width) !important;
+  border-radius: var(--cd-button-border-radius) !important;
 }
 
-.bg-faded {
-  background-color: var(--cd-faded-background-color) !important;
+.btn.btn-primary,
+.badge.badge-primary,
+.nav-pills .nav-link {
+  color: var(--cd-button-text-color) !important;
+  background-color: var(--cd-button-background-color) !important;
+  border-color: var(--cd-button-border-color) !important;
 }
 
-.bg-reset {
-  background-color: var(--cd-input-background-color) !important;
-}
-
-.text-muted {
-  color: var(--cd-faded-text-color) !important;
-}
-
-.text-loud {
-  color: var(--cd-primary-color) !important;
-}
-
-img {
-  image-rendering: -webkit-optimize-contrast;
-}
-
-.img-thumbnail {
-  border-radius: var(--cd-border-radius) !important;
-  border-color: var(--cd-border-color) !important;
-}
-
-.img-fluid {
-  object-fit: contain;
-  max-height: 400px;
-}
-
-figure {
-  max-width: 800px;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-/* Fix any border radiuses that were messed from before */
-.rounded {
-  border-radius: var(--cd-border-radius) !important;
-}
-
-.rounded-circle {
-  border-radius: 100%;
-}
-
-.rounded-0 {
-  border-radius: 0 !important;
-}
-
-/* Custom bullet list style */
-ul {
-  list-style-type: "✦";
-}
-
-ul li {
-  margin-bottom: 0.5em;
-  padding-left: 0.5em;
-}
-
-ul li::marker {
-  color: var(--cd-secondary-color) !important;
-}
-
-ol {
-  list-style-type: upper-roman;
-}
-
-ol li {
-  margin-bottom: 0.5em;
-  padding-left: 0.5em;
-}
-
-ol li::marker {
-  color: var(--cd-primary-color);
-  font-family: var(--cd-header-font-family);
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active,
+a.badge.badge-primary:hover,
+a.badge.badge-primary:focus,
+a.badge.badge-primary:active,
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:active {
+  color: var(--cd-button-text-color-hover) !important;
+  border-color: var(--cd-button-border-color-hover) !important;
+  background-color: var(--cd-button-background-color-hover) !important;
+  box-shadow: none !important;
 }
 
 /* ============================================================= */
@@ -890,31 +876,6 @@ ol li::marker {
 /* Chee's Tweaks
 /* ============================================================= */
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-#main-container {
-  padding: 1rem;
-  -ms-flex: 1 1 auto !important;
-  flex: 1 1 auto !important;
-}
-#main-card {
-  overflow: scroll;
-}
-
-@media (min-width: 768px) {
-  #main-container {
-    padding: 0rem 0.5rem;
-    height: 62vh;
-  }
-  #main-card {
-    padding: 1rem 7rem;
-  }
-}
-
 /* Remove ugly box shadow */
 button:focus,
 .page-link:focus,
@@ -928,64 +889,97 @@ p:last-child {
   margin-bottom: 0 !important;
 }
 
-/* Small container for more compact view */
-.container {
-  max-width: 950px !important;
-}
-
 /* ============================================================= */
-/* Custom Classes
+/* Charadex
 /* ============================================================= */
 
 /* Prevents awkward load in stutter */
-#charadex-gallery .list .card-body {
+#charadex-gallery .list .card-body,
+#prompt-gallery .list .card-body,
+#player-gallery .list .card-body,
+#item-gallery .list .card-body {
   min-height: calc(200px + 2.5rem);
 }
 
-#charadex-gallery .list .card-body img {
+#charadex-gallery .list .card-body img,
+#prompt-gallery .list .card-body img,
+#player-gallery .list .card-body img,
+#item-gallery .list .card-body img {
   max-height: 200px;
 }
 
-#charadex-gallery .list .card {
+#charadex-gallery .list .card,
+#prompt-gallery .list .card,
+#player-gallery .list .card,
+#item-gallery .list .card {
   border: 0 !important;
 }
-#charadex-gallery .list .card-header {
+#charadex-gallery .list .card-header,
+#prompt-gallery .list .card-header,
+#player-gallery .list .card-header,
+#item-gallery .list .card-header {
   border: 0 !important;
   background-color: transparent !important;
   aspect-ratio: 504/79;
 }
-#charadex-gallery .list .card-header a {
+#charadex-gallery .list .card-header a,
+#prompt-gallery .list .card-header a,
+#player-gallery .list .card-header a,
+#item-gallery .list .card-header a {
   text-decoration: none;
 }
-#charadex-gallery .list .cd-gallery-card-header {
+#charadex-gallery .list .cd-gallery-card-header,
+#player-gallery .list .cd-gallery-card-header,
+#item-gallery .list .cd-gallery-card-header {
   position: absolute;
   background-color: transparent;
   border-style: solid;
   border-width: 16px;
-  -moz-border-image: url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
+  -moz-border-image:    url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
   -webkit-border-image: url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
-  -o-border-image: url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
-  border-image: url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-top.svg") 54 stretch stretch;
   aspect-ratio: 175/29;
   width: 100%;
 }
-#charadex-gallery .list .cd-gallery-card {
+#prompt-gallery .list .cd-gallery-card-header {
+  position: absolute;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 16px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-top-filled.svg") 54 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-top-filled.svg") 54 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-top-filled.svg") 54 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-top-filled.svg") 54 stretch stretch;
+  aspect-ratio: 175/29;
+  width: 100%;
+}
+#charadex-gallery .list .cd-gallery-card,
+#prompt-gallery .list .cd-gallery-card,
+#player-gallery .list .cd-gallery-card,
+#item-gallery .list .cd-gallery-card {
   background-color: transparent;
   min-height: calc(175px + 2.5rem);
   border-style: solid;
   border-width: 2px 16px 16px;
-  -moz-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
   -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
-  -o-border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
-  border-image: url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 10 48 55 stretch stretch;
   aspect-ratio: 174/187;
 }
 
-#gallery-card {
+#gallery-card,
+#prompt-card,
+#player-card,
+#item-card {
   overflow: scroll;
 }
 @media (min-width: 768px) {
-  #gallery-card {
+  #gallery-card,
+  #prompt-card,
+  #player-card,
+  #item-card {
     padding: .5rem 1rem;
   }
 }
@@ -1014,25 +1008,6 @@ p:last-child {
 /* Best for large areas like notes */
 .cd-text-pre {
   white-space: break-spaces;
-}
-
-/* For the hero image in the index */
-.cd-hero-title {
-  color: var(--cd-primary-color);
-  background-color: var(--cd-faded-background-color);
-  border-radius: var(--cd-border-radius);
-  font-family: var(--cd-header-font-family);
-  text-transform: uppercase;
-  display: flex;
-  font-weight: 800;
-  font-size: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .cd-hero-title {
-    letter-spacing: 2px;
-    font-size: 4rem;
-  }
 }
 
 /* ============================================================= */
