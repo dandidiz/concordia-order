@@ -799,12 +799,15 @@ img {
 
 .img-fluid {
   object-fit: contain;
+  max-height: 400px;
 }
 
 figure {
-  max-height: 400px;
+  max-width: 800px;
+  padding: 0 1rem;
   text-align: center;
 }
+
 /* Fix any border radiuses that were messed from before */
 .rounded {
   border-radius: var(--cd-border-radius) !important;
