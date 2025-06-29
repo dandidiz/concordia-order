@@ -213,7 +213,7 @@ charadex.page.masterlist = {
 
   sort: {
     toggle: true,
-    key: 'lastupdate',
+    key: 'name',
     order: 'desc',
     parameters: []
   },
@@ -419,6 +419,13 @@ charadex.page.index = {
     ... charadex.page.masterlist,
     dexSelector: 'charadex',
     amount: 4,
+
+    sort: {
+      toggle: true,
+      key: 'dateadded',
+      order: 'desc',
+      parameters: []
+    },
   }
 
 };
