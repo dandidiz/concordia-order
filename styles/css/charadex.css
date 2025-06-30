@@ -64,20 +64,20 @@ body {
   /* Affiliations
   ================================================================ */
 
-  --cd-rarity-concordiaorder-bg: #d58353;
-  --cd-rarity-concordiaorder-txt: #fcf4ed;
+  --cd-rarity-concordiaorder-bg: #EEF1F6;
+  --cd-rarity-concordiaorder-txt: #676E7F;
 
   --cd-rarity-thelostguard-bg: #e0bb68;
-  --cd-rarity-thelostguard-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-thelostguard-txt: #D1C2AD;
 
-  --cd-rarity-salusanimarum-bg: #97b34e;
-  --cd-rarity-salusanimarum-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-salusanimarum-bg: #DAD9D7;
+  --cd-rarity-salusanimarum-txt: #860019;
 
-  --cd-rarity-gloriolafoundation-bg: #548b71;
-  --cd-rarity-gloriolafoundation-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-gloriolafoundation-bg: #FEF9F0;
+  --cd-rarity-gloriolafoundation-txt: #4D7A80;
 
-  --cd-rarity-lnochetuniversit-bg: #5a473e;
-  --cd-rarity-lnochetuniversit-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-lnochetuniversit-bg: #915F60;
+  --cd-rarity-lnochetuniversit-txt: #FFF6E5;
 
   /* ============================================================= */
   /*
