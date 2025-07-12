@@ -962,10 +962,10 @@ p:last-child {
   aspect-ratio: 174/187;
 }
 /* Profile */
-#charadex-profile .card-body {
+#profile-card .card-body {
   overflow: scroll;
 }
-#charadex-profile .card-header {
+#profile-card .card-header {
   aspect-ratio: 437/30;
 }
 .cd-profile-card-header {
