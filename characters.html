@@ -209,6 +209,145 @@
         </div>
         <div class="card-body cd-profile-card-body d-flex flex-column flex-fill pt-2 px-0 pb-0">
 
+          <!-- Banner Info -->
+          <div class="text-center">
+            <a class="player playerlink"></a> ◆ <span class="status"></span> ◆ <span class="role"></span>
+          </div>
+
+          <div class="row no-gutters ">
+            <!-- Basics -->
+            <div class="col-md-6 col-12 order-md-0 order-1">
+              <!-- identity rows -->
+              <h2>Basics</h2>
+              
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Name
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="name"></span>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Alias
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="alias"></span>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Age
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="age"></span>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Gender
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="gender"></span>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Pronouns
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="pronouns"></span>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Sexuality
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="sexuality"></span>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Birthday
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="birthday"></span>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Height
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="height"></span>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-3 mb-1 text-uppercase text-truncate">
+                  Build
+                </div>
+                <div class="col-9 mb-1 text-center">
+                  <span class="build"></span>
+                </div>
+              </div>
+
+            </div> <!-- end of basic section -->
+
+            <!-- image carousel -->
+            <div class="col-md-6 col-12 mt-3 pt-3 order-md-1 order-0 justify-content-center">
+              <div class="d-flex flex-column h-100 w-100">
+                <div class="ml-4 mt-4" style="background-color: #ffffff; box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+                                        transform: rotate(4deg); height: 240px; width: 86%; position: absolute;"></div>
+                <div class="carousel slide carousel-fade mx-auto p-1 w-100" style="flex: 1 1 auto;" data-ride="false"
+                  data-pause="true" id="photos">
+                  <div class="carousel-inner h-100 w-100">
+                    <div class="carousel-item active p-2">
+                      <div class="mx-3 mt-2 mb-md-0 mb-2 p-md-3 p-2" style="background-color: #ffffff; box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+                                                    transform: rotate(-2deg); height: 250px;">
+                        <!--------------------------------
+    IMAGE ONE
+        the photos can be cycled with the button. if you use a
+        transparent image, change the background-color as you like.
+--------------------------------->
+                        <div style="background-image: url('https://via.placeholder.com/250x250');
+                                                        background-size: cover; background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        background-color: grey; height: 100%;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item p-2">
+                      <div class="mx-3 mb-md-0 mb-2 p-md-3 p-2" style="background-color: #ffffff; box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+                                                    transform: rotate(1deg); height: 250px;">
+                        <!--------------------------------
+    IMAGE TWO
+        the photos can be cycled with the button. if you use a
+        transparent image, change the background-color as you like.
+--------------------------------->
+                        <div style="background-image: url('https://via.placeholder.com/250x250');
+                                                        background-size: cover; background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        background-color: grey; height: 100%;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- carousel button -->
+                <div class="justify-content-center">
+                  <a class="btn btn-secondary mb-3 p-1 carousel-control text-center"
+                    style="width: 2rem; border-radius: 100%; color: white; background-color: black;" data-slide="next"
+                    aria-hidden="true" href="#photos">
+                    <span class="tooltipster" title="Image"><i class="fa-solid fa-arrows-rotate my-1"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <!-- Image -->
           <div class="cd-profile-image-container p-md-5 p-4 text-center">
             <img class="image img-fluid" src="">
