@@ -961,7 +961,7 @@ p:last-child {
 }
 /* Character Profile */
 #profile-card .card-header {
-  aspect-ratio: 437/30 !important;
+  aspect-ratio: 437/29 !important;
 }
 .cd-profile-card-header {
   position: absolute;
@@ -975,9 +975,6 @@ p:last-child {
   aspect-ratio: 435/30;
   width: 100%;
 }
-#profile-card .card-body {
-  overflow: scroll;
-}
 .cd-profile-card-body a {
   text-decoration: none;
 }
@@ -990,7 +987,14 @@ p:last-child {
   -o-border-image:      url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
   border-image:         url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
   aspect-ratio: 174/77;
+}
+#profile-card .card-body {
+  overflow: visible;
+}
+@media (min-width: 768px) {
+  #profile-card .card-body {
   overflow: scroll;
+  }
 }
 
 /* prompt gallery */
