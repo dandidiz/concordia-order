@@ -18,8 +18,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (listData.type == 'profile') {
         
         $('#gallery-card').addClass('cd-profile-card');
-        $('#gallery-card-header').addClass('cd-profile-card-header');
-        $('#gallery-card-body').addClass('cd-profile-card-body');
 
         let profile = listData.profileArray[0];
 

@@ -898,6 +898,12 @@ p:last-child {
 .z-1 {
   z-index: 1;
 }
+/* Makes profile card background invisible */
+.cd-profile-card {
+  border: 0 !important;
+  background-color: transparent !important;
+  overflow: none !important;
+}
 
 #charadex-gallery .list .card-body img,
 #prompt-gallery .list .card-body img,
@@ -909,14 +915,13 @@ p:last-child {
 #charadex-gallery .list .card,
 #prompt-gallery .list .card,
 #player-gallery .list .card,
-#item-gallery .list .card,
-.cd-profile-card {
+#item-gallery .list .card {
   border: 0 !important;
 }
 #charadex-gallery .list .card-header,
 #player-gallery .list .card-header,
-#item-gallery .list .card-header,
-.cd-profile-card-header {
+#item-gallery .list .card-header
+{
   border: 0 !important;
   background-color: transparent !important;
   aspect-ratio: 504/79;
