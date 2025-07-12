@@ -998,7 +998,7 @@ p:last-child {
   border: 0 !important;
   background-color: transparent !important;
 }
-#player-gallery .list .card-header {
+#prompt-gallery .list .card-header {
   border: 0 !important;
   background-color: transparent !important;
   aspect-ratio: 175/13;
@@ -1042,7 +1042,7 @@ p:last-child {
   border: 0 !important;
   background-color: transparent !important;
 }
-#item-gallery .list .card-header {
+#player-gallery .list .card-header {
   border: 0 !important;
   background-color: transparent !important;
   aspect-ratio: 504/79;
@@ -1081,6 +1081,11 @@ p:last-child {
 #item-gallery .list .card {
   border: 0 !important;
   background-color: transparent !important;
+}
+#item-gallery .list .card-header {
+  border: 0 !important;
+  background-color: transparent !important;
+  aspect-ratio: 504/79;
 }
 #item-gallery .list .card-header a {
   text-decoration: none;
