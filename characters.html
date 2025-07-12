@@ -201,120 +201,121 @@
     <!-- --------------------------------------------------------------- -->
     <div class="col-12 p-2" id="charadex-profile">
       <div class="card">
-
-        <!-- Header -->
-        <div class="card-header p-4 text-center">
-          <h3 class="mb-0 pe-2"><a class="profilelink profileid"></a></h3>
-          <div class="text-muted">(#<span class="id"></span>)</div>
+        <div class="card-header text-center d-flex p-0">
+          <div class="cd-gallery-card-header"></div>
+          <div class="m-auto">
+            <h3><a class="profilelink profileid"></a></h3>
+          </div>
         </div>
+        <div class="card-body cd-gallery-card d-flex flex-column flex-fill pt-2 px-0 pb-0">
 
-        <!-- Image -->
-        <div class="cd-profile-image-container p-md-5 p-4 text-center">
-          <img class="image img-fluid" src="">
-        </div>
+          <!-- Image -->
+          <div class="cd-profile-image-container p-md-5 p-4 text-center">
+            <img class="image img-fluid" src="">
+          </div>
+
+          <!-- -------- -->
+          <!-- Nav Tabs -->
+          <!-- -------- -->
+          <hr class="my-0">
+          <ul class="nav nav-pills nav-justified justify-content-center m-n1 py-4 px-md-5 px-4">
+            <li class="nav-item p-1" role="presentation">
+              <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                type="button" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
+            </li>
+            <li class="col p-1 nav-item" role="presentation">
+              <button class="nav-link" id="logs-tab" data-bs-toggle="tab" data-bs-target="#logs" type="button"
+                role="tab" aria-controls="logs" aria-selected="false">Logs</a>
+            </li>
+          </ul>
+          <hr class="my-0">
 
 
-        <!-- -------- -->
-        <!-- Nav Tabs -->
-        <!-- -------- -->
-        <hr class="my-0">
-        <ul class="nav nav-pills nav-justified justify-content-center m-n1 py-4 px-md-5 px-4">
-          <li class="nav-item p-1" role="presentation">
-            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-              type="button" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
-          </li>
-          <li class="col p-1 nav-item" role="presentation">
-            <button class="nav-link" id="logs-tab" data-bs-toggle="tab" data-bs-target="#logs" type="button" role="tab"
-              aria-controls="logs" aria-selected="false">Logs</a>
-          </li>
-        </ul>
-        <hr class="my-0">
+          <!-- --------- -->
+          <!-- Main Info -->
+          <!-- --------- -->
+          <div class="p-md-5 p-4 tab-content">
 
+            <!-- ------------ -->
+            <!-- Main Profile -->
+            <!-- ------------ -->
+            <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab"
+              tabindex="0">
+              <h4 class="text-primary">Profile</h4>
+              <div class="row no-gutters m-n2">
 
-        <!-- --------- -->
-        <!-- Main Info -->
-        <!-- --------- -->
-        <div class="p-md-5 p-4 tab-content">
+                <div class="col-md-6 p-2">
+                  <div class="card bg-faded p-4 h-100">
 
-          <!-- ------------ -->
-          <!-- Main Profile -->
-          <!-- ------------ -->
-          <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab"
-            tabindex="0">
-            <h4 class="text-primary">Profile</h4>
-            <div class="row no-gutters m-n2">
+                    <!-- Item -->
+                    <div class="d-flex no-gutters mb-2">
+                      <b class="text-muted col-md-5 col-6">Player</b>
+                      <a class="player playerlink"></a>
+                    </div>
 
-              <div class="col-md-6 p-2">
-                <div class="card bg-faded p-4 h-100">
+                    <hr>
 
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Player</b>
-                    <a class="player playerlink"></a>
+                    <!-- Item -->
+                    <div class="d-flex no-gutters mb-2">
+                      <b class="text-muted col-md-5 col-6">Character Role</b>
+                      <span class="role"></span>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="d-flex no-gutters mb-2">
+                      <b class="text-muted col-md-5 col-6">Status</b>
+                      <span class="status"></span>
+                    </div>
+
                   </div>
-
-                  <hr>
-
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Character Role</b>
-                    <span class="role"></span>
-                  </div>
-
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Status</b>
-                    <span class="status"></span>
-                  </div>
-
                 </div>
-              </div>
 
-              <div class="col-md-6 p-2">
-                <div class="card bg-faded p-4 h-100">
+                <div class="col-md-6 p-2">
+                  <div class="card bg-faded p-4 h-100">
 
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Inheritance</b>
-                    <span class="inheritance"></span>
+                    <!-- Item -->
+                    <div class="d-flex no-gutters mb-2">
+                      <b class="text-muted col-md-5 col-6">Inheritance</b>
+                      <span class="inheritance"></span>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="d-flex no-gutters mb-2">
+                      <b class="text-muted col-md-5 col-6">Rarity</b>
+                      <span class="class"></span>
+                    </div>
+
+                    <hr>
+
+                    <!-- Item -->
+                    <div>
+                      <b class="text-muted">Traits</b>
+                      <div class="px-4 cd-text-pre traits cd-traits-scroll"></div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Item -->
+                    <div class="d-flex no-gutters mb-2">
+                      <b class="text-muted col-md-5 col-6">Age</b>
+                      <span class="age"></span>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="d-flex no-gutters mb-2">
+                      <b class="text-muted col-md-5 col-6">Gender</b>
+                      <span class="gender"></span>
+                    </div>
+
+                    <hr>
+
+                    <!-- Item -->
+                    <div>
+                      <b class="text-muted">Notes</b>
+                      <div class="px-4 cd-text-pre notes"></div>
+                    </div>
+
                   </div>
-
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Rarity</b>
-                    <span class="class"></span>
-                  </div>
-
-                  <hr>
-
-                  <!-- Item -->
-                  <div>
-                    <b class="text-muted">Traits</b>
-                    <div class="px-4 cd-text-pre traits cd-traits-scroll"></div>
-                  </div>
-
-                  <hr>
-
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Age</b>
-                    <span class="age"></span>
-                  </div>
-
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Gender</b>
-                    <span class="gender"></span>
-                  </div>
-
-                  <hr>
-
-                  <!-- Item -->
-                  <div>
-                    <b class="text-muted">Notes</b>
-                    <div class="px-4 cd-text-pre notes"></div>
-                  </div>
-
                 </div>
               </div>
 
