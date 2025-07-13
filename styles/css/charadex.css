@@ -349,7 +349,7 @@ body {
   --bs-px: 1px;
   --bs-per: 1%;
 
-  border: var(--bx) solid var(--b);
+  border: var(--bs-px) solid var(--b);
   background:
      linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + var(--bs-per)) ,transparent 0) bottom left /50% 50%,
      linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + var(--bs-per)),transparent 0) bottom right/50% 50%,
@@ -939,10 +939,12 @@ p:last-child {
   z-index: 1;
 }
 /* Makes profile card background invisible */
-.cd-profile-card {
-  border: 0 !important;
-  background-color: transparent !important;
-  overflow: visible !important;
+@media (min-width: 768px) {
+  .cd-profile-card {
+    border: 0 !important;
+    background-color: transparent !important;
+    overflow: visible !important;
+  }
 }
 
 /* masterlist gallery */
@@ -1000,26 +1002,26 @@ p:last-child {
   aspect-ratio: 435/30;
   width: 100%;
 }
-.cd-profile-card-body a {
-  text-decoration: none;
-}
-.cd-profile-card-body {
-  background-color: transparent;
-  border-style: solid;
-  border-width: 2px 16px 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
-  aspect-ratio: 162/77;
-}
-#profile-card .card-body {
-  overflow: visible;
-}
 @media (min-width: 768px) {
+  .cd-profile-card-body a {
+    text-decoration: none;
+  }
+  .cd-profile-card-body {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px 16px 16px;
+    -moz-border-image:    url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
+    -webkit-border-image: url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
+    -o-border-image:      url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
+    border-image:         url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
+    aspect-ratio: 162/77;
+  }
   #profile-card .card-body {
   overflow: scroll;
   }
+}
+#profile-card .card-body {
+  overflow: visible;
 }
 
 /* prompt gallery */
