@@ -345,11 +345,11 @@ body {
 /* Cut corners box */
 .cut-corners {
   --all: 15%;
-  --b: var(--cd-border-color);
+  --b: #dfdde3;
   --bs-px: 1px;
   --bs-per: 1%;
 
-  border: var(--bx) solid var(--bs-px);
+  border: var(--bx) solid var(--b);
   background:
      linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + var(--bs-per)) ,transparent 0) bottom left /50% 50%,
      linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + var(--bs-per)),transparent 0) bottom right/50% 50%,
