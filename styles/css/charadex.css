@@ -726,7 +726,7 @@ h3 {
   font-size: 1.1rem;
 }
 h4 {
-  color: var(--cd-secondary-color);
+  color: var(--cd-faded-text-color);
   font-size: 1.05rem;
 }
 
