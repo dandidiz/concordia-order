@@ -344,7 +344,7 @@ body {
 
 /* Cut corners box */
 .cut-corners {
-  --all: 15%;
+  --all: 10%;
   --b: #dfdde3;
   --bs-px: 1px;
   --bs-per: 1%;
