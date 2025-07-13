@@ -346,15 +346,14 @@ body {
 .cut-corners {
   --all: 10%;
   --b: #dfdde3;
-  --bs-px: 1px;
-  --bs-per: 1%;
+  --bw: 1px;
 
-  border: var(--bs-px) solid var(--b);
+  border: var(--bw) solid var(--b);
   background:
-     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + var(--bs-per)) ,transparent 0) bottom left /50% 50%,
-     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + var(--bs-per)),transparent 0) bottom right/50% 50%,
-     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + var(--bs-per))    ,transparent 0) top left    /50% 50%,
-     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + var(--bs-per))   ,transparent 0) top right   /50% 50%,
+     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + var(--bw)) ,transparent 0) bottom left /50% 50%,
+     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + var(--bw)),transparent 0) bottom right/50% 50%,
+     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + var(--bw))    ,transparent 0) top left    /50% 50%,
+     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + var(--bw))   ,transparent 0) top right   /50% 50%,
      var(--cd-content-background-color);
   background-origin:border-box;
   background-repeat:no-repeat;
