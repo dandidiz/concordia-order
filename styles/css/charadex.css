@@ -1016,12 +1016,14 @@ p:last-child {
     border-image:         url("/concordia-order/assets/card-border-bottom-12.svg") 10 48 55 stretch stretch;
     aspect-ratio: 162/77;
   }
-  #profile-card .card-body {
-  overflow: scroll;
-  }
 }
 #profile-card .card-body {
   overflow: visible;
+}
+@media (min-width: 768px) {
+  #profile-card .card-body {
+  overflow: scroll;
+  }
 }
 
 /* prompt gallery */
