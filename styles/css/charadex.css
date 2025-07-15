@@ -1031,10 +1031,10 @@ p:last-child {
   min-height: calc(175px + 2.5rem);
   border-style: solid;
   border-width: 15px 30px 30px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
 }
 /* Character Profile */
 #profile-card .card-header {
@@ -1059,10 +1059,10 @@ p:last-child {
     background-color: transparent;
     border-style: solid;
     border-width: 15px 30px 30px;
-    -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-    -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-    -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-    border-image:         url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
+    -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+    -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+    -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+    border-image:         url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
   }
 }
 #profile-card .card-body {
@@ -1105,10 +1105,10 @@ p:last-child {
   background-color: transparent;
   border-style: solid;
   border-width: 15px 30px 30px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
 }
 .cd-prompt-background {
   background-position: center;
@@ -1148,10 +1148,10 @@ p:last-child {
   min-height: calc(175px + 2.5rem);
   border-style: solid;
   border-width: 15px 30px 30px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
 }
 
 /* item gallery */
@@ -1186,10 +1186,10 @@ p:last-child {
   min-height: calc(175px + 2.5rem);
   border-style: solid;
   border-width: 15px 30px 30px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
 }
 
 .cd-gallery-card {
