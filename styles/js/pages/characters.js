@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (listData.type == 'profile') {
         
         $('#gallery-card').addClass('cd-profile-card');
+        $('#main-container').css('height','auto');
 
         let profile = listData.profileArray[0];
 

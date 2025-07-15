@@ -816,10 +816,10 @@ hr {
   }
 }
 .frame-top {
-  margin-bottom: -2rem;
+  margin-bottom: -1.5rem;
 }
 .frame-bottom {
-  margin-top: -2rem;
+  margin-top: -1.5rem;
 }
 .frame-top hr {
   background-color: #e3e4ec;
