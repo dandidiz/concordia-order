@@ -294,10 +294,10 @@ body {
   }
 }
 
-[data-cd-bool="FALSE"] {
+[data-cd-bool="false"] {
   opacity: .5;
 }
-[data-cd-bool="FALSE"]::before {
+[data-cd-bool="false"]::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
