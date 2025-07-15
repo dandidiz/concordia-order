@@ -398,9 +398,11 @@ figure {
   box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
 }
 .faux-photo img {
-  background-color: var(--cd-faded-background-color);
+  background-color: var(--cd-body-background-color);
   border: var(--cd-border-color) var(--cd-border-style) var(--cd-border-width);
   border-radius: 4px;
+  height: 200px;
+  width: 200px;
 }
 
 /* ============================================================= */
@@ -1192,7 +1194,7 @@ p:last-child {
   border-image:         url("/concordia-order/assets/card-border-bottom.svg") 45 90 90 stretch stretch;
 }
 
-.cd-gallery-card {
+#charadex-gallery .cd-gallery-card {
   aspect-ratio: 1/1;
 }
 .cd-gallery-card > img {
