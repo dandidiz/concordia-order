@@ -59,6 +59,7 @@ body {
   ================================================================ */
   --cd-body-font-family: "Montserrat", sans-serif;
   --cd-header-font-family: "Texturina", serif;
+  --cd-written-font-family:  "Homemade Apple", cursive;
 
   /* ============================================================= */
   /* Affiliations
@@ -393,6 +394,7 @@ figure {
 }
 
 .faux-photo {
+  font-family: var(--cd-written-font-family);
   border: var(--cd-border-color) var(--cd-border-style) var(--cd-border-width);
   border-radius: 4px;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
