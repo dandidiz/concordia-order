@@ -45,6 +45,13 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
       entry.affiliationbadge = badges.join('');
     }
 
+    // Clear blanks
+    for (let item of entry) {
+      if (item === "") {
+        item = `<span class='text-muted'>--</span>`;
+      }
+    }
+
     // Convert markdown to HTML, if we need to
     if (config.markdownColumns) {
       config.markdownColumns.forEach(function(column) {
