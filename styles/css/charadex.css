@@ -294,11 +294,19 @@ body {
   }
 }
 
-.disabled {
+[data-cd-bool="FALSE"] {
   opacity: .5;
 }
-.disabled::after {
-  content: '<i class="fa-solid fa-lock"></i>';
+[data-cd-bool="FALSE"]::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f023";
+  margin-right: 0.3rem;
 }
 
 /* ============================================================= */

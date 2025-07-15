@@ -99,7 +99,7 @@ charadex.tools = {
         newArr[i] = { name: classArr[i], attr: 'href' };
       }
       if (classArr[i].includes('toggle') || classArr[i].includes('check') || classArr[i].includes('active')) {
-        newArr[i] = { name: 'disabled', attr: 'class' };
+        newArr[i] = { name: classArr[i], attr: 'data-cd-bool' };
       }
     }
 
