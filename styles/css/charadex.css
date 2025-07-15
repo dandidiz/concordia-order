@@ -809,9 +809,8 @@ hr {
   mask: url("/concordia-order/assets/frame-top.svg") no-repeat 50% 50%;
   -webkit-mask-size: contain;
   mask-size: contain;
-  vertical-align: -0.1em;
   content: "";
-  height: 1em;
+  height: 4rem;
   width: 100%;
   padding: 1rem;
   margin: 0 auto 0 auto;
@@ -823,13 +822,19 @@ hr {
   mask: url("/concordia-order/assets/frame-bottom.svg") no-repeat 50% 50%;
   -webkit-mask-size: contain;
   mask-size: contain;
-  vertical-align: -0.1em;
   content: "";
-  height: 1em;
+  height: 4rem;
   width: 100%;
   padding: 1rem;
   margin: 0 auto 0 auto;
   border: 0;
+}
+@media (min-width: 768px) {
+  .frame-top hr, .frame-bottom hr {
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    height: 3rem;
+  }
 }
 
 /* ============================================================= */
