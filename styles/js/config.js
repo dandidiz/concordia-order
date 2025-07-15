@@ -279,7 +279,7 @@ charadex.page.masterlist = {
 
   markdownColumns: [
     'personality',
-    'lore'
+    'lore',
   ],
 
 };
