@@ -395,6 +395,12 @@ figure {
   text-align: center;
 }
 
+.faux-photo {
+  border: var(--cd-border-color) var(--cd-border-style) var(--cd-border-width);
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+}
+
 /* ============================================================= */
 /* Navbar
 /* ============================================================= */
