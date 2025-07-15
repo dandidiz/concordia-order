@@ -50,6 +50,9 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
       if (entry[key] === "") {
         entry[key] = `<span class='text-muted'>--</span>`;
       }
+      if (typeof entry[key] === 'number') {
+        entry[key] = entry[key].toString();
+      }
     });
 
     // Convert markdown to HTML, if we need to

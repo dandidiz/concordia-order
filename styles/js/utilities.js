@@ -98,6 +98,9 @@ charadex.tools = {
       if (classArr[i].includes('link') || classArr[i].includes('toyhouse')) {
         newArr[i] = { name: classArr[i], attr: 'href' };
       }
+      if (classArr[i].includes('toggle') || classArr[i].includes('check') || classArr[i].includes('active')) {
+        newArr[i] = { name: classArr[i], attr: 'disabled' };
+      }
     }
 
     return newArr;
