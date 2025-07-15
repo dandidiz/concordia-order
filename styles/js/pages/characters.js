@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         $('#gallery-card').addClass('cd-profile-card');
         $('#main-container').css('height','auto');
+        $('#anchor-nav').show();
 
         let profile = listData.profileArray[0];
 
