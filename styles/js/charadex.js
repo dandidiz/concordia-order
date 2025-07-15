@@ -46,11 +46,11 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     }
 
     // Clear blanks
-    for (let key of entry) {
+    Object.entries(entry).forEach(([key, value]) => {
       if (entry[key] === "") {
         entry[key] = `<span class='text-muted'>--</span>`;
       }
-    }
+    });
 
     // Convert markdown to HTML, if we need to
     if (config.markdownColumns) {
