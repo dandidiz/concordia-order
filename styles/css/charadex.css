@@ -1197,6 +1197,7 @@ p:last-child {
 }
 .cd-gallery-card > img {
   background-color: var(--cd-body-background-color);
+  aspect-ratio: 1/1;
   border-radius: 3px;
   border-width: var(--cd-card-border-width) !important;
   border-style: var(--cd-card-border-style) !important;
