@@ -1036,10 +1036,6 @@ p:last-child {
 }
 #charadex-gallery .list .card-body img {
   max-height: 200px;
-  transition: all .2s ease-in-out;
-}
-#charadex-gallery .list .card-body img:hover {
-  transform: scale(1.1);
 }
 #charadex-gallery .list .cd-gallery-card-header {
   position: absolute;
