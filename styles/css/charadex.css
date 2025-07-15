@@ -803,6 +803,34 @@ hr {
   width: 50%;
   }
 }
+.frame-top hr {
+  background-color: var(--cd-faded-text-color);
+  -webkit-mask: url("/concordia-order/assets/frame-top.svg") no-repeat 50% 50%;
+  mask: url("/concordia-order/assets/frame-top.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  vertical-align: -0.1em;
+  content: "";
+  height: 1em;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto 0 auto;
+  border: 0;
+}
+.frame-bottom hr {
+  background-color: var(--cd-faded-text-color);
+  -webkit-mask: url("/concordia-order/assets/frame-bottom.svg") no-repeat 50% 50%;
+  mask: url("/concordia-order/assets/frame-bottom.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  vertical-align: -0.1em;
+  content: "";
+  height: 1em;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto 0 auto;
+  border: 0;
+}
 
 /* ============================================================= */
 /* Tooltips
