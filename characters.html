@@ -67,7 +67,7 @@
     <!-- ----------------------------------------------------------------- -->
     <!-- Title                                                             -->
     <!-- ----------------------------------------------------------------- -->
-    <div id="charadex-gallery" class="w-100 d-flex flex-column">
+    <div id="charadex-gallery" class="w-100 d-flex flex-column softload">
 
       <div id="search-options" class="mx-md-3 mx-0 mb-2">
         <h1 class="mb-0"><a href="/concordia-order/characters">Characters</a></h1>
@@ -143,12 +143,12 @@
         </div>
       </div> <!-- end of search options -->
 
-      <div id="gallery-card" class="card card-body bg-faded flex-grow-1 mx-md-3 mx-0 softload">
+      <div id="gallery-card" class="card card-body bg-faded flex-grow-1 mx-md-3 mx-0">
         <!-- ----------------------------------------------------------------- -->
         <!-- List Items Render Here                                            -->
         <!-- ----------------------------------------------------------------- -->
         <div class="card-body p-md-3 p-0">
-          <div class="row no-gutters charadex-list list softload m-n2"></div>
+          <div class="row no-gutters charadex-list list m-n2"></div>
           <p class="text-center"><i class="text-primary fa-solid fa-hurricane fa-spin fa-spin-reverse loading"></i></p>
 
           <!-- ----------------------------------------------------------------- -->
@@ -207,10 +207,10 @@
             <h3 class="mb-0"><a class="profilelink profileid"></a></h3>
           </div>
         </div>
-        <div class="card-body cd-profile-card-body d-flex flex-column flex-fill pt-2 px-0 pb-0">
+        <div class="card-body cd-profile-card-body d-flex flex-column flex-fill p-md-3 p-0">
 
           <!-- Banner Info -->
-          <div id="status-info" class="text-center">
+          <div id="status-info" class="text-center cut-corners script pb-1" style="--all:7%;">
             <a class="player playerlink"></a> ◆ <span class="status"></span> ◆ <span class="role"></span>
           </div>
 
@@ -298,141 +298,33 @@
             <!-- image -->
             <div class="col-auto px-5 py-2 d-flex justify-content-center align-items-center order-0">
               <div class="my-auto p-4 bg-white d-inline-block align-self-center position-relative faux-photo">
-                <a href="" class="reflink stretched-link">
+                <a href="" class="reflink stretched-link" target="_blank">
                   <img src="" class="thumbnail img-fluid">
                 </a>
               </div>
             </div>
 
           </div>
-          <div class="frame-top">
-            <hr>
-          </div>
-          <div class="text-center">Something cute will go here one day!</div>
-          <div class="frame-bottom">
-            <hr>
-          </div>
-
-          <!-- -------- -->
-          <!-- Nav Tabs -->
-          <!-- -------- -->
-          <hr class="my-0">
-          <ul class="nav nav-pills nav-justified justify-content-center m-n1 py-4 px-md-5 px-4">
-            <li class="nav-item p-1" role="presentation">
-              <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                type="button" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
-            </li>
-            <li class="col p-1 nav-item" role="presentation">
-              <button class="nav-link" id="logs-tab" data-bs-toggle="tab" data-bs-target="#logs" type="button"
-                role="tab" aria-controls="logs" aria-selected="false">Logs</a>
-            </li>
-          </ul>
-          <hr class="my-0">
-
-
-          <!-- --------- -->
-          <!-- Main Info -->
-          <!-- --------- -->
-          <div class="p-md-5 p-4 tab-content">
-
-            <!-- ------------ -->
-            <!-- Main Profile -->
-            <!-- ------------ -->
-            <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab"
-              tabindex="0">
-              <h4 class="text-primary">Profile</h4>
-              <div class="row no-gutters m-n2">
-
-                <div class="col-md-6 p-2">
-                  <div class="card bg-faded p-4 h-100">
-
-                    <!-- Item -->
-                    <div class="d-flex no-gutters mb-2">
-                      <b class="text-muted col-md-5 col-6">Player</b>
-                      <a class="player playerlink"></a>
-                    </div>
-
-                    <hr>
-
-                    <!-- Item -->
-                    <div class="d-flex no-gutters mb-2">
-                      <b class="text-muted col-md-5 col-6">Character Role</b>
-                      <span class="role"></span>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="d-flex no-gutters mb-2">
-                      <b class="text-muted col-md-5 col-6">Status</b>
-                      <span class="status"></span>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6 p-2">
-                  <div class="card bg-faded p-4 h-100">
-
-                    <!-- Item -->
-                    <div class="d-flex no-gutters mb-2">
-                      <b class="text-muted col-md-5 col-6">Inheritance</b>
-                      <span class="inheritance"></span>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="d-flex no-gutters mb-2">
-                      <b class="text-muted col-md-5 col-6">Rarity</b>
-                      <span class="class"></span>
-                    </div>
-
-                    <hr>
-
-                    <!-- Item -->
-                    <div>
-                      <b class="text-muted">Traits</b>
-                      <div class="px-4 cd-text-pre traits cd-traits-scroll"></div>
-                    </div>
-
-                    <hr>
-
-                    <!-- Item -->
-                    <div class="d-flex no-gutters mb-2">
-                      <b class="text-muted col-md-5 col-6">Age</b>
-                      <span class="age"></span>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="d-flex no-gutters mb-2">
-                      <b class="text-muted col-md-5 col-6">Gender</b>
-                      <span class="gender"></span>
-                    </div>
-
-                    <hr>
-
-                    <!-- Item -->
-                    <div>
-                      <b class="text-muted">Notes</b>
-                      <div class="px-4 cd-text-pre notes"></div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
 
           <!-- ---- -->
           <!-- Logs -->
           <!-- ---- -->
-          <div class="tab-pane fade" id="logs" role="tabpanel" aria-labelledby="logs-tab" tabindex="0">
-            <div class="card bg-faded p-4" id="log-gallery">
 
+          <div class="frame-top">
+            <a data-bs-toggle="collapse" href="#collapseLogs" role="button" aria-expanded="false"
+              aria-controls="collapseLogs">
+              <hr>
+            </a>
+          </div>
+          <!-- vv collapse vv -->
+          <div class="collapse my-5" id="collapseLogs">
+
+            <div id="log-gallery">
               <!-- ----- -->
               <!-- Title -->
               <!-- ----- -->
               <h4 class="text-primary mb-0">Transaction Log</h4>
               <hr>
-
               <!-- ---- -->
               <!-- List -->
               <!-- ---- -->
@@ -447,7 +339,6 @@
                 <!-- ---------------------- -->
                 <div class="log-list list"></div>
               </div>
-
               <!-- ---------- -->
               <!-- Pagination -->
               <!-- ---------- -->
@@ -460,13 +351,15 @@
                   </div>
                 </div>
               </div>
-
             </div>
-          </div>
 
-          <!-- Where to Update -->
-          <div class="card bg-faded py-2 px-3 mt-3 small text-center">
-            <b>If you need to update this entry, please do so <a href="">here</a>.</b>
+          </div>
+          <!-- ^^ collapse ^^ -->
+          <div class="frame-bottom">
+            <a data-bs-toggle="collapse" href="#collapseLogs" role="button" aria-expanded="false"
+              aria-controls="collapseLogs">
+              <hr>
+            </a>
           </div>
 
         </div>
