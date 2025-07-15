@@ -1019,11 +1019,11 @@ p:last-child {
   position: absolute;
   background-color: transparent;
   border-style: solid;
-  border-width: 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
+  border-width: 33px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
   aspect-ratio: 175/29;
   width: 100%;
 }
@@ -1031,11 +1031,11 @@ p:last-child {
   background-color: transparent;
   min-height: calc(175px + 2.5rem);
   border-style: solid;
-  border-width: 2px 16px 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
+  border-width: 33px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
   aspect-ratio: 174/187;
 }
 /* Character Profile */
@@ -1047,10 +1047,10 @@ p:last-child {
   background-color: transparent;
   border-style: solid;
   border-width: 33px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-top-12.svg") 90 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-top-12.svg") 90 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-top-12.svg") 90 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-top-12.svg") 90 stretch stretch;
+  -moz-border-image:    url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1061,10 +1061,10 @@ p:last-child {
     background-color: transparent;
     border-style: solid;
     border-width: 33px;
-    -moz-border-image:    url("/concordia-order/assets/card-border-bottom-12.svg") 90 stretch stretch;
-    -webkit-border-image: url("/concordia-order/assets/card-border-bottom-12.svg") 90 stretch stretch;
-    -o-border-image:      url("/concordia-order/assets/card-border-bottom-12.svg") 90 stretch stretch;
-    border-image:         url("/concordia-order/assets/card-border-bottom-12.svg") 90 stretch stretch;
+    -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+    -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+    -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+    border-image:         url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
   }
 }
 #profile-card .card-body {
@@ -1096,22 +1096,22 @@ p:last-child {
   position: absolute;
   background-color: transparent;
   border-style: solid;
-  border-width: 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-top-6.svg") 54 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-top-6.svg") 54 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-top-6.svg") 54 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-top-6.svg") 54 stretch stretch;
+  border-width: 33px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-top-filled.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-top-filled.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-top-filled.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-top-filled.svg") 90 stretch stretch;
   aspect-ratio: 175/13;
   width: 100%;
 }
 #prompt-gallery .list .cd-gallery-card {
   background-color: transparent;
   border-style: solid;
-  border-width: 2px 16px 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom-6.svg") 10 48 55 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom-6.svg") 10 48 55 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom-6.svg") 10 48 55 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom-6.svg") 10 48 55 stretch stretch;
+  border-width: 33px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
   aspect-ratio: 174/75;
 }
 .cd-prompt-background {
@@ -1140,11 +1140,11 @@ p:last-child {
   position: absolute;
   background-color: transparent;
   border-style: solid;
-  border-width: 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
+  border-width: 33px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
   aspect-ratio: 175/29;
   width: 100%;
 }
@@ -1152,11 +1152,11 @@ p:last-child {
   background-color: transparent;
   min-height: calc(175px + 2.5rem);
   border-style: solid;
-  border-width: 2px 16px 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
+  border-width: 33px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
   aspect-ratio: 174/187;
 }
 
@@ -1180,11 +1180,11 @@ p:last-child {
   position: absolute;
   background-color: transparent;
   border-style: solid;
-  border-width: 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-top-3.svg") 54 stretch stretch;
+  border-width: 33px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-top.svg") 90 stretch stretch;
   aspect-ratio: 175/29;
   width: 100%;
 }
@@ -1192,11 +1192,11 @@ p:last-child {
   background-color: transparent;
   min-height: calc(175px + 2.5rem);
   border-style: solid;
-  border-width: 2px 16px 16px;
-  -moz-border-image:    url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  -webkit-border-image: url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  -o-border-image:      url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
-  border-image:         url("/concordia-order/assets/card-border-bottom-3.svg") 10 48 55 stretch stretch;
+  border-width: 33px;
+  -moz-border-image:    url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  -webkit-border-image: url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  -o-border-image:      url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
+  border-image:         url("/concordia-order/assets/card-border-bottom.svg") 90 stretch stretch;
   aspect-ratio: 174/187;
 }
 
