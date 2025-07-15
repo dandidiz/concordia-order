@@ -807,8 +807,8 @@ hr {
   background-color: var(--cd-faded-text-color);
   -webkit-mask: url("/concordia-order/assets/frame-top.svg") no-repeat 50% 50%;
   mask: url("/concordia-order/assets/frame-top.svg") no-repeat 50% 50%;
-  -webkit-mask-size: contain;
-  mask-size: contain;
+  -webkit-mask-size: cover;
+  mask-size: cover;
   content: "";
   height: 4rem;
   width: 100%;
@@ -820,8 +820,8 @@ hr {
   background-color: var(--cd-faded-text-color);
   -webkit-mask: url("/concordia-order/assets/frame-bottom.svg") no-repeat 50% 50%;
   mask: url("/concordia-order/assets/frame-bottom.svg") no-repeat 50% 50%;
-  -webkit-mask-size: contain;
-  mask-size: contain;
+  -webkit-mask-size: cover;
+  mask-size: cover;
   content: "";
   height: 4rem;
   width: 100%;
@@ -831,8 +831,8 @@ hr {
 }
 @media (min-width: 768px) {
   .frame-top hr, .frame-bottom hr {
-    -webkit-mask-size: cover;
-    mask-size: cover;
+    -webkit-mask-size: contain;
+    mask-size: contain;
     height: 3rem;
   }
 }
