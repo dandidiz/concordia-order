@@ -1192,9 +1192,11 @@ p:last-child {
   border-image:         url("/concordia-order/assets/card-border-bottom.svg") 30 90 90 stretch stretch;
 }
 
+.cd-gallery-card {
+  aspect-ratio: 1/1;
+}
 .cd-gallery-card > img {
   background-color: var(--cd-body-background-color);
-  aspect-ratio: 1/1;
   border-radius: 3px;
   border-width: var(--cd-card-border-width) !important;
   border-style: var(--cd-card-border-style) !important;
