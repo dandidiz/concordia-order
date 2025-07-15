@@ -49,6 +49,7 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     if (config.markdownColumns) {
       config.markdownColumns.forEach(function(column) {
         if (entry[column]) entry[column] = charadex.manageData.convertMarkdown(entry[column]);
+        console.log(column, entry[column]);
       });
     }
   }
