@@ -46,9 +46,9 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     }
 
     // Clear blanks
-    for (let item of entry) {
-      if (item === "") {
-        item = `<span class='text-muted'>--</span>`;
+    for (let key of entry) {
+      if (entry[key] === "") {
+        entry[key] = `<span class='text-muted'>--</span>`;
       }
     }
 
