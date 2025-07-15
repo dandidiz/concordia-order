@@ -278,7 +278,14 @@ charadex.page.masterlist = {
   },
 
   markdownColumns: [
-    'personality'
+    'mythosdescription',
+    'abilitydescription1',
+    'abilitydescription2',
+    'abilitydescription3',
+    'abilitydescription4',
+    'abilitydescription5',
+    'personality',
+    'lore'
   ],
 
 };
