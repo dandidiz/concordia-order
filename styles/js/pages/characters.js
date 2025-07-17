@@ -36,32 +36,35 @@ document.addEventListener("DOMContentLoaded", async () => {
         let pageUrl = charadex.url.getPageUrl(charadex.page.inventory.sitePage);
         $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
 
-        // Oh lordt, it's rels time
+        // Oh lordt, it's rels time =========================================
         if (profile.relationships && typeof profile.relationships === 'string') {
 
           // our rels column has a textjoin of all relationships
           // we need to put it back into array form
           let relSplit = profile.relationships.split(';;;');
-          // number of columns per row we anticipate
+          
           const numCols = 5;
           let relElement = '';
-          pageUrl = charadex.url.getPageUrl(charadex.page.masterlist.sitePage);
 
           for (let i = 0; i < relSplit.length; i += numCols) {
             let rel = relSplit.slice(i, i + numCols);
 
             if (rel[1] === 'FALSE') { // hiding = FALSE
               // Set the character link
-              let charLink = charadex.url.addUrlParameters(pageUrl, { profile: charadex.tools.scrub(rel[0]) });
+              let charLink = charadex.url.addUrlParameters(
+                charadex.url.getPageUrl(charadex.page.masterlist.sitePage),
+                { profile: charadex.tools.scrub(rel[0]) });
+              let relText = `<span class="text-muted">--</span>`
+              if (rel[4]) relText = charadex.manageData.convertMarkdown(rel[4]);
               // Create the DOM elements
               relElement += `<div class="row no-gutters justify-content-center align-items-center mb-2">
                               <div class="col-md-3 text-center text-uppercase">
                                 <h3><a href="${charLink}">${rel[0]}</a></h3>
-                                <p class="small">Last Updated: ${rel[2]}</p>
+                                <p class="small"><span class="script">Last Updated:</span> ${rel[2]}</p>
                               </div>
                               <div class="col-md-9 p-2 cut-corners text-center">
                                 <p class="script">${rel[3]}</p>
-                                <p>${rel[4]}</p>
+                                <div>${relText}</div>
                               </div>
                              </div>`
             }
