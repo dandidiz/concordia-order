@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", async () => {
               let charLink = charadex.url.addUrlParameters(
                 charadex.url.getPageUrl(charadex.page.masterlist.sitePage),
                 { profile: charadex.tools.scrub(rel[0]) });
-              let relText = `<span class="text-muted">--</span>`
-              if (rel[4]) relText = charadex.manageData.convertMarkdown(rel[4]);
+              let relTitle = rel[3] ? rel[3] : '--';
+              let relText = rel[4] ? charadex.manageData.convertMarkdown(rel[4]) : `<span class="text-muted">--</span>`;
               // Create the DOM elements
               relElement += `<div class="row no-gutters justify-content-center align-items-center mb-2">
                               <div class="col-md-3 text-center text-uppercase">
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                                 <p class="small"><span class="script">Last Updated:</span> ${rel[2]}</p>
                               </div>
                               <div class="col-md-9 p-2 cut-corners text-center">
-                                <p class="script">${rel[3]}</p>
+                                <p class="script">${relTitle}</p>
                                 <div>${relText}</div>
                               </div>
                              </div>`
