@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
           for (let i = 0; i < relSplit.length; i += numCols) {
             // get the relationship
-            let chunk = array.slice(i, i + numCols);
+            let rel = relSplit.slice(i, i + numCols);
             // Create the DOM elements
             let relElement = `<div class="row">`
-            for (let j = 0; j < chunk.length; j++) {
-              relElement += `<div class="col">${chunk[j]}</div>`
+            for (let j = 0; j < rel.length; j++) {
+              relElement += `<div class="col">${rel[j]}</div>`
             }
             relElement += `</div>`
 
