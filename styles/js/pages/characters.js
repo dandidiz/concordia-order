@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
 
         // Oh lordt, it's rels time
-        if (profile.relationships && profile.relationships === 'string') {
+        if (profile.relationships && typeof profile.relationships === 'string') {
 
           // our rels column has a textjoin of all relationships
           // we need to put it back into array form
