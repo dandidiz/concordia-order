@@ -44,21 +44,30 @@ document.addEventListener("DOMContentLoaded", async () => {
           let relSplit = profile.relationships.split(';;;');
           // number of columns per row we anticipate
           const numCols = 5;
+          let relElement = '';
+          pageUrl = charadex.url.getPageUrl(charadex.page.masterlist.sitePage);
 
           for (let i = 0; i < relSplit.length; i += numCols) {
-            // get the relationship
             let rel = relSplit.slice(i, i + numCols);
-            // Create the DOM elements
-            let relElement = `<div class="row">`
-            for (let j = 0; j < rel.length; j++) {
-              relElement += `<div class="col">${rel[j]}</div>`
+
+            if (rel[1] === 'FALSE') { // hiding = FALSE
+              // Set the character link
+              let charLink = charadex.url.addUrlParameters(pageUrl, { profile: charadex.tools.scrub(rel[0]) });
+              // Create the DOM elements
+              relElement += `<div class="row no-gutters justify-content-center align-items-center mb-2">
+                              <div class="col-md-3 text-center text-uppercase">
+                                <h3><a href="${charLink}">${rel[0]}</a></h3>
+                                <p class="small">Last Updated: ${rel[2]}</p>
+                              </div>
+                              <div class="col-md-9 p-2 cut-corners text-center">
+                                <p class="script">${rel[3]}</p>
+                                <p>${rel[4]}</p>
+                              </div>
+                             </div>`
             }
-            relElement += `</div>`
-
-            $('#rel-container').html(relElement);
           }
+          $('#rel-container').html(relElement);
         }
-
       }
   });
 

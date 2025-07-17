@@ -322,27 +322,25 @@
             </div> <!-- end of basic section -->
 
           </div>
-
-          <!-- ---- -->
-          <!-- Logs -->
-          <!-- ---- -->
-
-          <div id="rel-container"></div>
+          
+          <!-- ------------- -->
+          <!-- Relationships -->
+          <!-- ------------- -->
 
           <div class="frame-top">
-            <a data-bs-toggle="collapse" href="#collapseLogs" role="button" aria-expanded="false"
-              aria-controls="collapseLogs">
+            <a data-bs-toggle="collapse" href="#collapseRels" role="button" aria-expanded="false"
+              aria-controls="collapseRels">
               <hr>
             </a>
           </div>
           <!-- vv collapse vv -->
-          <div class="collapse" id="collapseLogs">
+          <div class="collapse" id="collapseRels">
 
-            <div id="log-gallery" class="my-4 mx-3">
+            <div id="rel-list" class="my-4 mx-3">
               <!-- ----- -->
               <!-- Title -->
               <!-- ----- -->
-              <h4 class="text-primary mb-0">Transaction Log</h4>
+              <h4 class="text-primary mb-0">Relationships</h4>
               <!-- ---- -->
               <!-- List -->
               <!-- ---- -->
@@ -354,31 +352,18 @@
                 <!-- ---------------------- -->
                 <!-- List Items Render Here -->
                 <!-- ---------------------- -->
-                <div class="log-list list"></div>
-              </div>
-              <!-- ---------- -->
-              <!-- Pagination -->
-              <!-- ---------- -->
-              <div style="display: none;" class="log-pagination-container">
-                <div class="nav d-flex justify-content-center mb-n4">
-                  <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a>
-                  </div>
-                  <ul class="pagination log-pagination log-pagination-top justify-content-center m-0"></ul>
-                  <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a>
-                  </div>
-                </div>
+                <div id="rel-container"></div>
               </div>
             </div>
 
           </div>
           <!-- ^^ collapse ^^ -->
           <div class="frame-bottom mb-2">
-            <a data-bs-toggle="collapse" href="#collapseLogs" role="button" aria-expanded="false"
-              aria-controls="collapseLogs">
+            <a data-bs-toggle="collapse" href="#collapseRels" role="button" aria-expanded="false"
+              aria-controls="collapseRels">
               <hr>
             </a>
           </div>
-
 
           <div class="row mx-3 mb-2">
 
@@ -521,6 +506,60 @@
           <hr>
           <h2 class="text-center mt-2">Lore</h2>
           <div class="cut-corners mx-3 mb-2 p-3 lore"></div>
+
+          <!-- ---- -->
+          <!-- Logs -->
+          <!-- ---- -->
+
+          <div class="frame-top">
+            <a data-bs-toggle="collapse" href="#collapseLogs" role="button" aria-expanded="false"
+              aria-controls="collapseLogs">
+              <hr>
+            </a>
+          </div>
+          <!-- vv collapse vv -->
+          <div class="collapse" id="collapseLogs">
+
+            <div id="log-gallery" class="my-4 mx-3">
+              <!-- ----- -->
+              <!-- Title -->
+              <!-- ----- -->
+              <h4 class="text-primary mb-0">Transaction Log</h4>
+              <!-- ---- -->
+              <!-- List -->
+              <!-- ---- -->
+              <div class="p-3">
+                <div class="row pb-1 border-bottom">
+                  <div class="col-md-3"><b>Timestamp</b></div>
+                  <div class="col-md-9"><b>Reason</b></div>
+                </div>
+                <!-- ---------------------- -->
+                <!-- List Items Render Here -->
+                <!-- ---------------------- -->
+                <div class="log-list list"></div>
+              </div>
+              <!-- ---------- -->
+              <!-- Pagination -->
+              <!-- ---------- -->
+              <div style="display: none;" class="log-pagination-container">
+                <div class="nav d-flex justify-content-center mb-n4">
+                  <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a>
+                  </div>
+                  <ul class="pagination log-pagination log-pagination-top justify-content-center m-0"></ul>
+                  <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- ^^ collapse ^^ -->
+          <div class="frame-bottom mb-2">
+            <a data-bs-toggle="collapse" href="#collapseLogs" role="button" aria-expanded="false"
+              aria-controls="collapseLogs">
+              <hr>
+            </a>
+          </div>
 
         </div>
       </div>
