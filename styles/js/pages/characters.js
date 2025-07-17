@@ -37,9 +37,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
 
         // Set partner url
-        $('.partnerlink').attr('href', charadex.url.addUrlParameters(
-          charadex.url.getPageUrl(charadex.page.masterlist.sitePage),
-          { profile: profile.partner }));
+        if (profile.partner) {
+          $('.partnerlink').attr('href', charadex.url.addUrlParameters(
+            charadex.url.getPageUrl(charadex.page.masterlist.sitePage),
+            { profile: profile.partner }));
+        }
 
         // Oh lordt, it's rels time =========================================
         if (profile.relationships && typeof profile.relationships === 'string') {
