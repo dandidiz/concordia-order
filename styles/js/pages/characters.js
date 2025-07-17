@@ -74,5 +74,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
   });
 
+  // open collapsed items when clicking on the corresponding link
+  var hash = $(location).attr('hash');
+  if (hash) {
+    var $hash = $(`#${hash}`);
+    var $parents = $hash.parents('.collapse');
+    $parents.collapse('show');
+
+    window.location = hash;
+  }
+
   charadex.tools.loadPage('.softload', 500);
 });
