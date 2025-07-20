@@ -962,9 +962,15 @@ a.badge.badge-primary:active,
 .softload {
   opacity: 0;
 }
-
 .softload.active {
   opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.loading {
+  opacity: 1;
+}
+.loading.active {
+  opacity: 0;
   transition: opacity 0.2s ease;
 }
 
